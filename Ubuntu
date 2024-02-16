@@ -1,11 +1,11 @@
 # My Ubuntu terminal configurations
 
-## Uninstalling VIM
+# Uninstalling VIM
 
 sudo apt-get remove vim.tiny
 sudo apt-get remove vim
 
-## Installing VIM
+# Installing VIM
 
 sudo add-apt-repository ppa:jonathonf/vim (Latest version)
 
@@ -15,15 +15,15 @@ sudo apt install vim
 
 vim --version
 
-## Adding plugins
+# Adding plugins
 
 Plugin manager that lets us add/remove plugins
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-## For VIM setup, look into the setup.md file
+# For VIM setup, look into the setup.md file
 
-## Installing NVIM
+# Installing NVIM
 
 1. Download nvim-linux64.tar.gz from (https://github.com/neovim/neovim/releases)
 
@@ -35,15 +35,15 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 5. Remove nvim-linux64.tar.gz, because we have the nvim-linux64 file
 
-## Create a symbolic link
+# Create a symbolic link
 
 6.ln -s ./nvim-linux64/bin/nvim ./nvim
 
-## Installing LazyVim
+# Installing LazyVim
 
-## Back up current Neovim
+# Back up current Neovim
 
-Step 1
+# Step 1
 
 (# required)
 mv ~/.config/nvim{,.bak}
@@ -61,19 +61,61 @@ Step 3: Remove the .git folder, so you can add it to your own repo later
 
 rm -rf ~/.config/nvim/.git
 
-## Customizing nvim
+# Customizing nvim
 
-Navigate to:
+# Navigate to:
 
-Linux:
+# Linux:
 
 .Config >> nvim >> lua >> config >> options.lua
 
-Windows:
+## Windows:
 
 AppData >> Local >> nvim >> lua >> config >> options.lua
 
-## Installing betty linter for .c files
+# Databases
+
+# Installing mySQL
+
+sudo apt install mysql-server
+
+sudo service mysql status
+
+sudo service mysql stop
+
+sudo service mysql start
+
+# To set password for root User
+
+sudo mysql
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password you want';
+
+# Exit out of mysql
+# Run the secure installation script
+
+sudo mysql_secure_installation
+
+# Enter the password you just set:
+
+# Press y (yes) on all the questions
+
+# After all is done, if we try to login into mysql with root it won't work:
+
+sudo mysql                    
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+# To fix this:
+
+mysql -u root -p
+
+# Enter your mysql password you set:
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
+
+# Exit out of mysql
+
+# Installing betty linter for .c files
 
 1. mkdir Betty && cd Betty
 
@@ -83,23 +125,25 @@ AppData >> Local >> nvim >> lua >> config >> options.lua
 
 4. sudo ./install.sh
 
-5. vim betty and paste; look in the setup file
+5. vim betty and paste >> look in the setup file
 
 6. chmod u+x betty
 
 7. sudo mv betty /bin/
 
-## Batcat command (cat)
+# Batcat command (cat)
 
-1. Add alias bat="batcat" in your .bashrc or .zshrc
+# Add
 
-## Langauages
+alias bat="batcat" in your .bashrc or .zshrc
 
-## Python
+# Langauages
 
-Installation 1:
+# Python
 
-Deadsnakes repository
+# Installation 1:
+
+# Deadsnakes repository
 
 1. sudo add-apt-repository ppa:deadsnakes/ppa
 
@@ -117,9 +161,9 @@ If you want the latest version of Python, we have to give it the most priorities
 
 6. sudo update-alternatives --config python3
 
-Installation 2:
+# Installation 2:
 
-Compiling from source
+# Compiling from source
 
 1. sudo apt-get update
 
@@ -129,7 +173,7 @@ Go to Python.org on your browser and copy link of the version you want, eg:
 
 3. wget https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tar.xz
 
-After step 3 finishes downloading, extract the tarball file
+# After step 3 finishes downloading, extract the tarball file
 
 tar xvf Python-3.12.2.tar.xz
 
@@ -139,21 +183,21 @@ tar xvf Python-3.12.2.tar.xz
 
 6. sudo make -j 2
 
-The 2 is for checking the number of cores
+# The 2 is for checking the number of cores
 
 nproc
 
 7. sudo make install
 
-Extras: Importing my own modules
+# Extras: Importing my own modules
 
-PATH to the directory of the modules
+# PATH to the directory of the modules
 
 export PYTHONPATH=/home/tafara/Documents/Code/Programs/Python/Codes/Modules:${PYTHONPATH}
 
 echo $PYTHONPATH
 
-## Java
+# Java
 
 1. sudo apt-get update
 
@@ -163,7 +207,7 @@ Go to Oracle and download the JDK version you want
 
 3. sudo dpkg -i jdk-21_linux-x64_bin.deb (To install Java)
 
-## Go
+# Go
 
 Visit the Go website and copy the link of the version you want
 
@@ -173,11 +217,11 @@ Visit the Go website and copy the link of the version you want
 
 3. sudo mv go /usr/local
 
-Add into your .bashrc or .zshrc files
+# Add into your .bashrc or .zshrc files
 
 4. export PATH=$PATH:/usr/local/go/bin
 
-EXTRAS
+# EXTRAS
 
 Subfinder, a tool for looking for subdomains
 
@@ -187,17 +231,19 @@ Subfinder, a tool for looking for subdomains
 
 7. sudo mv subfinder /usr/bin
 
-## Ruby
+# Ruby
 
-Visit (https://rvm.io/rvm/install)
+Visit [rvm](https://rvm.io/rvm/install)
 
 1. gpg --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 
-Visit (https://github.com/rvm/ubuntu_rvm)
+Visit [Ruby](https://github.com/rvm/ubuntu_rvm)
 
-You need software-properties-common installed in order to add PPA repositories.
+# You need software-properties-common installed in order to add PPA repositories.
 
-If not installed: sudo apt-get install software-properties-common
+# If not installed:
+
+sudo apt-get install software-properties-common
 
 2. sudo apt-add-repository -y ppa:rael-gc/rvm
 
@@ -231,15 +277,15 @@ To switch between installed versions
 
 1. nvm alias default (version you want)
 
-## Terminal Set Up
+# Terminal Set Up
 
-Install Oh My ZSH
+# Install Oh My ZSH
 
 sudo apt install zsh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-Install Powerlevel Plug themes
+# Install Powerlevel Plug themes
 
 1. git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
@@ -247,7 +293,7 @@ Install Powerlevel Plug themes
 
 3. source .zshrc
 
-## Plugins
+# Plugins
 
 1. git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
