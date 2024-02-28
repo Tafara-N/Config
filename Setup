@@ -27,8 +27,6 @@ Plugin 'kien/rainbow_parentheses.vim'
 
 Plugin 'townk/vim-autoclose'
 
-" Plugin 'valloric/youcompleteme'
-
 Plugin 'bronson/vim-trailing-whitespace'
 
 Plugin 'hdima/python-syntax'
@@ -38,8 +36,6 @@ Plugin 'vimjas/vim-python-pep8-indent'
 Plugin 'flazz/vim-colorschemes'
 
 Plugin 'lokaltog/vim-powerline'
-
-Plugin 'myusuf3/numbers.vim'
 
 Plugin 'prettier/vim-prettier'
 
@@ -145,6 +141,7 @@ vim.o.stop = 4 -- Number of spaces tabs count for
 vim.o.termguicolors = true -- True color support
 vim.o.colorcolumn = 80  --Sets my colorcolumn to 80
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Betty linter for .c files
 
 Insert in the betty file you created
