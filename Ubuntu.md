@@ -1,4 +1,4 @@
-# My Ubuntu terminal configurations  
+# My Ubuntu terminal configurations
 ### Uninstalling VIM
 
 ```
@@ -23,7 +23,7 @@ Plugin manager that lets us add/remove plugins Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-## For VIM setup, look into the Setup file  
+## For VIM setup, look into the Setup file
 ### Installing NVIM
 
 1. Download `nvim-linux64.tar.gz` from (https://github.com/neovim/neovim/releases)
@@ -46,8 +46,8 @@ sudo tar xzvf nvim-linux64.tar.gz
 ln -s ./nvim-linux64/bin/nvim ./nvim
 ```
 
-### Installing LazyVim  
-### Back up current Neovim  
+### Installing LazyVim
+### Back up current Neovim
 ### Step 1
 
 ```
@@ -72,16 +72,16 @@ Step 3: Remove the .git folder, so you can add it to your own repo later
 rm -rf ~/.config/nvim/.git
 ```
 
-### Customizing nvim  
-### Navigate to:  
-### Linux:  
+### Customizing nvim
+### Navigate to:
+### Linux:
 .Config >> nvim >> lua >> config >> options.lua
 
 ## Windows:
 
 AppData >> Local >> nvim >> lua >> config >> options.lua
 
-# Databases  
+# Databases
 ## Installing mySQL
 
 ```
@@ -112,7 +112,7 @@ sudo mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password you want';
 ```
 
-## Exit out of mysql  
+## Exit out of mysql
 ## Run the secure installation script
 
 ```
@@ -141,7 +141,59 @@ mysql -u root -p
 ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
 ```
 
-### Exit out of mysql  
+### Exit out of mysql
+
+# Installing Nginx
+[Installing Nginx](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#installing-prebuilt-ubuntu-packages)
+
+When:
+
+```
+sudo nginx
+
+nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+
+nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+
+nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+
+nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+
+nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+
+nginx: [emerg] still could not bind()
+```
+
+OR
+
+```
+sudo nginx
+nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Unknown error)
+nginx: [emerg] bind() to [::]:80 failed (98: Unknown error)
+nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Unknown error)
+nginx: [emerg] bind() to [::]:80 failed (98: Unknown error)
+nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Unknown error)
+nginx: [emerg] bind() to [::]:80 failed (98: Unknown error)
+nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Unknown error)
+nginx: [emerg] bind() to [::]:80 failed (98: Unknown error)
+nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Unknown error)
+nginx: [emerg] bind() to [::]:80 failed (98: Unknown error)
+nginx: [emerg] still could not bind()
+```
+
+> nginx is already running and can be stopped by:
+
+```
+sudo pkill -f nginx & wait $!
+sudo systemctl start nginx
+```
+
+Or apache2 is listening on the same port and can be stopped:
+
+```
+sudo /etc/init.d/apache2 stop
+```
+
 ### Installing betty linter for .c files
 
 ```
@@ -184,9 +236,9 @@ sudo apt install batcat
 alias bat="batcat"
 ```
 
-# Langauages  
-## Python  
-## Installation 1:  
+# Langauages
+## Python
+## Installation 1:
 ### Deadsnakes repository
 
 ```
@@ -217,7 +269,7 @@ sudo update-alternatives --install /usr/bin/python3 python3 /usr//bin/python3.10
 sudo update-alternatives --config python3
 ```
 
-## Installation 2:  
+## Installation 2:
 # Compiling from source
 
 ```
@@ -262,7 +314,7 @@ nproc
 sudo make install
 ```
 
-### Extras: Importing my own modules  
+### Extras: Importing my own modules
 ## PATH to the directory of the modules
 
 ```bash
@@ -337,7 +389,7 @@ gpg --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB8
 
 Visit [Ruby](https://github.com/rvm/ubuntu_rvm)
 
-## You need software-properties-common installed in order to add PPA repositories.  
+## You need software-properties-common installed in order to add PPA repositories.
 ## If not installed:
 
 ```
@@ -394,7 +446,7 @@ To switch between installed versions
 nvm alias default (version you want)
 ```
 
-### Terminal Set Up  
+### Terminal Set Up
 ### Install Oh My ZSH
 
 ```
