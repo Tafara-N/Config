@@ -388,7 +388,9 @@ And finally we hardcode the version of Prettier we're using so it doesn't change
 
 ```
 npm init -y
-npm -i --save-dev prettier
+npm i --save-dev prettier
+npm i --save-dev --save-exact prettier
+npm i --save-dev eslint-config-prettier
 ```
 
 To check our style:
