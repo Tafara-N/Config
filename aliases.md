@@ -1,4 +1,5 @@
 # Aliases
+
 alias zsh="nvim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls="colorls"
@@ -27,7 +28,8 @@ alias pip="pip3"
 alias list="pip3 list"
 alias python="python3"
 
-# SSH CONNECTION  
+# SSH CONNECTION
+
 alias listen="sudo ss -ltup"
 alias allow="sudo ufw allow ssh"
 alias ssh-status="sudo systemctl status ssh"
@@ -35,18 +37,27 @@ alias ssh-status="sudo systemctl status ssh"
 # mySQL
 alias mysql-status="sudo systemctl status mysql"
 alias mysql-stop="sudo systemctl stop mysql"
+alias mysql-start="sudo service mysql start"
 alias mysql-restart="sudo systemctl restart mysql"
 alias mysql="sudo mycli -u root"
+
+# Postgres
+alias pgsql-status="sudo systemctl status postgresql"
+alias pgsql-stop="sudo systemctl stop postgresql"
+alias pgsql-start="sudo service start postgresql"
+alias pgsql-restart="sudo systemctl restart mysql"
 
 # nginx
 alias nginx-status="sudo systemctl status nginx"
 alias nginx-stop="sudo systemctl stop nginx"
+alias nginx-start="sudo service nginx start"
 alias nginx-restart="sudo systemctl restart nginx"
 
 # apache2
 alias apache-status="sudo systemctl status apache2"
 alias apache-stop="sudo systemctl stop apache2"
-alias apache-restart="sudo systemctl restart apache2"
+alias apache-start="sudo service apache2 start"
+alias apache-restart="sudo systemctl apache2 restart"
 
 
 # GIT
@@ -71,7 +82,9 @@ alias valid="./w3c_validator.py"
 
 # JavaScript
 alias style="semistandard"
-alias style-fix="standard --fix"
+alias style-fix="semistandard --fix"
+alias prettier="npx prettier --check"
+alias prettier-fix="npx prettier --write"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
