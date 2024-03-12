@@ -114,7 +114,6 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 
 ## Exit out of mysql
 ## Run the secure installation script
-
 ```
 sudo mysql_secure_installation
 ```
@@ -131,6 +130,7 @@ ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: N
 ```
 
 ### To fix this:
+
 ```
 mysql -u root -p
 ```
@@ -142,6 +142,45 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
 ```
 
 ### Exit out of mysql
+
+## Install mycli for mySQL
+```
+pip3 install mycli
+```
+
+OR
+
+```
+sudo apt-get install mycli
+```
+
+# Installing Postgre
+```
+sudo apt install postgresql postgresql-contrib
+```
+
+## Start Postgre
+```
+sudo systemctl start postgresql.service
+```
+
+## Install pgcli for Postgre
+```
+sudo apt-get install libpq-dev python-dev
+pip3 install pgcli
+```
+
+OR
+
+```
+sudo apt-get install pgcli
+```
+
+# Installing Apache2
+```
+sudo apt update
+sudo apt install apache2
+```
 
 # Installing Nginx
 [Installing Nginx](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#installing-prebuilt-ubuntu-packages)
@@ -224,20 +263,128 @@ chmod u+x betty
 sudo mv betty /bin/
 ```
 
+To check style:
+
+```
+betty filename.c
+```
+
+### Installing Formatter/Linter for .py files
+
+## Linter for .html and .css files
+## Requirements
+- [Python 3](https://www.python.org/downloads/)
+- [Requests: HTTP for Humans™](https://requests.readthedocs.io/en/latest/user/install/)
+
+## Quickstart
+1. Clone this repo
+
+```
+git clone https://github.com/holbertonschool/W3C-Validator.git
+```
+
+2. Run the validator command from within
+
+Single file:
+
+```
+./w3c_validator.py index.html
+./w3c_validator.py css/styles.css
+```
+
+Multiple files:
+
+```
+./w3c_validator.py index.html article.html css/styles.css
+```
+
+All errors are printed in `STDERR`; Exit status = # of errors (0 on success)
+
+### Troubleshooting
+- Error: bad interpreter: `No such file or directory` If you get this error you might not have Python installed correctly; or the system [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) might not be updated to reflect the installed Python version.
+
+Assuming that Python 3 is indeed installed, you can try to run it like so:
+
+```
+python3 w3c_validator.py index.html
+```
+
+- Error: `ModuleNotFoundError: No module named 'requests'` If you get this error you do not have the module `requests` installed in your system.
+
+You can install `requests` using pip:
+
+```
+python3 -m pip install requests
+```
+
+If you don't have `pip` installed, you can get it [here](https://pypi.org/project/pip/).
+
+### Formater/Linter for .js files
+```
+sudo npm install semistandard --global
+```
+
+To check style:
+
+```
+semistandard <filename>
+```
+
+To format:
+
+```
+semi-standard --fix <filename>
+```
+
+### Vim
+Install [Syntastic](https://vimawesome.com/plugin/syntastic) and add these lines to .vimrc:
+
+```vim
+let g:syntastic_javascript_checkers=['standard']
+let g:syntastic_javascript_standard_exec = 'semistandard'
+```
+
+For automatic formatting on save, add these two lines to .vimrc:
+
+```
+autocmd bufwritepost *.js silent !semistandard % --fix
+set autoread
+```
+
+### Prettier is best set in a Project Folder
+
+### Formater/Linter for .css, .html, and .js files
+First we create an initial package-json file with default values
+Next we install Prettier in the package-json file
+And finally we hardcode the version of Prettier we're using so it doesn't change automatically.
+
+```
+npm init -y
+npm -i --save-dev prettier
+```
+
+To check our style:
+
+```
+npx prettier --check <filename>
+```
+
+To format our files:
+
+```
+npx prettier --write <filename>
+```
+
+
 ### Batcat command (cat)
 
 ```
 sudo apt install batcat
 ```
 
-### Add alias in your .bashrc or .zshrc
-
-```bash
-alias bat="batcat"
-```
-
-# Langauages
+# Languages
 ## Python
+
 ## Installation 1:
 ### Deadsnakes repository
 
@@ -428,9 +575,28 @@ To have multiple versions of Ruby for different projects.
 
 2. Inside the `.ruby-version` file >> the version you want only, eg `3.3.0`
 
+## Extras
+1. Install Ruby (preferably, version >= 2.6)
+
+2. Download and install a [Nerd Font](https://www.nerdfonts.com/)
+
+3. Install the colorls ruby gem with:
+
+```
+gem install colorls
+```
+
+4. Enable tab completion for flags by entering following line to your shell configuration file (~/.bashrc or ~/.zshrc) :
+
+```
+source $(dirname $(gem which colorls))/tab_complete.sh
+```
+
 ## Node.js
 
-Visit (https://github.com/nvm-sh/nvm)
+## Step 1
+
+1. Visit (https://github.com/nvm-sh/nvm)
 
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
@@ -444,6 +610,12 @@ To switch between installed versions
 
 ```
 nvm alias default (version you want)
+```
+
+## Step 2 - Installs Node.14
+```
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
 
 ### Terminal Set Up
