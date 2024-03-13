@@ -160,7 +160,7 @@ OR
 sudo apt-get install mycli
 ```
 
-# Installing Postgre
+# [Installing Postgre](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04)
 ```
 sudo apt install postgresql postgresql-contrib
 ```
@@ -168,6 +168,17 @@ sudo apt install postgresql postgresql-contrib
 ## Start Postgre
 ```
 sudo systemctl start postgresql.service
+```
+
+## Switch to Postgre
+```
+sudo -i -u postgres
+psql
+```
+
+## Run directly
+```
+sudo -u postgres psql
 ```
 
 ## Install pgcli for Postgre
