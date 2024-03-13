@@ -84,8 +84,8 @@ alias valid="./w3c_validator.py"
 # JavaScript
 alias style="semistandard"
 alias style-fix="semistandard --fix"
-alias prettier="npx prettier --check"
-alias prettier-fix="npx prettier --write"
+# alias prettier="npx prettier --check"
+# alias prettier-fix="npx prettier --write"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
