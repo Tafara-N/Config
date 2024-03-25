@@ -582,6 +582,7 @@ If you want the latest version of Python, we have to give it the most priorities
 
 ```
 sudo update-alternatives --install /usr/bin/python3 python3 /usr//bin/python3.10 1
+sudo update-alternatives --install /usr/bin/python3 python3 /usr//bin/python3.12 2
 ```
 
 ```
