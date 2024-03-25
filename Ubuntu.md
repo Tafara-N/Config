@@ -49,7 +49,7 @@ sudo tar xzvf nvim-linux64.tar.gz
 ### Create a symbolic link
 
 ```
-ln -s ./nvim-linux64/bin/nvim ./nvim
+sudo ln -s ./nvim-linux64/bin/nvim ./nvim
 ```
 
 ### Installing LazyVim
