@@ -18,7 +18,7 @@ vim --version
 ### Batcat command (cat)
 
 ```
-sudo apt install batcat
+sudo apt install bat
 ```
 
 ## Adding plugins
