@@ -791,6 +791,48 @@ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
+# Docker
+
+### If systemctl (systemd is not working)
+
+```
+𝐚) 𝗦𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗳𝗼𝗿 𝗨𝗯𝘂𝗻𝘁𝘂
+𝐏𝐮𝐥𝐥 𝐈𝐦𝐚𝐠𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 :
+docker run -d --name <Name> --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro jrei/systemd-ubuntu:20.04
+𝐋𝐨𝐠 𝐢𝐧𝐭𝐨 𝐭𝐡𝐞 𝐂𝐨𝐧𝐭𝐚𝐢𝐧𝐞𝐫 :
+docker exec -it <Name> bash
+
+𝐛) 𝗦𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗳𝗼𝗿 𝗖𝗲𝗻𝘁𝗢𝗦
+𝐏𝐮𝐥𝐥 𝐈𝐦𝐚𝐠𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 :
+docker run -d --name <Name> --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro alekseychudov/centos8-systemd
+𝐋𝐨𝐠 𝐢𝐧𝐭𝐨 𝐭𝐡𝐞 𝐂𝐨𝐧𝐭𝐚𝐢𝐧𝐞𝐫 :
+docker exec -it <Name> bash
+
+𝐜) 𝗦𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗳𝗼𝗿 𝐃𝐞𝐛𝐢𝐚𝐧
+𝐏𝐮𝐥𝐥 𝐈𝐦𝐚𝐠𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 :
+sudo docker run -d --name <Name> --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro jrei/systemd-debian:11
+𝐋𝐨𝐠 𝐢𝐧𝐭𝐨 𝐭𝐡𝐞 𝐂𝐨𝐧𝐭𝐚𝐢𝐧𝐞𝐫 :
+sudo docker exec -it <Name> bash
+
+𝐝) 𝗦𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗳𝗼𝗿 𝗳𝗲𝗱𝗼𝗿𝗮
+𝐏𝐮𝐥𝐥 𝐈𝐦𝐚𝐠𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 :
+sudo docker run -d --name <Name> --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro jrei/systemd-fedora
+𝐋𝐨𝐠 𝐢𝐧𝐭𝐨 𝐭𝐡𝐞 𝐂𝐨𝐧𝐭𝐚𝐢𝐧𝐞𝐫 :
+sudo docker exec -it <Name> bash
+
+𝗲) 𝗦𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗳𝗼𝗿 𝗥𝗲𝗱𝗵𝗮𝘁 𝗟𝗶𝗻𝘂𝘅
+𝐏𝐮𝐥𝐥 𝐈𝐦𝐚𝐠𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 :
+sudo docker run -d --name <Name> --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro registry.access.redhat.com/ubi8/ubi-init:8.1
+𝐋𝐨𝐠 𝐢𝐧𝐭𝐨 𝐭𝐡𝐞 𝐂𝐨𝐧𝐭𝐚𝐢𝐧𝐞𝐫 :
+sudo docker exec -it <Name> bash
+
+𝐟) 𝗦𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗳𝗼𝗿 𝐀𝐥𝐦𝐚𝐋𝐢𝐧𝐮𝐱
+𝐏𝐮𝐥𝐥 𝐈𝐦𝐚𝐠𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 :
+sudo docker run -d --name <Name> --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro almalinux/8-init
+𝐋𝐨𝐠 𝐢𝐧𝐭𝐨 𝐭𝐡𝐞 𝐂𝐨𝐧𝐭𝐚𝐢𝐧𝐞𝐫 :
+sudo docker exec -it <Name> bash
+```
+
 ### Terminal Set Up
 ### Install Oh My ZSH
 
