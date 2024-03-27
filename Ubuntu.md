@@ -1,4 +1,13 @@
 # My Ubuntu terminal configurations
+
+# Start Here
+
+```
+sudo apt get upadte && sudo apt-get upgrade
+sudo apt-get install software-properties-common
+sudo apt-get install build-essential
+```
+
 ### Uninstalling VIM
 
 ```
