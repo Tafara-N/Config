@@ -1,3 +1,4 @@
+```
 # Aliases
 # alias zsh="nvim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -109,4 +110,5 @@ alias style-fix="semistandard --fix"
 # Virtual Environments
 alias tafara="source venv/bin/activate"
 alias stop="deactivate"
+```
 
