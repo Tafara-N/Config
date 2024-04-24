@@ -63,7 +63,7 @@ sudo ln -s ./nvim-linux64/bin/nvim ./nvim
 ### Back up current Neovim
 ### Step 1
 
-```
+```shell
 (# required)
 mv ~/.config/nvim{,.bak}
 
@@ -75,19 +75,21 @@ mv ~/.cache/nvim{,.bak}
 
 Step 2
 
-```
+```shell
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 ```
 
 Step 3: Remove the .git folder, so you can add it to your own repo later
 
-```
+```shell
 rm -rf ~/.config/nvim/.git
 ```
 
 ### Customizing nvim
 ### Navigate to:
+
 ### Linux:
+
 .Config >> nvim >> lua >> config >> options.lua
 
 ## Windows:
