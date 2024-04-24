@@ -3,16 +3,14 @@
 # Start Here
 
 ```
-sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install software-properties-common
-sudo apt-get install build-essential
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get install -y software-properties-common build-essential
 ```
 
 ### Uninstalling VIM
 
 ```
-sudo apt-get remove vim.tiny
-sudo apt-get remove vim
+sudo apt-get remove vim.tiny vim
 ```
 
 ### Installing VIM - latest stable version
@@ -20,14 +18,14 @@ sudo apt-get remove vim
 ```
 sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update
-sudo apt install vim
+sudo apt install -y vim
 vim --version
 ```
 
 ### Batcat command (cat)
 
 ```
-sudo apt install bat
+sudo apt install -y bat
 ```
 
 ## Adding plugins
@@ -166,7 +164,7 @@ pip3 install mycli
 OR
 
 ```
-sudo apt-get install mycli
+sudo apt-get install -y mycli
 ```
 
 # [Installing Postgre](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04)
@@ -175,37 +173,42 @@ sudo apt install postgresql postgresql-contrib
 ```
 
 ## Start Postgre
-```
+
+```shell
 sudo systemctl start postgresql.service
 ```
 
 ## Switch to Postgre
-```
+
+```shell
 sudo -i -u postgres
 psql
 ```
 
 ## Run directly
-```
+
+```shell
 sudo -u postgres psql
 ```
 
 ## Install pgcli for Postgre
-```
+
+```shell
 sudo apt-get install libpq-dev python-dev
 pip3 install pgcli
 ```
 
 OR
 
-```
-sudo apt-get install pgcli
+```shell
+sudo apt-get install -y pgcli
 ```
 
 # Installing Apache2
-```
+
+```shell
 sudo apt update
-sudo apt install apache2
+sudo apt install -y apache2
 ```
 
 # Installing Nginx
@@ -213,7 +216,7 @@ sudo apt install apache2
 
 When:
 
-```
+```shell
 sudo nginx
 
 nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
@@ -231,7 +234,7 @@ nginx: [emerg] still could not bind()
 
 OR
 
-```
+```shell
 sudo nginx
 nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Unknown error)
 nginx: [emerg] bind() to [::]:80 failed (98: Unknown error)
@@ -248,14 +251,14 @@ nginx: [emerg] still could not bind()
 
 > nginx is already running and can be stopped by:
 
-```
+```shell
 sudo pkill -f nginx & wait $!
 sudo systemctl start nginx
 ```
 
 Or apache2 is listening on the same port and can be stopped:
 
-```
+```shell
 sudo /etc/init.d/apache2 stop
 ```
 
@@ -265,20 +268,20 @@ sudo /etc/init.d/apache2 stop
 
 To create a Python Virtual Environment, allowing you to install specific dependencies for this python project, we will install venv:
 
-```
+```shell
 sudo pip3 install virtualenv
-python3 -m venv (name_of_venv)
-source venv/bin/activate
+python3 -m venv env  # (name_of_venv)
+source env/bin/activate
 ```
 
 ## Install MySQLdb module version 2.0.x
 
 For installing `MySQLdb`, you need to have `MySQL` installed.
 
-```
-sudo apt-get install python3-dev
-sudo apt-get install libmysqlclient-dev
-sudo apt-get install zlib1g-dev
+```shell
+sudo apt-get install -y python3-dev
+sudo apt-get install -y libmysqlclient-dev
+sudo apt-get install -y zlib1g-dev
 sudo pip3 install mysqlclient
 ...
 python3
@@ -289,7 +292,7 @@ python3
 
 ## Install SQLAlchemy module version 1.4.x
 
-```
+```shell
 sudo pip3 install SQLAlchemy
 ...
 python3
@@ -300,7 +303,7 @@ python3
 
 Also, you can have this warning message:
 
-```
+```shell
 /usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py:552: Warning: (1681, "'@@SESSION.GTID_EXECUTED' is deprecated and will be re
 moved in a future release.")
   cursor.execute(statement, parameters)
@@ -316,49 +319,70 @@ You can ignore it.
 
 ### Installing betty linter for .c files
 
-```
+```shell
 mkdir Betty && cd Betty
 ```
 
-```
+```shell
 git clone https://github.com/holbertonschool/Betty.git
 ```
 
-```
+```shell
 cd Betty
 ```
 
-```
+```shell
 sudo ./install.sh
 ```
 
-```
-vim betty and paste >> look in the setup file
+Put this inside `betty` file
+
+```bash
+#!/bin/bash
+Simply a wrapper script to keep you from having to use betty-style
+and betty-doc separately on every item.
+Originally by Tim Britton (@wintermanc3r), multiargument added by
+Larry Madeo (@hillmonkey)
+
+BIN_PATH="/usr/local/bin"
+BETTY_STYLE="betty-style"
+BETTY_DOC="betty-doc"
+
+if [ "$#" = "0" ]; then
+    echo "No arguments passed."
+    exit 1
+fi
+
+for argument in "$@" ; do
+    echo -e "\n========== $argument =========="
+    ${BIN_PATH}/${BETTY_STYLE} "$argument"
+    ${BIN_PATH}/${BETTY_DOC} "$argument"
+done
 ```
 
-```
+```shell
 chmod u+x betty
 ```
 
-```
+```shell
 sudo mv betty /bin/
 ```
 
 To check style:
 
-```
+```shell
 betty filename.c
 ```
 
 ## GNU Indent Formatter
 
-```
+```shell
 git clone https://git.savannah.gnu.org/git/indent.git
 ```
 
 Usage:
 
-```
+```shell
 indent <filename.c>
 ```
 
@@ -367,6 +391,7 @@ indent <filename.c>
 ### Installing W3C Validator for .css, .html files
 
 ## Linter for .html and .css files
+
 ## Requirements
 - [Python 3](https://www.python.org/downloads/)
 - [Requests: HTTP for Humans™](https://requests.readthedocs.io/en/latest/user/install/)
@@ -374,7 +399,7 @@ indent <filename.c>
 ## Quickstart
 1. Clone this repo
 
-```
+```shell
 git clone https://github.com/holbertonschool/W3C-Validator.git
 ```
 
@@ -382,14 +407,14 @@ git clone https://github.com/holbertonschool/W3C-Validator.git
 
 Single file:
 
-```
+```shell
 ./w3c_validator.py index.html
 ./w3c_validator.py css/styles.css
 ```
 
 Multiple files:
 
-```
+```shell
 ./w3c_validator.py index.html article.html css/styles.css
 ```
 
@@ -400,7 +425,7 @@ All errors are printed in `STDERR`; Exit status = # of errors (0 on success)
 
 Assuming that Python 3 is indeed installed, you can try to run it like so:
 
-```
+```shell
 python3 w3c_validator.py index.html
 ```
 
@@ -408,7 +433,7 @@ python3 w3c_validator.py index.html
 
 You can install `requests` using pip:
 
-```
+```shell
 python3 -m pip install requests
 ```
 
@@ -417,19 +442,20 @@ If you don't have `pip` installed, you can get it [here](https://pypi.org/projec
 # JavaScript
 
 ### Semistandard for .js files
-```
-sudo npm install semistandard --global
+
+```shell
+npm install semistandard --global
 ```
 
 To check style:
 
-```
+```shell
 semistandard <filename>
 ```
 
 To format:
 
-```
+```shell
 semi-standard --fix <filename>
 ```
 
@@ -443,7 +469,7 @@ let g:syntastic_javascript_standard_exec = 'semistandard'
 
 For automatic formatting on save, add these two lines to .vimrc:
 
-```
+```vim
 autocmd bufwritepost *.js silent !semistandard % --fix
 set autoread
 ```
@@ -455,7 +481,7 @@ First we create an initial package-json file with default values
 Next we install Prettier in the package-json file
 And finally we hardcode the version of Prettier we're using so it doesn't change automatically.
 
-```
+```shell
 npm init -y
 npm i --save-dev prettier
 npm i --save-dev --save-exact prettier
@@ -464,13 +490,13 @@ npm i --save-dev eslint-config-prettier
 
 To check our style:
 
-```
+```shell
 npx prettier --check <filename>
 ```
 
 To format our files:
 
-```
+```shell
 npx prettier --write <filename>
 ```
 
@@ -480,7 +506,7 @@ npx prettier --write <filename>
 
 Ruff is available as [`ruff`](https://pypi.org/project/ruff/) on PyPI:
 
-```
+```shell
 pip3 install ruff
 ```
 
@@ -488,7 +514,7 @@ Usage:
 
 To run Ruff as a linter, try any of the following:
 
-```
+```shell
 ruff check .                        # Lint all files in the current directory (and any subdirectories).
 ruff check path/to/code/            # Lint all files in `/path/to/code` (and any subdirectories).
 ruff check path/to/code/*.py        # Lint all `.py` files in `/path/to/code`.
@@ -498,7 +524,7 @@ ruff check @arguments.txt           # Lint using an input file, treating its con
 
 Or, to run Ruff as a formatter:
 
-```
+```shell
 ruff format .                        # Format all files in the current directory (and any subdirectories).
 ruff format path/to/code/            # Format all files in `/path/to/code` (and any subdirectories).
 ruff format path/to/code/*.py        # Format all `.py` files in `/path/to/code`.
@@ -539,25 +565,25 @@ jobs:
 
 From Github, latest release:
 
-```
+```shell
 pip3 install git+https://github.com/psf/black
 ```
 
 OR
 
-```
+```shell
 pip3 install black
 ```
 
 To use:
 
-```
+```shell
 black <filename.py>
 ```
 
 ## Pycodestyle
 
-```
+```shell
 pip3 install pycodestyle
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------
@@ -569,19 +595,19 @@ pip3 install pycodestyle
 ## Installation 1:
 ### Deadsnakes repository
 
-```
+```shell
 sudo add-apt-repository ppa:deadsnakes/ppa
 ```
 
-```
-ls -l /etc/apt/sources.list.d/ (Checking if it has been added)
+```shell
+ls -l /etc/apt/sources.list.d/  # (Checking if it has been added)
 ```
 
-```
+```shell
 sudo apt-get update
 ```
 
-```
+```shell
 sudo apt install python3.12 -y
 ```
 
@@ -589,57 +615,57 @@ By default Ubuntu comes with Python 3.10 installed, so we need to manage these t
 
 If you want the latest version of Python, we have to give it the most priorities.
 
-```
+```shell
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 2
 ```
 
-```
+```shell
 sudo update-alternatives --config python3
 ```
 
 ## Installation 2:
 # Compiling from source
 
-```
+```shell
 sudo apt-get update
 ```
 
-```
+```shell
 sudo apt -y install gdb lcov libbz2-dev libffi-dev libgdbm-dev libgdbm-compat-dev liblzma-dev libncurses5-dev libreadline6-dev libssl-dev lzma lzma-dev tk-dev uuid-dev zlib1g-dev gcc make pkg-config
 ```
 
 Go to Python.org on your browser and copy link of the version you want, eg:
 
-```
+```shell
 wget https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tar.xz
 ```
 
 ### After step 3 finishes downloading, extract the tarball file
 
-```
+```shell
 tar xvf Python-3.12.2.tar.xz
 ```
 
-```
+```shell
 cd Python-3.12.0
 ```
 
-```
+```shell
 sudo ./configure --enable-optimizations
 ```
 
-```
+```shell
 sudo make -j 2
 ```
 
 ### The 2 is for checking the number of cores
 
-```
+```shell
 nproc
 ```
 
-```
+```shell
 sudo make install
 ```
 
@@ -650,23 +676,23 @@ sudo make install
 export PYTHONPATH=/home/tafara/Documents/Code/Programs/Python/Codes/Modules:${PYTHONPATH}
 ```
 
-```bash
+```shell
 echo $PYTHONPATH
 ```
 
 ## Java
 
-```
+```shell
 sudo apt-get update
 ```
 
 Go to Oracle and download the JDK version you want
 
-```
+```shell
 wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
 ```
 
-```
+```shell
 sudo dpkg -i jdk-21_linux-x64_bin.deb (To install Java)
 ```
 
@@ -674,15 +700,15 @@ sudo dpkg -i jdk-21_linux-x64_bin.deb (To install Java)
 
 Visit the Go website and copy the link of the version you want
 
-```
+```shell
 wget https://go.dev/dl/go1.22.0.linux-amd64.tar.gz
 ```
 
-```
+```shell
 tar -xzf go1.22.0.linux-amd64.tar.gz
 ```
 
-```
+```shell
 sudo mv go /usr/local
 ```
 
@@ -696,15 +722,15 @@ export PATH=$PATH:/usr/local/go/bin
 
 Subfinder, a tool for looking for subdomains
 
-```
+```shell
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 ```
 
-```
+```shell
 cd go/bin/
 ```
 
-```
+```shell
 sudo mv subfinder /usr/bin
 ```
 
@@ -712,7 +738,7 @@ sudo mv subfinder /usr/bin
 
 Visit [rvm](https://rvm.io/rvm/install)
 
-```
+```shell
 gpg --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 ```
 
@@ -721,34 +747,34 @@ Visit [Ruby](https://github.com/rvm/ubuntu_rvm)
 ## You need software-properties-common installed in order to add PPA repositories.
 ## If not installed:
 
-```
+```shell
 sudo apt-get install software-properties-common
 ```
 
-```
+```shell
 sudo apt-add-repository -y ppa:rael-gc/rvm
 ```
 
-```
+```shell
 sudo apt-get update
 ```
 
-```
+```shell
 sudo apt-get install rvm
 ```
 
-```
+```shell
 sudo usermod -a -G rvm $USER
 ```
 
-```
+```shell
 echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
 ```
 
 Reboot
 
-```
-rvm install ruby (version)
+```shell
+rvm install ruby 3.3.0  # (version)
 ```
 
 To have multiple versions of Ruby for different projects.
@@ -757,6 +783,14 @@ To have multiple versions of Ruby for different projects.
 
 2. Inside the `.ruby-version` file >> the version you want only, eg `3.3.0`
 
+### Example
+
+```shell
+mkdir ProjectFolder ; cd ProjectFolder
+echo "3.3.0" > .ruby-version
+cat .ruby-version
+```
+
 ## Extras
 1. Install Ruby (preferably, version >= 2.6)
 
@@ -764,13 +798,13 @@ To have multiple versions of Ruby for different projects.
 
 3. Install the colorls ruby gem with:
 
-```
+```shell
 gem install colorls
 ```
 
 4. Enable tab completion for flags by entering following line to your shell configuration file (~/.bashrc or ~/.zshrc) :
 
-```
+```bash
 source $(dirname $(gem which colorls))/tab_complete.sh
 ```
 
@@ -780,22 +814,23 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 
 1. Visit (https://github.com/nvm-sh/nvm)
 
-```
+```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 
-```
+```shell
 nvm install node
 ```
 
 To switch between installed versions
 
-```
-nvm alias default (version you want)
+```shell
+nvm alias default  # (version you want)
 ```
 
 ## Step 2 - Installs Node.14
-```
+
+```shell
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
@@ -845,17 +880,17 @@ sudo docker exec -it <Name> bash
 ### Terminal Set Up
 ### Install Oh My ZSH
 
-```
+```shell
 sudo apt install zsh
 ```
 
-```
+```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ### Install Powerlevel Plug themes
 
-```
+```shell
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
@@ -865,19 +900,21 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 
-```
+```shell
 source .zshrc
 ```
 
 # Plugins
 
 ### Auto suggestions
-```
+
+```shell
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 ### Syntax highlighting
-```
+
+```shell
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
