@@ -97,12 +97,13 @@ AppData >> Local >> nvim >> lua >> config >> options.lua
 # Databases
 ## Installing mySQL
 
-```
+```shell
 sudo apt install mysql-server
 ```
 
 ## Check mysql status
-```
+
+```shell
 sudo service mysql status
 ```
 
