@@ -705,7 +705,7 @@ wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
 ```
 
 ```shell
-sudo dpkg -i jdk-21_linux-x64_bin.deb (To install Java)
+sudo dpkg -i jdk-21_linux-x64_bin.deb  # (To install Java)
 ```
 
 ## Go
