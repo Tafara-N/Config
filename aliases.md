@@ -151,12 +151,6 @@ alias gcc="gcc -Wall -Wextra -pedantic "
 # HTML
 alias valid="w3c_validator.py"
 
-# PYTHON
-alias pip="pip3"
-alias list="pip3 list"
-alias python="python3"
-alias pycode="pycodestyle"
-
 # JavaScript
 alias js-style="semistandard"
 alias js-fix="semistandard --fix"
