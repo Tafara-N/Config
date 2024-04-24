@@ -2,20 +2,20 @@
 
 # Start Here
 
-```
+```shell
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install -y software-properties-common build-essential
 ```
 
 ### Uninstalling VIM
 
-```
+```shell
 sudo apt-get remove vim.tiny vim
 ```
 
 ### Installing VIM - latest stable version
 
-```
+```shell
 sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update
 sudo apt install -y vim
