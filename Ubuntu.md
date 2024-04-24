@@ -107,17 +107,20 @@ sudo service mysql status
 ```
 
 ## Stop mysql
-```
+
+```shell
 sudo service mysql stop
 ```
 
 ## Start mysql
-```
+
+```shell
 sudo service mysql start
 ```
 
 ## To set password for root User
-```
+
+```shell
 sudo mysql
 ```
 
@@ -127,7 +130,8 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 
 ## Exit out of mysql
 ## Run the secure installation script
-```
+
+```shell
 sudo mysql_secure_installation
 ```
 
@@ -137,14 +141,14 @@ Press y (yes) on all the questions
 
 ### After all is done, if we try to login into mysql with root it won't work:
 
-```
+```shell
 sudo mysql
 ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
 ```
 
 ### To fix this:
 
-```
+```shell
 mysql -u root -p
 ```
 
@@ -157,7 +161,8 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
 ### Exit out of mysql
 
 ## Install mycli for mySQL
-```
+
+```shell
 pip3 install mycli
 ```
 
