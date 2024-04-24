@@ -24,7 +24,7 @@ vim --version
 
 ### Batcat command (cat)
 
-```
+```shell
 sudo apt install -y bat
 ```
 
@@ -32,7 +32,7 @@ sudo apt install -y bat
 
 Plugin manager that lets us add/remove plugins Vundle
 
-```
+```shell
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
@@ -43,11 +43,11 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 2. On WSL, move file from Windows to Linux destination (mv nvim-linux64.tar.gz /usr/local/bin)
 
-```
+```shell
 cd /usr/local/bin
 ```
 
-```
+```shell
 sudo tar xzvf nvim-linux64.tar.gz
 ```
 
@@ -55,7 +55,7 @@ sudo tar xzvf nvim-linux64.tar.gz
 
 ### Create a symbolic link
 
-```
+```shell
 sudo ln -s ./nvim-linux64/bin/nvim ./nvim
 ```
 
