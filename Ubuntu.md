@@ -163,13 +163,14 @@ pip3 install mycli
 
 OR
 
-```
+```shell
 sudo apt-get install -y mycli
 ```
 
 # [Installing Postgre](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04)
-```
-sudo apt install postgresql postgresql-contrib
+
+```shell
+sudo apt install -y postgresql postgresql-contrib
 ```
 
 ## Start Postgre
