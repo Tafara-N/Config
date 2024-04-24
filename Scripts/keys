@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Generates RSA pair keys
+#   Private key name provided by the user
+#   Bits in the key 4096
+
+
+# Check if the key name argument is provided
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <key_name>"
+    exit 1
+fi
+
+# Assign the first argument to the variable KEY_NAME
+KEY_NAME="$1"
+
+ssh-keygen -t rsa -b 4096 -f "$KEY_NAME"
+
+echo "RSA keys generated with the name '$KEY_NAME'"
