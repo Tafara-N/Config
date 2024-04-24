@@ -1,6 +1,6 @@
 # Aliases
 
-```.zshrc
+```zsh
 alias ls="colorls"
 alias md="mkdir"
 alias bat="batcat"
