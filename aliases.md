@@ -26,6 +26,11 @@ alias restart="source ~/.zshrc"
 # Virtual Environments
 
 # Python
+alias pip="pip3"
+alias list="pip3 list"
+alias python="python3"
+alias pycode="pycodestyle"
+
 alias start-venv="python3 -m venv env"
 alias venv="source env/bin/activate"
 alias stop="deactivate"
