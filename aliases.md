@@ -89,6 +89,27 @@ alias load-balancer="ssh load-balancer"
 alias ubuntu-01="ssh ubuntu-01"
 alias ubuntu-vm="ssh ubuntu-vm"
 
+# COPYING FILES AND DIRECTORIES
+
+# FILES
+# File from remote to local/remote
+alias file-alx-01="scp alx-01:"
+alias file-alx-02="scp alx-02:"
+alias file-lb="scp load-balancer:"
+alias file-ubuntu="scp ubuntu-01:"
+alias file-vm="scp ubuntu-vm:"
+
+# DIRECTORIES
+# Directory from local to remote
+alias to-remote="scp -r"
+
+# Directory from remote to local/remote
+alias from-alx-01="scp -r alx-01:"
+alias from-alx-02="scp -r alx-02:"
+alias from-lb="scp -r load-balancer:"
+alias from-ubuntu="scp -r ubuntu-01:"
+alias from-vm="scp -r ubuntu-vm:"
+
 # MySQL
 alias mysql-local="sudo mysql -hlocalhost -uroot -p"
 alias mysql-status="sudo systemctl status mysql"
