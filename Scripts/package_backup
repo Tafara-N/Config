@@ -14,4 +14,4 @@ dpkg --get-selections > /backup_path/filename.txt
 # sudo dpkg --set-selections < /backup-path/filename.txt
 # sudo apt-get dselect-upgrade
 
-echo -e "Done..\n"
+echo -e "Done...\n"
