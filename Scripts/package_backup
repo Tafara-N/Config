@@ -7,11 +7,11 @@ echo -e "Updating local packages...\n"
 sudo apt-get update && sudo apt-get -y upgrade
 
 echo -e "Generating a list of installed packages...\n"
-dpkg -get-selections > /backup_path/filename.txt
+dpkg --get-selections > /backup_path/filename.txt
 
 # To install the packages from the list, use the following commands:
 # echo -e "Installing packages from the list...\n"
-# sudo dpkg -set-selections < package_list.txt
+# sudo dpkg --set-selections < /backup-path/filename.txt
 # sudo apt-get dselect-upgrade
 
 echo -e "Done..\n"
