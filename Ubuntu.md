@@ -222,6 +222,7 @@ sudo apt install -y apache2
 ```
 
 # Installing Nginx
+
 [Installing Nginx](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#installing-prebuilt-ubuntu-packages)
 
 When:
