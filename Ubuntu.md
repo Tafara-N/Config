@@ -132,6 +132,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 ```
 
 ## Exit out of mysql
+
 ## Run the secure installation script
 
 ```shell
