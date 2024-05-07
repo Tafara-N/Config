@@ -1,4 +1,3 @@
-```json
 {
 	"accessibility.hideAccessibleView": true,
 	"accessibility.signals.terminalBell": {
@@ -17,6 +16,54 @@
 	],
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	"better-comments.tags": [
+		{
+			"tag": "!",
+			"color": "#FF2D00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "?",
+			"color": "#3498DB",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "//",
+			"color": "#474747",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "todo",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "*",
+			"color": "#98C379",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		}
+	],
 
 	"betterFolding.excludedLanguages": [],
 
@@ -132,17 +179,47 @@
 	"editor.formatOnType": true,
 	"editor.insertSpaces": false,
 	"editor.fontSize": 12,
-	"editor.inlayHints.fontFamily": "Iosevka Nerd Font Mono",
+	"editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
 	"editor.inlineSuggest.fontFamily": "ComicShannsMono Nerd Font Mono",
-	"editor.inlayHints.fontSize": 11,
+	"editor.inlayHints.fontSize": 13,
 	"editor.guides.bracketPairs": "active",
 	"editor.guides.bracketPairsHorizontal": false,
 	"editor.renderWhitespace": "all",
+	"editor.semanticTokenColorCustomizations": {
+		// optionally wrap the following in a "[Color Theme Name]": { ... }
+		"rules": {
+			"module:python": "#0db474"
+		}
+	},
 	"editor.scrollbar.horizontalScrollbarSize": 9,
 	"editor.scrollbar.verticalScrollbarSize": 9,
 	"editor.scrollBeyondLastLine": false,
 	"editor.stickyTabStops": true,
 	"editor.suggestFontSize": 10,
+	"editor.tokenColorCustomizations": {
+		"comments": "#88846F",
+		"textMateRules": [
+			{
+				"scope": [
+					// For Python multi-line docstrings / block comments!
+					"string.quoted.docstring.multi.python",
+					"string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
+					"string.quoted.docstring.multi.python punctuation.definition.string.end.python"
+				],
+				"settings": {
+					// match regular Python comment color
+					"foreground": "#88846F",
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": "module:python",
+				"settings": {
+					"foreground": "#0db474"
+				}
+			}
+		]
+	},
 	"editor.tabCompletion": "on",
 	"editor.quickSuggestions": {
 		"other": "inline",
@@ -152,7 +229,6 @@
 	"explorer.confirmDragAndDrop": false,
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 	"files.autoSave": "afterDelay",
 	"files.eol": "\n",
@@ -254,13 +330,13 @@
 		"editor.defaultFormatter": "Shopify.ruby-lsp",
 		"editor.formatOnSave": true,
 		"editor.formatOnType": true,
-		"editor.tabSize": 2,
 		"editor.insertSpaces": true,
-		"files.trimTrailingWhitespace": true,
-		"files.insertFinalNewline": true,
-		"files.trimFinalNewlines": true,
 		"editor.rulers": [120],
-		"editor.semanticHighlighting.enabled": true
+		"editor.tabSize": 2,
+		"editor.semanticHighlighting.enabled": true,
+		"files.insertFinalNewline": true,
+		"files.trimTrailingWhitespace": true,
+		"files.trimFinalNewlines": true
 	},
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -276,7 +352,7 @@
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.cursorStyleInactive": "underline",
 	"terminal.integrated.defaultProfile.windows": "Ubuntu-24 (WSL)",
-	"terminal.integrated.enableMultiLinePasteWarning": "always",
+	"terminal.integrated.enableMultiLinePasteWarning": "auto",
 	"terminal.integrated.enableVisualBell": true,
 	"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
 	"terminal.integrated.fontWeightBold": "100",
@@ -319,6 +395,9 @@
 	"window.restoreFullscreen": true,
 	"workbench.commandPalette.experimental.suggestCommands": true,
 	"workbench.colorCustomizations": {
+		"editorInlayHint.background": "#00000000",
+		"editorInlayHint.foreground": "#88846F",
+		"editor.inlayHints.enabled": "offUnlessPressed",
 		"statusBar.background": "#191819",
 		"statusBar.noFolderBackground": "#191819",
 		"statusBar.debuggingBackground": "#191819"
@@ -340,6 +419,5 @@
 
 	"yaml.schemas": {
 		"file:///home/tafara/.vscode-server/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-	},
+	}
 }
-```
