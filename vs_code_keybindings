@@ -42,6 +42,10 @@
 		"when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !jupyter.havenativecells && !notebookEditorFocused"
 	},
 	{
+		"key": "ctrl+shift+alt+i",
+		"command": "editor.action.inspectTMScopes"
+	},
+	{
 		"key": "ctrl+l",
 		"command": "workbench.action.terminal.clear"
 	},
@@ -49,6 +53,24 @@
 		"key": "ctrl+d",
 		"command": "editor.action.deleteLines",
 		"when": "textInputFocus && !editorReadonly"
+	},
+	// {
+	// 	"key": "alt+right",
+	// 	"command": "cursorWordEndRight",
+	// 	"when": "textInputFocus && !accessibilityModeEnabled"
+	// },
+	// {
+	// 	"key": "alt+left",
+	// 	"command": "cursorWordEndLeft",
+	// 	"when": "textInputFocus && !accessibilityModeEnabled"
+	// },
+	{
+		"key": "ctrl+right",
+		"command": "cursorLineEnd"
+	},
+	{
+		"key": "ctrl+left",
+		"command": "cursorLineStart"
 	},
 	{
 		"key": "ctrl+k",
@@ -159,7 +181,7 @@
 		"command": "workbench.action.terminal.resizePaneLeft"
 	},
 	{
-		"key": "alt+f",
+		"key": "alt+s",
 		"command": "workbench.action.toggleMaximizedPanel"
 	}
 ]
