@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Script re-creates your software environment, you can generate a list of all installed packages
+# Same as 'pip3 freeze > requirements.txt'
+
+echo -e "Updating local packages...\n"
+sudo apt-get update && sudo apt-get -y upgrade
+
+echo -e "Generating a list of installed packages...\n"
+dpkg --get-selections > /backup_path/filename.txt
+
+# To install the packages from the list, use the following commands:
+# echo -e "Installing packages from the list...\n"
+# sudo dpkg --set-selections < /backup-path/filename.txt
+# sudo apt-get dselect-upgrade
+
+echo -e "Done...\n"

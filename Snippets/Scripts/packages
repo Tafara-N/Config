@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+
+echo -e "Updating packages in the environment...\n"
+sudo apt-get update && sudo apt-get upgrade -y
+
+echo -e "Installing required packages...\n"
+sudo apt install -y libpq-dev vim bat curl wget mycli pgcli python-dev python3-pip python3-venv rvm
+sudo apt install -y libmysqlclient-dev zlib1g-dev shellcheck
+
+# Installing some languages
+# Java
+wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
+sudo dpkg -i jdk-21_linux-x64_bin.deb
+
+# Go
+wget https://go.dev/dl/go1.22.0.linux-amd64.tar.gz
+sudo tar -xzf go1.22.0.linux-amd64.tar.gz
+sudo mv go /usr/local
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.zshrc
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+
+# Ruby
+gpg --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+sudo usermod -a -G rvm $USER
+echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
+echo 'source "/etc/profile.d/rvm.sh"' >> ~/.zshrc
+
+# Node JS
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+nvm install node
+
+# Linters
+# C
+mkdir Betty && cd Betty
+git clone https://github.com/holbertonschool/Betty.git
+cd Betty
+sudo ./install.sh
+echo '#!/bin/bash
+
+# Simply a wrapper script to keep you from having to use betty-style
+# and betty-doc separately on every item.
+# Originally by Tim Britton (@wintermanc3r), multiargument added by
+# Larry Madeo (@hillmonkey)
+
+BIN_PATH="/usr/local/bin"
+BETTY_STYLE="betty-style"
+BETTY_DOC="betty-doc"
+
+if [ "$#" = "0" ]; then
+    echo "No arguments passed."
+    exit 1
+fi
+
+for argument in "$@" ; do
+    echo -e "\n========== $argument =========="
+    ${BIN_PATH}/${BETTY_STYLE} "$argument"
+    ${BIN_PATH}/${BETTY_DOC} "$argument"
+done' > betty
+
+chmod u+x betty
+sudo mv betty /bin/ ; cd
+
+# HTML and CSS
+git clone https://github.com/holbertonschool/W3C-Validator.git
+cd W3C_Validator
+sudo cp w3c_validator.py /usr/local/bin
+cd
+
+# GNU Indent
+git clone https://git.savannah.gnu.org/git/indent.git
+
+# JS
+npm install semistandard --global
