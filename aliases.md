@@ -1,49 +1,105 @@
 # Aliases
 
-```zsh
+```bash
+
+	# Navigation
+alias .="cd"
+alias back="cd -"
+alias ..="cd .."
+
+	# List files, directories and hidden files
 alias ls="colorls"
+alias files="ls -f"  # Files only
+alias hidden="ls -la"  # Show hidden files
+alias dir-only="ls -d"  # Directories only
+alias dir-contents="ls -d */"
+
 alias md="mkdir"
 alias bat="batcat"
-alias rmv="rm -fr"
-alias ..="cd .."
-alias .="cd"
+alias rmv="sudo rm -fr"
 alias nv="nvim"
-alias ux="chmod 755"
-alias ux-="chmod 664"
-alias link="sudo ln -s"
+
+alias cpfile="copyfile"
+alias cppath="copypath"
+
+	# Permissions        #  usr | grp | others
+alias x="chmod 755"      # rwx  | rwx | rwx
+alias x-="chmod 644"     # r = 4, w = 2, x = 1
+alias link="sudo ln -s"  # sudo ln -s /path/to/file /path/to/symlink
+
+	# Compress files and directories
 alias zip="gzip"
-alias zip-d="gzip -d"
+alias zip-d="gzip -d"  # Decompress files and directories
 alias unzip="gunzip"
 alias zip2="bzip2"
 alias unzip2="bunzip2"
+
 alias grep-e="grep -E"
+
+	# List all users
+alias list-users="cat /etc/passwd | grep -vE '(/bin/false|/sbin/nologin|/bin/sync)' | cut -d: -f1"
+alias ch-tafara="sudo chown tafara"
+alias ch-root="sudo chown root"
+
+	# Add user
+alias add-user="sudo adduser" # or sudo useradd new_username
+
+	# Remove/delete a user, first you can use:
+alias del-user="sudo userdel"  # username
+
+	# Then you may want to delete the home directory for the deleted user account :
+alias rmv-home="sudo rm -r /home/"  # username
+
+	# Modify the username of a user
+alias ch-username="usermod -l new_username old_username"
+
+	# Change the password for a user
+alias change-passwd="sudo passwd"   # username
+
+	# To add a user to the sudo group
+alias add-sudo="usermod -aG sudo"  # or adduser username sudo
+
+	# Convert file to Unix or DOS format
 alias dos-unix="dos2unix"
 alias unix-dos="unix2dos"
-alias lint="splint"
-alias check="cppcheck"
+
+	# Restart the terminal
 alias restart="source ~/.zshrc"
+alias refresh='exec "$SHELL"'
 
 # Virtual Environments
 
 # Python
-alias pip="pip3"
-alias list="pip3 list"
-alias python="python3"
-alias pycode="pycodestyle"
-
 alias start-venv="python3 -m venv env"
 alias venv="source env/bin/activate"
 alias stop="deactivate"
 
-alias reqs="pip3 freeze > requirements.txt"
-alias i-reqs="pip3 install -r /home/tafara/requirements.txt"
-alias pip-upg="pip3 install --upgrade pip"
+# Conda
+alias start-conda="conda create --name env"
+alias conda-env="conda activate env"
+alias stop-conda="conda deactivate"
+alias conda-remove="conda remove --name environment --all"
+
+alias requirements="pip3 freeze > requirements.txt"
+alias i-requirements="pip3 install -r /home/tafara/requirements.txt"
+
+	# Upgrading pip modules
+alias pip-upgrade="pip3 install --upgrade pip"
 alias pip-up-old="pip3 list --outdated | cut -d ' ' -f 1 | xargs -n1 pip3 install -U"
 alias pip-up-all="pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U"
 
-alias py-global="pyenv global"
-alias py-local="pyenv local"
-alias py-version="pyenv versions"
+	# Django Project
+alias set-django="django-admin startproject"  # name of the project
+alias run-django="python3 manage.py runserver"
+alias create-app="python3 manage.py startapp"  # name of the app
+alias make-migrations="python3 manage.py makemigrations"  # creates a migration file
+alias migrate="python3 manage.py migrate"  # migrates data into a database
+alias django-shell="bpython manage.py shell"  # Django shell
+alias create-superuser="python3 manage.py createsuperuser"
+
+	# Unit Testing
+alias tests-dir="python3 -m unittest discover tests"
+alias test-file="python3 -m unittest"
 
 # Java
 alias j-add="jenv add"
@@ -52,28 +108,64 @@ alias j-local="jenv local"
 alias j-versions="jenv versions"
 
 # APT GET
+
+	# Release version
 alias release="lsb_release -a"
-alias update="sudo apt-get update"
-alias remove="sudo apt-get remove"
-alias install="sudo apt-get install -y"
-alias upgrade="sudo apt-get upgrade -y"
-alias clean="sudo apt-get clean"
-alias autoclean="sudo apt-get autoclean"
-alias check="sudo apt-get check"
+
+	# Search Packages
 alias search="apt-cache search"
 alias show="apt-cache show"
-alias purge="sudo apt-get purge"
-alias dist-upgrade="sudo apt-get dist-upgrade"
+alias check="sudo apt-get check"
+
+	# Install, update and upgrade
+alias install="sudo apt-get install -y"
+alias update="sudo apt-get update"
+alias upgrade="sudo apt-get upgrade -y"
 alias upgradable="apt list --upgradable"
 alias full-upgrade="sudo apt-get full-upgrade"
+alias dist-upgrade="sudo apt-get dist-upgrade"
+
+	# Clean distro
+alias clean="sudo apt-get clean"
+alias autoclean="sudo apt-get autoclean"
+alias daemon-reload="sudo systemctl daemon-reload"
+
+	# Remove and purge
+alias purge="sudo apt-get purge"
+alias remove="sudo apt-get remove"
 alias autoremove="sudo apt autoremove"
 
+# PROCESSES | PID
+alias proc="ps auxf | grep"
+alias k15="sudo kill -15"
+alias k9="sudo kill -9"
+alias k6="sudo kill -6"
+alias k3="sudo kill -3"
+
+	# Ports
+alias ports="netstat -tuln"
+alias on-port="sudo lsof -i"      # Show which process is listening on port, :port_number
+
+	# Using ss
+alias show-ports="sudo ss -ltn"  # Show which ports are listening for connections
+alias proc-port="sudo ss -ltnp"  # Show which process is listening on which port
+
+	# Using nmap
+alias nmap="sudo nmap localhost" # Scan localhost, we can change localhost to any IP address
+
 # UFW FIREWALL
-alias ufw-allow="sudo ufw allow"
 alias ufw-status="sudo ufw status"
+alias ufw-numbers="sudo ufw status numbered"
+alias ufw-verbose="sudo ufw status verbose"
+alias ufw-app="sudo ufw app list"
+alias ufw-allow="sudo ufw allow"
+alias ufw-deny-incoming="sudo ufw default deny incoming"
+alias ufw-allow-outgoing="sudo ufw default allow outgoing"
+alias ufw-deny="sudo ufw deny"
+alias ufw-delete="sudo ufw delete"
+alias ufw-reload="sudo ufw reload"
 alias ufw-enable="sudo ufw enable"
 alias ufw-disable="sudo ufw disable"
-alias ufw-reload="sudo ufw reload"
 
 # SSH CONNECTION
 alias ssh-status="sudo systemctl status ssh"
@@ -83,103 +175,257 @@ alias ssh-stop="sudo systemctl stop ssh"
 alias ssh-enable="sudo systemctl enable ssh"
 
 # SSH SERVERS
+
+	# ALX
 alias alx-01="ssh alx-01"
 alias alx-02="ssh alx-02"
-alias load-balancer="ssh load-balancer"
-alias ubuntu-01="ssh ubuntu-01"
+alias lb-01="ssh lb-01"
+
+	# Digital Ocean
+alias d_ocean01="ssh digital-ocean"
+alias d_ocean02="ssh digital-ocean_01"
+
+# VIRTUAL MACHINES
+
+	# Ubuntu
 alias ubuntu-vm="ssh ubuntu-vm"
+
+	# Kali Linux
+alias kali="ssh kali-linux"
 
 # COPYING FILES AND DIRECTORIES
 
-# FILES
-# File from remote to local/remote
-alias file-alx-01="scp alx-01:"
-alias file-alx-02="scp alx-02:"
-alias file-lb="scp load-balancer:"
-alias file-ubuntu="scp ubuntu-01:"
-alias file-vm="scp ubuntu-vm:"
-
-# DIRECTORIES
 # Directory from local to remote
 alias to-remote="scp -r"
 
-# Directory from remote to local/remote
-alias from-alx-01="scp -r alx-01:"
-alias from-alx-02="scp -r alx-02:"
-alias from-lb="scp -r load-balancer:"
-alias from-ubuntu="scp -r ubuntu-01:"
-alias from-vm="scp -r ubuntu-vm:"
-
 # MySQL
-alias mysql-local="sudo mysql -hlocalhost -uroot -p"
 alias mysql-status="sudo systemctl status mysql"
-alias mysql-stop="sudo systemctl stop mysql"
-alias mysql-start="sudo service mysql start"
 alias mysql-restart="sudo systemctl restart mysql"
+alias mysql-start="sudo service mysql start"
+alias mysql-stop="sudo systemctl stop mysql"
 alias mysql-enable="sudo systemctl enable mysql"
-alias mysql="sudo mycli -u root"
+
+# MySQL USERS
+alias mysql="sudo mycli -u root -p <passwd>"
+alias mysql-tafara="sudo mycli -u tafara -p <passwd>"
+
+	# Connect and Execute MySQL Commands on the terminal
+alias mysql-local="sudo mysql -hlocalhost -uroot -p"
+
+	# Dump Database
+alias dump="mysqldump -u root -p"
 
 # Postgres
 alias pgsql-status="sudo systemctl status postgresql"
-alias pgsql-stop="sudo systemctl stop postgresql"
-alias pgsql-start="sudo service start postgresql"
 alias pgsql-restart="sudo systemctl restart postgresql"
+alias pgsql-start="sudo service start postgresql"
+alias pgsql-stop="sudo systemctl stop postgresql"
 alias pgsql-enable="sudo systemctl enable postgresql"
 
-# nginx
+# PostgresSQL USERS
+alias postgres='pgcli -h "127.0.0.1" -U postgres -d postgres'
+alias pgsql-tafara="pgcli -h localhost -U tafara -d postgres"
+alias pgsql="sudo -u postgres psql"
+
+# MongoDB
+alias mongodb-status="sudo systemctl status mongod"
+alias mongodb-restart="sudo systemctl restart mongod"
+alias mongodb-start="sudo service start mongod"
+alias mongodb-stop="sudo systemctl stop mongod"
+alias mongodb-enable="sudo systemctl enable mongod"
+
+# Cassandra
+alias cass-status="sudo /etc/init.d/cassandra status"
+alias cass-restart="sudo /etc/init.d/cassandra restart"
+alias cass-start="sudo /etc/init.d/cassandra start"
+alias cass-stop="sudo /etc/init.d/cassandra stop"
+alias cass-enable="sudo /etc/init.d/cassandra enable"
+
+# Nginx
 alias nginx-status="sudo systemctl status nginx"
-alias nginx-stop="sudo systemctl stop nginx"
-alias nginx-start="sudo service nginx start"
 alias nginx-restart="sudo systemctl restart nginx"
+alias nginx-start="sudo systemctl start nginx"
+alias nginx-stop="sudo systemctl stop nginx"
 alias nginx-enable="sudo systemctl enable nginx"
 
-# apache2
+# Apache2
 alias apache-status="sudo systemctl status apache2"
-alias apache-stop="sudo systemctl stop apache2"
-alias apache-start="sudo service apache2 start"
 alias apache-restart="sudo systemctl restart apache2"
+alias apache-start="sudo systemctl start apache2"
+alias apache-stop="sudo systemctl stop apache2"
 alias apache-enable="sudo systemctl enable apache2"
 
 # HAProxy
 alias haproxy-status="sudo systemctl status haproxy"
-alias haproxy-stop="sudo systemctl stop haproxy"
-alias haproxy-start="sudo systemctl start haproxy"
 alias haproxy-restart="sudo systemctl restart haproxy"
+alias haproxy-start="sudo systemctl start haproxy"
+alias haproxy-stop="sudo systemctl stop haproxy"
 alias haproxy-enable="sudo systemctl enable haproxy"
 
 # Puppetserver
-alias puppetserver-status="sudo systemctl status puppetserver"
-alias puppetserver-start="sudo systemctl start puppetserver"
-alias puppetserver-restart="sudo systemctl restart puppetserver"
-alias puppetserver-stop="sudo systemctl stop puppetserver"
-alias puppetserver-enable="sudo systemctl enable puppetserver"
+alias puppet-status="sudo systemctl status puppetserver"
+alias puppet-restart="sudo systemctl restart puppetserver"
+alias puppet-start="sudo systemctl start puppetserver"
+alias puppet-stop="sudo systemctl stop puppetserver"
+alias puppet-enable="sudo systemctl enable puppetserver"
+
+# Docker
+alias docker-status="sudo systemctl status docker"
+alias docker-restart="sudo systemctl restart docker"
+alias docker-start="sudo service start docker"
+alias docker-stop="sudo systemctl stop docker"
+alias docker-enable="sudo systemctl enable docker"
+
+# Docker Commands
+alias docker="sudo docker"
+alias docker-run="sudo docker run -i -t"
 
 # GIT
 alias add="git add"
 alias all="git add ."
+alias log="git log"
 alias init="git init"
 alias clone="git clone"
 alias status="git status"
+
+	# Branches
 alias branch="git branch"
+alias branch-merged="git branch --merged"
 alias checkout="git checkout"
+alias checkin="git checkout -b"
+
+	# Merge conflicts
+alias merge="git merge"
+alias merge-abort="git merge --abort"
+alias merge-oneline="git log --merge --oneline"
+
+	# Stash
+alias stash="git stash"
+
+	# Stash with untracked files
+alias stash-u="git stash -u"
+alias stash-untracked="git stash --include-untracked"
+
+	# Stash list
+alias stash-list="git stash list"
+alias stash-clear="git stash clear"
+alias stash-pop="git stash pop"
+alias stash-apply="git stash apply"
+alias stash-push="git stash push -m"
+
+	# Stash drop specific stash: n = index
+alias stash-drop="git stash drop stash@{n}"
+
+	# Obtain Stash Commit Hash
+# alias stash-obtain="gitk --all $( git fsck --no-reflog | awk '/dangling commit/ {print $3}' )"
+
+	# Show the tracked files in the stash: n = index
+alias show-tracked="git show -p stash@{n}"
+
+	# Show the untracked files in the stash
+alias show-untracked="git show stash@{n}^3"
+
+	# Commit
 alias commit="git commit -m"
+alias add-commit="git commit -a -m"
+
+	# Push
 alias push="git push"
+alias push-branch="git push -u origin"
+
+	# Pull
 alias pull="git pull"
+alias fetch="git fetch origin"
+
+	# Delete
+alias del-branch="git push origin --delete"
+alias cache="git rm --cached"
+
+	# Set username and email address
 alias name="git config --global user.name"
 alias email="git config --global user.email"
+alias git-list="git config --list"
 
-# VS Code Keyboard Shortcuts
+# LAZYGIT
+alias lazy="lazygit"
+
+# If you change repos in lazygit and want your shell to change directory
+# into that repo on exiting lazygit, add this to your ~/.zshrc (or other rc file):
+
+lg()
+{
+    export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
+
+    lazygit "$@"
+
+    if [ -f $LAZYGIT_NEW_DIR_FILE ]; then
+            cd "$(cat $LAZYGIT_NEW_DIR_FILE)"
+            rm -f $LAZYGIT_NEW_DIR_FILE > /dev/null
+    fi
+}
+
+# Ansible
+alias playbook="ansible-playbook"
+
+# VS Code Shortcuts
 alias showkeys="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/keybindings.json"
+alias settings="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/settings.json"
+
+# Snippets Config
+alias snippets-fsharp="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/fsharp.json"
+alias snippets-groovy="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/groovy.json"
+alias snippets-js="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/javascript.json"
+alias snippets-lua="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/lua.json"
+alias snippets-perl="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/perl.json"
+alias snippets-php="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/php.json"
+alias snippets-text="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/plaintext.json"
+alias snippets-pwsh="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/powershell.json"
+alias snippets-py="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/python.json"
+alias snippets-rb="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/ruby.json"
+alias snippets-sh="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/shellscript.json"
 
 # C
-alias gcc="gcc -Wall -Wextra -pedantic "
+alias gcc="gcc -Wall -Wextra -pedantic"
 
 # HTML
 alias valid="w3c_validator.py"
 
+# PYTHON
+alias pip="pip3"
+alias list="pip3 list"
+alias repl="bpython"
+# alias python="python3"
+alias pycode="pycodestyle"
+alias valid="w3c_validator"
+
 # JavaScript
 alias js-style="semistandard"
 alias js-fix="semistandard --fix"
+alias npx-style="npx eslint"
+alias npx-fix="npx eslint --fix"
 # alias prettier="npx prettier --check"
 # alias prettier-fix="npx prettier --write"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# Node NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Ruby RVM
+source "/etc/profile.d/rvm.sh"
+
+# Go Language
+export PATH=$PATH:/usr/local/go/bin
+
+# X Server
+export DISPLAY=<ip address>:0.0
+DISPLAY=:0
 ```
