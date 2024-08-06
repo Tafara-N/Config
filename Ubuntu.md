@@ -935,5 +935,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 3. Add to your .zshrc file,
 
 ```zsh
-plugins=(git sudo zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(copyfile copypath dirhistory fzf git sudo zsh-autosuggestions zsh-syntax-highlighting)
 ```
