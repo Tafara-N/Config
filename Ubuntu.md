@@ -703,11 +703,11 @@ sudo apt-get update
 Go to Oracle and download the JDK version you want
 
 ```shell
-wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
+wget https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.deb
 ```
 
 ```shell
-sudo dpkg -i jdk-21_linux-x64_bin.deb  # (To install Java)
+sudo dpkg -i jdk-22_linux-x64_bin.deb  # (To install Java)
 ```
 
 ## Go
@@ -715,11 +715,11 @@ sudo dpkg -i jdk-21_linux-x64_bin.deb  # (To install Java)
 Visit the Go website and copy the link of the version you want
 
 ```shell
-wget https://go.dev/dl/go1.22.0.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.22.6.linux-amd64.tar.gz
 ```
 
 ```shell
-tar -xzf go1.22.0.linux-amd64.tar.gz
+tar -xzf go1.22.6.linux-amd64.tar.gz
 ```
 
 ```shell
