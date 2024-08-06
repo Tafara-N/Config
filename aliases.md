@@ -117,6 +117,10 @@ alias j-versions="jenv versions"
 	# Release version
 alias release="lsb_release -a"
 
+	# Packages list
+alias packages="sudo dpkg --get-selections > completePackages.txt"
+alias i-packages="sudo xargs -a completePackages.txt apt install"
+
 	# Search Packages
 alias search="apt-cache search"
 alias show="apt-cache show"
