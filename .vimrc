@@ -1,72 +1,43 @@
-set nocompatible              " be iMproved, required
+call plug#begin('~/.vim/plugged')
 
-filetype off                  " required
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'git://git.wincent.com/command-t.git'
 
-" Sets the runtime path to include Vundle and initialize:
+Plug 'scrooloose/nerdtree'
+Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
+Plug 'gregsexton/matchtag'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'chr4/nginx.vim'
+Plug 'vim-scripts/bash-support.vim'
+Plug 'lifepillar/pgsql.vim'
+Plug 'kovetskiy/vim-bash'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'hdima/python-syntax'
+Plug 'chase/vim-ansible-yaml'
+Plug 'flazz/vim-colorschemes'
+Plug 'junegunn/fzf'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'matze/vim-move'
+Plug 'pangloss/vim-javascript'
+Plug 'elzr/vim-json'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-markdown'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/syntastic'
+Plug 'prettier/vim-prettier'
+Plug 'jmcantrell/vim-virtualenv'
+Plug 'dense-analysis/ale'
 
-set rtp+=~/.vim/bundle/Vundle.vim
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Plugins
-
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'tpope/vim-fugitive'
-
-Plugin 'airblade/vim-gitgutter'
-
-Plugin 'git://git.wincent.com/command-t.git'
-
-Plugin 'jreybert/vimagit'
-
-Plugin 'vim-jp/vim-cpp'
-
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-
-Plugin 'kien/rainbow_parentheses.vim'
-
-Plugin 'townk/vim-autoclose'
-
-Plugin 'bronson/vim-trailing-whitespace'
-
-Plugin 'hdima/python-syntax'
-
-Plugin 'vimjas/vim-python-pep8-indent'
-
-Plugin 'flazz/vim-colorschemes'
-
-Plugin 'lokaltog/vim-powerline'
-
-Plugin 'myusuf3/numbers.vim'
-
-Plugin 'prettier/vim-prettier'
-
-Plugin 'tpope/vim-markdown'
-
-Plugin 'jtratner/vim-flavored-markdown'
-
-Plugin 'jmcantrell/vim-virtualenv'
-
-Plugin 'scrooloose/nerdtree'
-
-Plugin 'scrooloose/syntastic'
-
-Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-
-Plugin 'ryanoasis/vim-devicons'
-
-call vundle#end()            " required
-
-filetype plugin indent on    " required
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
+call plug#end()
 
 " NERDTree
-
+"=========
 " Start NERDTree and leave the cursor in it.
 " autocmd VimEnter * NERDTree
 
@@ -83,21 +54,144 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <F5> :NERDTree<CR>
 nnoremap <F6> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
+" AUTO CLOSING TAGS
+" =================
 
-" Brief help
+" filenames like *.xml, *.html, *.xhtml, ...
+" These are the file extensions where this plugin is enabled.
+"
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" filenames like *.xml, *.xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
 
-" Basic settings
+" filetypes like xml, html, xhtml, ...
+" These are the file types where this plugin is enabled.
+"
+let g:closetag_filetypes = 'html,xhtml,phtml'
 
+" filetypes like xml, xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filetypes = 'xhtml,jsx'
+
+" integer value [0|1]
+" This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
+"
+let g:closetag_emptyTags_caseSensitive = 1
+
+" dict
+" Disables auto-close if not in a "valid" region (based on filetype)
+"
+let g:closetag_regions = {
+    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
+    \ 'javascript.jsx': 'jsxRegion',
+    \ 'typescriptreact': 'jsxRegion,tsxRegion',
+    \ 'javascriptreact': 'jsxRegion',
+    \ }
+
+" Shortcut for closing tags, default is '>'
+"
+let g:closetag_shortcut = '>'
+
+" Add > at current position without closing the current tag, default is ''
+"
+let g:closetag_close_shortcut = '<leader>>'
+
+" RAINBOW PARENTHESES
+" ===================
+
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+" WHITESPACE
+" ==========
+
+let g:better_whitespace_ctermcolor='white'
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
+let g:move_key_modifier = 'Alt'
+
+" JSON
+"=====
+
+augroup json_autocmd
+  autocmd!
+  autocmd FileType json set autoindent
+  autocmd FileType json set formatoptions=tcq2l
+  autocmd FileType json set textwidth=78 shiftwidth=2
+  autocmd FileType json set softtabstop=2 tabstop=4
+  autocmd FileType json set expandtab
+  autocmd FileType json set foldmethod=syntax
+augroup END
+
+" MARKDOWN
+" ========
+
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'c', 'javascript', 'ruby', 'go', 'java', 'css']
+let g:markdown_syntax_conceal = 0
+let g:markdown_minlines = 100
+
+"Airline
+"=======
+let g:airline_theme='simple'
+let g:airline#extensions#tabline#left_sep = '  '
+let g:airline#extensions#tabline#left_alt_sep = ' '
+let g:airline#extensions#tabline#enabled = 1
+
+" Syntatic
+"=========
+let g:syntastic_javascript_checkers=['standard']
+let g:syntastic_javascript_standard_exec = 'semistandard'
+
+
+" ALE
+"====
+" let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
+" Set this variable to 1 to fix files when you save them.
+" let g:ale_fix_on_save = 1
+
+" Formatting on save
+autocmd bufwritepost *.js silent !semistandard % --fix
+set autoread
+
+" GitGutter
+"==========
+let g:gitgutter_sign_added = '>>'
+let g:gitgutter_sign_modified = '!!'
+let g:gitgutter_sign_removed = 'XX'
+
+" BASIC SETTINGS
+" ==============
+
+colorscheme blacklight
 set tabstop=4 shiftwidth=4
 set autoindent
 set smartindent
@@ -107,57 +201,3 @@ set number
 set colorcolumn=80
 set encoding=UTF-8
 set noshowmode
-
-" Status (Powerline)
-
-set rtp+=~/home/tafara/.local/lib/python3.12/site-packages
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Theme
-
-colorscheme jellybeans
-
-"Airline
-
-let g:airline_theme='simple'
-
-let g:airline#extensions#tabline#left_sep = ' '
-
-let g:airline#extensions#tabline#left_alt_sep = ' '
-
-let g:airline#extensions#tabline#enabled = 1
-
-" set runtimepath+=~/.vim-plugins/LanguageClient-neovim
-
-" GitGutter
-
-let g:gitgutter_sign_added = '>>'
-let g:gitgutter_sign_modified = '!!'
-let g:gitgutter_sign_removed = 'XX'
-
-" Syntatic
-
-let g:syntastic_javascript_checkers=['standard']
-let g:syntastic_javascript_standard_exec = 'semistandard'
-
-" Formatting on save
-autocmd bufwritepost *.js silent !semistandard % --fix
-set autoread
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Markdown files
-
-augroup markdown
-    au!
-    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-augroup END
-
-" For C/C++ files
-" path to directory where library can be found
-" let g:clang_library_path='/usr/lib/llvm-3.8/lib'
-
-" or path directly to the library file
-" let g:clang_library_path='/usr/lib64/libclang.so.3.8'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
