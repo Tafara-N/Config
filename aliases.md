@@ -9,9 +9,7 @@ alias ..="cd .."
 
 	# List files, directories and hidden files
 alias ls="colorls"
-alias files="ls -f"  # Files only
-alias hidden="ls -la"  # Show hidden files
-alias dir-only="ls -d"  # Directories only
+alias hidden="ls -dA .*"  # Show hidden files
 alias dir-contents="ls -d */"
 
 alias md="mkdir"
@@ -30,9 +28,9 @@ alias link="sudo ln -s"  # sudo ln -s /path/to/file /path/to/symlink
 	# Compress files and directories
 alias zip="gzip"
 alias zip-d="gzip -d"  # Decompress files and directories
-alias unzip="gunzip"
-alias zip2="bzip2"
-alias unzip2="bunzip2"
+# alias unzip="gunzip"
+# alias zip2="bzip2"
+# alias unzip2="bunzip2"
 
 alias grep-e="grep -E"
 
@@ -65,37 +63,44 @@ alias unix-dos="unix2dos"
 
 	# Restart the terminal
 alias restart="source ~/.zshrc"
-alias refresh='exec "$SHELL"'
+alias refresh="exec \"$SHELL\""
 
 # Virtual Environments
 
 # Python
-alias start-venv="python3 -m venv env"
-alias venv="source env/bin/activate"
+alias start-venv="python3 -m venv .venv"
+alias start="source .venv/bin/activate"
+alias tafara="source .tafara/bin/activate"
 alias stop="deactivate"
 
 # Conda
-alias start-conda="conda create --name env"
-alias conda-env="conda activate env"
-alias stop-conda="conda deactivate"
-alias conda-remove="conda remove --name environment --all"
+alias enable-base="conda config --set auto_activate_base true"
+alias disable-base="conda config --set auto_activate_base false"
+alias conda-start="conda create --name $(basename $PWD)"
+alias conda-venv="conda activate $(basename $PWD)"
+alias conda-base="conda activate base"
+alias conda-envs="conda info --envs"
+alias conda-stop="conda deactivate"
+# alias conda-remove="conda remove --name environment --all"
 
 alias requirements="pip3 freeze > requirements.txt"
-alias i-requirements="pip3 install -r /home/tafara/requirements.txt"
+alias conda-requirements="pip list --format=freeze > requirements.txt"
+alias i-requirements="pip3 install -r requirements.txt"
 
 	# Upgrading pip modules
 alias pip-upgrade="pip3 install --upgrade pip"
+alias pip-uninstall="pip3 freeze | xargs pip uninstall -y"
 alias pip-up-old="pip3 list --outdated | cut -d ' ' -f 1 | xargs -n1 pip3 install -U"
 alias pip-up-all="pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U"
 
 	# Django Project
-alias set-django="django-admin startproject"  # name of the project
-alias run-django="python3 manage.py runserver"
-alias create-app="python3 manage.py startapp"  # name of the app
-alias make-migrations="python3 manage.py makemigrations"  # creates a migration file
-alias migrate="python3 manage.py migrate"  # migrates data into a database
+alias django-project="django-admin startproject"  # name of the project
+alias django-server="python3 manage.py runserver"
+alias django-app="python3 manage.py startapp"  # name of the app
+alias django-migrations="python3 manage.py makemigrations"  # creates a migration file
+alias django-migrate="python3 manage.py migrate"  # migrates data into a database
 alias django-shell="bpython manage.py shell"  # Django shell
-alias create-superuser="python3 manage.py createsuperuser"
+alias django-superuser="python3 manage.py createsuperuser"
 
 	# Unit Testing
 alias tests-dir="python3 -m unittest discover tests"
@@ -124,6 +129,7 @@ alias upgrade="sudo apt-get upgrade -y"
 alias upgradable="apt list --upgradable"
 alias full-upgrade="sudo apt-get full-upgrade"
 alias dist-upgrade="sudo apt-get dist-upgrade"
+alias update-atlas="sudo apt-get install --only-upgrade mongodb-atlas-cli"
 
 	# Clean distro
 alias clean="sudo apt-get clean"
@@ -206,14 +212,14 @@ alias mysql-stop="sudo systemctl stop mysql"
 alias mysql-enable="sudo systemctl enable mysql"
 
 # MySQL USERS
-alias mysql="sudo mycli -u root -p <passwd>"
-alias mysql-tafara="sudo mycli -u tafara -p <passwd>"
+alias mysql="sudo mycli -u root -p $MySQL_PASSWD"
+alias mysql-tafara="sudo mycli -u tafara -p $MySQL_PASSWD"
 
 	# Connect and Execute MySQL Commands on the terminal
-alias mysql-local="sudo mysql -hlocalhost -uroot -p"
+alias mysql-local="sudo mysql -hlocalhost -uroot -p $MySQL_PASSWD"
 
 	# Dump Database
-alias dump="mysqldump -u root -p"
+alias dump="mysqldump -u root -p $MySQL_PASSWD"
 
 # Postgres
 alias pgsql-status="sudo systemctl status postgresql"
@@ -233,6 +239,19 @@ alias mongodb-restart="sudo systemctl restart mongod"
 alias mongodb-start="sudo service start mongod"
 alias mongodb-stop="sudo systemctl stop mongod"
 alias mongodb-enable="sudo systemctl enable mongod"
+
+# Mongo Users
+alias mongo-atlas="mongosh 'mongodb+srv://$MONGO_USER:$MONGO_USER_PASSWD@$APP.ntw59k5.mongodb.net/?retryWrites=true&w=majority&appName=$APP_NAME'"
+
+# Redis
+alias redis-status="sudo systemctl status redis"
+alias redis-restart="sudo systemctl restart redis"
+alias redis-start="sudo service start redis"
+alias redis-stop="sudo systemctl stop redis"
+alias redis-enable="sudo systemctl enable redis"
+
+# Redis Users
+alias redis-tafara="redis-cli -u redis://$REDIS:$REDIS_USER_PASSWD@$REDIS_PUB_ENDPOINT"
 
 # Cassandra
 alias cass-status="sudo /etc/init.d/cassandra status"
@@ -279,6 +298,8 @@ alias docker-enable="sudo systemctl enable docker"
 # Docker Commands
 alias docker="sudo docker"
 alias docker-run="sudo docker run -i -t"
+alias puppetserver="docker run -i -t techsk8/puppetserver-ubuntu22 /bin/bash"
+alias puppetagent="docker run -i -t techsk8/puppetagent-ubuntu22 /bin/bash"
 
 # GIT
 alias add="git add"
@@ -339,7 +360,12 @@ alias fetch="git fetch origin"
 
 	# Delete
 alias del-branch="git push origin --delete"
-alias cache="git rm --cached"
+
+	# Delete committed and pushed: AFter deleting, commit and force-push
+alias cache="git rm --cached"  # Remove file from remote repo, but keeps it locally
+alias delete-file="git rm"
+alias delete-folder="git rm -r"
+alias force-push="git push --force -u origin main"
 
 	# Set username and email address
 alias name="git config --global user.name"
@@ -384,17 +410,22 @@ alias snippets-py="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/py
 alias snippets-rb="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/ruby.json"
 alias snippets-sh="code /mnt/c/Users/tafar/AppData/Roaming/Code/User/snippets/shellscript.json"
 
+# Redis
+alias redis="iredis"
+
+# SQLite
+alias sqlite="litecli"
+
 # C
-alias gcc="gcc -Wall -Wextra -pedantic"
+alias options="-Wall -Wextra -pedantic"
 
 # HTML
 alias valid="w3c_validator.py"
 
 # PYTHON
-alias pip="pip3"
 alias list="pip3 list"
 alias repl="bpython"
-# alias python="python3"
+alias python="ptpython"
 alias pycode="pycodestyle"
 alias valid="w3c_validator"
 
@@ -403,8 +434,8 @@ alias js-style="semistandard"
 alias js-fix="semistandard --fix"
 alias npx-style="npx eslint"
 alias npx-fix="npx eslint --fix"
-# alias prettier="npx prettier --check"
-# alias prettier-fix="npx prettier --write"
+alias prettier="npx prettier --check"
+alias prettier-fix="npx prettier --write"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -426,6 +457,8 @@ source "/etc/profile.d/rvm.sh"
 export PATH=$PATH:/usr/local/go/bin
 
 # X Server
-export DISPLAY=<ip address>:0.0
+export DISPLAY=192.168.56.1:0.0
 DISPLAY=:0
+
+# eval $(thefuck --alias)
 ```
