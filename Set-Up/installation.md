@@ -220,6 +220,8 @@ sudo -u postgres psql
 
 ## Install pgcli for Postgre
 
+[pgcli](https://www.pgcli.com/)
+
 ```shell
 sudo apt-get -y install libpq-dev python-dev
 pip3 install pgcli
