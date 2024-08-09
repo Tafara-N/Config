@@ -108,6 +108,8 @@ AppData >> Local >> nvim >> lua >> config >> options.lua
 
 ## Installing mySQL
 
+[Installation link: Linux Genie](https://linuxgenie.net/install-mysql-ubuntu-24-04/)
+
 ```shell
 sudo apt install mysql-server
 ```
