@@ -179,6 +179,8 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
 
 ## Install mycli for mySQL
 
+[mycli](https://www.mycli.net/)
+
 ```shell
 pip3 install mycli
 ```
