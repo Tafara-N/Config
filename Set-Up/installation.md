@@ -281,6 +281,24 @@ sudo rm -r /var/log/mongodb
 sudo rm -r /var/lib/mongodb
 ```
 
+# Installing redis
+
+```bash
+sudo apt-get -y install redis-server
+```
+
+**Using pip3**
+
+```bash
+pip3 install redis
+```
+
+**Optional**
+
+```bash
+sed -i "s/bind .*/bind 127.0.0.1/g" /etc/redis/redis.conf
+```
+
 
 
 # Installing Apache2
