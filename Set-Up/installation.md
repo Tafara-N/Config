@@ -226,6 +226,10 @@ sudo apt-get install -y pgcli
 
 # Installing MongoDB
 
+[Installation link](https://linuxgenie.net/install-mongodb-ubuntu-24-04/)
+
+[Installation link](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/)
+
 First, ensure the gnupg and curl are installed. If they are missing, you can get them using this command:
 
 ```bash
