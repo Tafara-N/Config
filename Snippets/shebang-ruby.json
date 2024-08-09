@@ -35,5 +35,14 @@
             "# -*- coding: ${1|utf-8,latin-1,ascii|} -*-"
         ],
         "description": "Adds a magic comment for Ruby file encoding"
+    },
+    "Ruby Multiline Comment": {
+      "prefix": "ruby-comment",
+      "body": [
+        "=begin",
+        "",
+        "=end"
+      ],
+      "description": "Generate a multiline comment for Ruby"
     }
 }
