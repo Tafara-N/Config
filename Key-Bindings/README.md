@@ -2,11 +2,11 @@
 
 # Windows
 
-`windows_settings.json`
+`windows_keybindings.json`
 
 # Ubuntu 24.04
 
-`ubuntu_settings.json`
+`ubuntu_keybindings.json`
 
 ## Location
 
