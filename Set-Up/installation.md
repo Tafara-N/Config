@@ -240,13 +240,13 @@ sudo apt-get install -y pgcli
 
 [Installation link: Linux Genie](https://linuxgenie.net/install-mongodb-ubuntu-24-04/)
 
-First, ensure the gnupg and curl are installed. If they are missing, you can get them using this command:
+**First, ensure the gnupg and curl are installed. If they are missing, you can get them using this command:**
 
 ```bash
 sudo apt-get install gnupg curl
 ```
 
-Import the MongoDB GPG key from the official MongoDB repository, run this command:
+**Import the MongoDB GPG key from the official MongoDB repository, run this command:**
 
 ```bash
 curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
@@ -256,37 +256,37 @@ curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
  --dearmor
 ```
 
-You can also check if the key is successfully imported or not by running:
+**You can also check if the key is successfully imported or not by running:**
 
 ```bash
 ls /usr/share/keyrings
 ```
 
-Amongst the keys you have should be:
+**Amongst the keys you have should be:**
 
 ```bash
 mongodb-server-7.0.gpg
 ```
 
-Now run the echo command to create the source list for your MongoDB package in Ubuntu 24.04 by running this command:
+**Now run the echo command to create the source list for your MongoDB package in Ubuntu 24.04 by running this command:**
 
 ```bash
 echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 ```
 
-Update the system
+**Update the system**
 
 ```bash
 sudo apt update
 ```
 
-Finally: install MongoDB
+**Finally: install MongoDB**
 
 ```bash
 sudo apt install -y mongodb-org
 ```
 
-For a clean uninstall:
+**For a clean uninstall:**
 
 ```bash
 sudo service mongod stop
