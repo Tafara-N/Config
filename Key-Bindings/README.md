@@ -1,4 +1,4 @@
-# VS Code Settings
+# VS Code User Keybindings
 
 # Windows
 
