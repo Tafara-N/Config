@@ -110,6 +110,8 @@ AppData >> Local >> nvim >> lua >> config >> options.lua
 
 [Installation link: Linux Genie](https://linuxgenie.net/install-mysql-ubuntu-24-04/)
 
+[Installation link: Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-22-04)
+
 ```shell
 sudo apt install mysql-server
 ```
