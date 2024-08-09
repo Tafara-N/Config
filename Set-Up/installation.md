@@ -191,7 +191,9 @@ OR
 sudo apt-get install -y mycli
 ```
 
-# [Installing Postgre](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04)
+## Installing PostgreSQL
+
+[Installation link: Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04)
 
 ```shell
 sudo apt install -y postgresql postgresql-contrib
