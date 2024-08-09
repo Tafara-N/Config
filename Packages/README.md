@@ -5,3 +5,9 @@
 ```bash
 sudo xargs -a ubuntu_24.txt apt install
 ```
+
+**To generate a list of installed packages into a file:**
+
+```bash
+sudo dpkg --get-selections > filename.txt
+```
