@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 	# Navigation
 alias .="cd"
@@ -17,6 +17,8 @@ alias nv="nvim"
 
 alias cpfile="copyfile"
 alias cppath="copypath"
+alias zshrc="code ~/.zshrc"
+alias bashrc="code ~/.bashrc"
 
 	# Permissions        #  usr | grp | others
 alias x="chmod 755"      # rwx  | rwx | rwx
@@ -100,17 +102,40 @@ alias django-migrate="python3 manage.py migrate"  # migrates data into a databas
 alias django-shell="bpython manage.py shell"  # Django shell
 alias django-superuser="python3 manage.py createsuperuser"
 
+	# Flask Project
+
+
 	# Unit Testing
-alias tests-dir="python3 -m unittest discover tests"
 alias test-file="python3 -m unittest"
+alias tests-dir="python3 -m unittest discover tests"
+
+# Python
+alias py-local="pyenv local"
+alias py-global="pyenv global"
+alias py-install="pyenv install"
+alias py-versions="pyenv versions"
+alias py-uninstall="pyenv uninstall"
 
 # Java
 alias j-add="jenv add"
-alias j-global="jenv global"
 alias j-local="jenv local"
+alias j-global="jenv global"
 alias j-versions="jenv versions"
 
 # Ruby
+alias ruby-local="rbenv local"
+alias ruby-global="rbenv global"
+alias ruby-install="rbenv install"
+alias ruby-versions="rbenv versions"
+alias ruby-uninstall="rbenv uninstall"
+alias ruby-remote="rbenv --list-remote"
+
+# Node
+alias node-use="nvm use"
+alias node-versions="nvm ls"
+alias node-install="nvm install"
+alias node-remote="nvm ls-remote"
+alias node-uninstall="nvm uninstall"
 
 # APT GET
 
@@ -408,6 +433,7 @@ alias settings="code /home/tafara/.config/Code/User/settings.json"
 # Snippets Config
 alias snippets-fsharp="code /home/tafara/.config/Code/User/snippets/fsharp.json"
 alias snippets-groovy="code /home/tafara/.config/Code/User/snippets/groovy.json"
+alias snippets-html="code /home/tafara/.config/Code/User/snippets/html.json"
 alias snippets-js="code /home/tafara/.config/Code/User/snippets/javascript.json"
 alias snippets-lua="code /home/tafara/.config/Code/User/snippets/lua.json"
 alias snippets-perl="code /home/tafara/.config/Code/User/snippets/perl.json"
