@@ -20,7 +20,7 @@ code --list-extensions > vscode-extensions.list
 
 **On Windows**
 
-```bash
+```pwsh
 Get-Content vscode-extensions.list | ForEach-Object { code --install-extension $_ }
 ```
 
