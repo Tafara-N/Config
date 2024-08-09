@@ -12,6 +12,8 @@
 
 **Windows:**
 
+`C:\Users\<YourUsername>\AppData\Roaming\Code\User\settings.json`
+
 **Ubuntu:**
 
 `/home/$USER/.config/Code/User/settings.json`
