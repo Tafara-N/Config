@@ -283,6 +283,8 @@ sudo rm -r /var/lib/mongodb
 
 # Installing redis
 
+[Installation link](https://linuxgenie.net/install-configure-redis-ubuntu-24-04/)
+
 ```bash
 sudo apt-get -y install redis-server
 ```
