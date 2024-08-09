@@ -7,3 +7,9 @@
 - Mac
 - Noto
 - Noto Sans
+
+## Location
+
+> **Note:** If not available, make the directory
+
+`~/.local/share/fonts`
