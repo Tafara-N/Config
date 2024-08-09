@@ -28,10 +28,12 @@
 
 ### Extensions
 - VS Code
+- ...
 
 ### Plugins
 - Vim
 - MySQL
 - Gedit
+- ...
 
-Author: Tafara Nyamhunga
+**Author: Tafara Nyamhunga**
