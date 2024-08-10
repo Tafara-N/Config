@@ -380,6 +380,8 @@ sudo /etc/init.d/apache2 stop
 
 # Virtual Environments
 
+# Python
+
 ## Install and activate venv
 
 To create a Python Virtual Environment, allowing you to install specific dependencies for this python project, we will install venv:
