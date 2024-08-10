@@ -398,6 +398,13 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ~/.rbenv/bin/rbenv init
 ```
 
+# Node
+
+## Install NVM: Node version manager
+
+[nvm](https://github.com/nvm-sh/nvm)
+
+
 # Python
 
 ## Install Pyenv: Python version manager
