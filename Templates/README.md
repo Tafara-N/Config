@@ -702,3 +702,7 @@ If you want to limit the depth of the directory tree, you can use the `-L` flag 
 ```bash
 tree -d -L 2
 ```
+
+## OR use the VS Code Extenstion
+
+### [file-tree-generator](https://marketplace.visualstudio.com/items?itemName=Shinotatwu-DS.file-tree-generator)
