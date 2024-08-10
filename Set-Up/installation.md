@@ -404,6 +404,15 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 [nvm](https://github.com/nvm-sh/nvm)
 
+1. Auto Install
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+```
+
+```bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+```
 
 # Python
 
