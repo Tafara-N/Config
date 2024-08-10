@@ -386,6 +386,10 @@ sudo /etc/init.d/apache2 stop
 
 [Pyenv](https://github.com/pyenv/pyenv)
 
+```bash
+curl https://pyenv.run | bash
+```
+
 ## Install and activate venv
 
 To create a Python Virtual Environment, allowing you to install specific dependencies for this python project, we will install venv:
