@@ -1118,7 +1118,8 @@ sudo docker run -d --name <Name> --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:r
 sudo docker exec -it <Name> bash
 ```
 
-### Terminal Set Up
+# Terminal Set Up
+
 ### Install Oh My ZSH
 
 ```shell
