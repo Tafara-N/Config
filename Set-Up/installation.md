@@ -1063,7 +1063,21 @@ sudo apt-get install -y nodejs
 
 [Installation link: Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
 
+[Installation link: Linuxiac](https://linuxiac.com/how-to-install-docker-on-ubuntu-24-04-lts/)
 
+```bash
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+apt-cache policy docker-ce
+sudo apt install docker-ce
+sudo systemctl status docker
+
+# If you want to avoid typing sudo whenever you run the docker command, add your username to the docker group:
+sudo usermod -aG docker ${USER}
+```
 ### If systemctl (systemd is not working)
 
 ```
