@@ -956,7 +956,9 @@ sudo mv subfinder /usr/bin
 
 ## Ruby
 
-Visit [rvm](https://rvm.io/rvm/install)
+[Visit rvm](https://rvm.io/rvm/install)
+
+[Visit rbenv](https://github.com/rbenv/rbenv)
 
 ```shell
 gpg --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
