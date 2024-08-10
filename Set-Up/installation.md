@@ -1034,7 +1034,7 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 
 ## Step 1
 
-1. Visit (https://github.com/nvm-sh/nvm)
+[Visit nvm](https://github.com/nvm-sh/nvm)
 
 ```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
