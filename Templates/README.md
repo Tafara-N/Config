@@ -683,7 +683,7 @@
 
 ## To generate a tree view
 
-***On Linux: Use the tree command**
+**On Linux: Use the tree command**
 
 ```bash
 tree
