@@ -904,6 +904,8 @@ sudo apt-get update
 
 Go to Oracle and download the JDK version you want
 
+[Java Download link](https://www.oracle.com/java/technologies/downloads/)
+
 ```shell
 wget https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.deb
 ```
