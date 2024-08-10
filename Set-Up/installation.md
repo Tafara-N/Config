@@ -234,6 +234,11 @@ OR
 ```shell
 sudo apt-get install -y pgcli
 ```
+
+## Install litecli for SQLite
+
+[litecli](https://litecli.com/)
+
 # NoSQL
 
 # Installing MongoDB
@@ -318,6 +323,10 @@ pip3 install redis
 ```bash
 sed -i "s/bind .*/bind 127.0.0.1/g" /etc/redis/redis.conf
 ```
+
+## Install iredis for Redis DB
+
+[iredis](https://github.com/laixintao/iredis)
 
 # Installing Apache2
 
@@ -523,6 +532,12 @@ moved in a future release.")
 ```
 
 You can ignore it.
+
+## Other Python Tools
+
+[Ptpython](https://github.com/prompt-toolkit/ptpython)
+
+[Bpython]()
 
 --------------------------------------------------------------------------------------------------------------------
 
