@@ -918,6 +918,8 @@ sudo dpkg -i jdk-22_linux-x64_bin.deb
 
 Visit the Go website and copy the link of the version you want
 
+[Go Download link](https://go.dev/dl/)
+
 ```shell
 wget https://go.dev/dl/go1.22.6.linux-amd64.tar.gz
 ```
