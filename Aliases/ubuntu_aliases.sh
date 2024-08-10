@@ -31,6 +31,7 @@ alias zip-d="gzip -d"  # Decompress files and directories
 # alias unzip="gunzip"
 # alias zip2="bzip2"
 # alias unzip2="bunzip2"
+alias untar="sudo tar -zxvf"
 
 alias grep-e="grep -E"
 
@@ -103,7 +104,8 @@ alias django-shell="bpython manage.py shell"  # Django shell
 alias django-superuser="python3 manage.py createsuperuser"
 
 	# Flask Project
-
+alias flask-runapp="flask --app"
+alias flask-run="flask run"
 
 	# Unit Testing
 alias test-file="python3 -m unittest"
@@ -216,19 +218,14 @@ alias ssh-enable="sudo systemctl enable ssh"
 
 # SSH SERVERS
 
-	# ALX
-alias alx-01="ssh alx-01"
-alias alx-02="ssh alx-02"
-alias lb-01="ssh lb-01"
-
 	# Digital Ocean
 alias d_ocean01="ssh digital-ocean"
 alias d_ocean02="ssh digital-ocean_01"
 
 # VIRTUAL MACHINES
 
-	# Ubuntu
-alias ubuntu-vm="ssh ubuntu-vm"
+	# Windows
+alias win10="ssh win10"
 
 	# Kali Linux
 alias kali="ssh kali-linux"
@@ -455,6 +452,7 @@ alias options="-Wall -Wextra -pedantic"
 
 # PYTHON
 alias list="pip3 list"
+alias py-package="pip3 show"
 alias repl="bpython"
 alias pyshell="ptpython"
 alias pycode="pycodestyle"
