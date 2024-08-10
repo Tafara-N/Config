@@ -319,8 +319,6 @@ pip3 install redis
 sed -i "s/bind .*/bind 127.0.0.1/g" /etc/redis/redis.conf
 ```
 
-
-
 # Installing Apache2
 
 ```shell
