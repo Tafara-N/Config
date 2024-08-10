@@ -193,6 +193,8 @@ sudo apt-get install -y mycli
 
 ## Installing PostgreSQL
 
+[Installation link: Official PostgreSQL](https://www.postgresql.org/download/linux/ubuntu/)
+
 [Installation link: Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04)
 
 ```shell
