@@ -380,6 +380,24 @@ sudo /etc/init.d/apache2 stop
 
 # Virtual Environments
 
+# Ruby
+
+## Install Rbenv: Ruby version manger
+
+[Rbenv](https://github.com/rbenv/rbenv)
+
+1. Clone rbenv into ~/.rbenv.
+
+```bash
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+```
+
+2. Set up your shell to load rbenv.
+
+```bash
+~/.rbenv/bin/rbenv init
+```
+
 # Python
 
 ## Install Pyenv: Python version manager
