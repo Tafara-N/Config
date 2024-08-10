@@ -696,3 +696,9 @@ Here's the command:
 ```bash
 tree -d
 ```
+
+If you want to limit the depth of the directory tree, you can use the `-L` flag followed by the desired depth level. For example, to display directories up to a depth of 2:
+
+```bash
+tree -d -L 2
+```
