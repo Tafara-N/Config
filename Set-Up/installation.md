@@ -911,7 +911,7 @@ wget https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.deb
 ```
 
 ```shell
-sudo dpkg -i jdk-22_linux-x64_bin.deb  # (To install Java)
+sudo dpkg -i jdk-22_linux-x64_bin.deb
 ```
 
 ## Go
