@@ -680,3 +680,19 @@
             ├── Zsh.gitignore
             └── ZukenCR8000.gitignore
 ```
+
+## To generate a tree view
+
+***On Linux: Use the tree command**
+
+```bash
+tree
+```
+
+To display only the directories and not their contents using the tree command, you can use the `-d` flag. This flag tells tree to list directories only.
+
+Here's the command:
+
+```bash
+tree -d
+```
