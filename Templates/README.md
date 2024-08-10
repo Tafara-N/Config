@@ -10,6 +10,7 @@
 
 **Templates Structure**
 
+```bash
 /home/tafara/
 │
 ├── Templates
@@ -678,3 +679,4 @@
             ├── zig.gitignore
             ├── Zsh.gitignore
             └── ZukenCR8000.gitignore
+```
