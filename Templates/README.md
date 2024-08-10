@@ -706,3 +706,12 @@ tree -d -L 2
 ## OR use the VS Code Extenstion
 
 ### [file-tree-generator](https://marketplace.visualstudio.com/items?itemName=Shinotatwu-DS.file-tree-generator)
+
+1. Right-click on the folder for which you want to generate a tree.
+2. Click `Generate to tree`.
+
+Once you generate the directory structure, you can select the output and copy it.
+
+If you want to remove the icons, click on the `icon off` button.
+
+Now, paste the output into your markdown file and don't forget to wrap it in three backticks or  the `<pre></pre>` tag if you can't get the backtick characters to work.
