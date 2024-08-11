@@ -53,16 +53,16 @@
     "command": "editor.action.deleteLines",
     "when": "textInputFocus && !editorReadonly"
   },
-  // {
-  // 	"key": "alt+right",
-  // 	"command": "cursorWordEndRight",
-  // 	"when": "textInputFocus && !accessibilityModeEnabled"
-  // },
-  // {
-  // 	"key": "alt+left",
-  // 	"command": "cursorWordEndLeft",
-  // 	"when": "textInputFocus && !accessibilityModeEnabled"
-  // },
+  {
+    "key": "ctrl+right",
+    "command": "cursorWordPartRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+left",
+    "command": "cursorWordPartLeft",
+    "when": "editorTextFocus"
+  },
   {
     "key": "ctrl+c",
     "command": "workbench.action.terminal.copySelection",
@@ -74,11 +74,11 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+right",
+    "key": "shift+right",
     "command": "cursorLineEnd"
   },
   {
-    "key": "ctrl+left",
+    "key": "shift+left",
     "command": "cursorLineStart"
   },
   {
