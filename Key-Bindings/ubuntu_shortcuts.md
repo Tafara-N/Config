@@ -23,3 +23,5 @@
 ![Screenshots](images/screenshots.png)
 
 ## Sound And Media
+
+![Sound and Media](images/sound_and_media.png)
