@@ -43,3 +43,7 @@
 ## Custom Shortcuts
 
 ![Custom Shortcuts](images/custom.png)
+
+## Custom: MongoDB Compass
+
+![MongoDB Compass](images/custom_MongoDB-Compass.png)
