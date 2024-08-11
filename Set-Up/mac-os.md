@@ -22,6 +22,6 @@ sudo apt install gnome-tweaks gnome-shell-extensions gnome-shell-extension-manag
 
 > **Note:** Some apps may need to be installed: Go to `Browse` tab and search for missing apps.
 
-[Extensions Manager](images/extensions_manager.png)
+![Extensions Manager](images/extensions_manager.png)
 
-[Extensions Manager](images/extensions_manager_1.png)
+![Extensions Manager](images/extensions_manager_1.png)
