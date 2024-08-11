@@ -37,3 +37,5 @@
 ## Windows
 
 ![Windows](images/windows.png)
+
+![Windows](images/windows_1.png)
