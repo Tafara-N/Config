@@ -93,3 +93,18 @@ Set the wallpaper of your choice.
 [Phinger Cursors](https://github.com/phisch/phinger-cursors)
 
 [macOS Cursors](https://github.com/ful1e5/apple_cursor)
+
+Cursors are to be set in the `.icons` directory: `home/$USER/.icons`
+
+```bash
+.icons
+│
+├── macOS
+│   ├── cursors
+│   ├── cursor.theme
+│   └── index.theme
+├── macOS-White
+│   ├── cursors
+│   ├── cursor.theme
+│   └── index.theme
+```
