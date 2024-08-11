@@ -38,7 +38,9 @@ git clone git@github.com:vinceliuice/WhiteSur-gtk-theme.git
 
 Inside the WhiteSur GTK Theme directory, install all the themes [optional], look into the WhiteSur GTK Theme [README.md](https://github.com/vinceliuice/WhiteSur-gtk-theme/blob/master/README.md) for more installation guides.
 
+> **Tip:** The `-N glassy` option makes `Ubuntu's Nautilus File Manager` glassy like
+
 ```bash
 cd WhiteSur-gtk-theme/
-./install.sh -t all
+./install.sh -t all -N glassy
 ```
