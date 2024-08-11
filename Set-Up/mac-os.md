@@ -69,7 +69,7 @@ Set the wallpaper of your choice.
 [Wallpapers](wallpapers/)
 
 ```bash
-└── Wallpapers
+└── wallpapers
     └── MacOS
         ├── 1080p
         ├── 2k
@@ -81,6 +81,8 @@ Set the wallpaper of your choice.
 **Open: Tweaks**
 
 **Set as follows.**
+
+[Fonts](fonts/)
 
 ![Tweaks: Fonts](images/tweaks_fonts.png)
 
