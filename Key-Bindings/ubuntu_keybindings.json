@@ -74,11 +74,11 @@
     "when": "terminalFocus"
   },
   {
-    "key": "shift+right",
+    "key": "ctrl+shift+right",
     "command": "cursorLineEnd"
   },
   {
-    "key": "shift+left",
+    "key": "ctrl+shift+left",
     "command": "cursorLineStart"
   },
   {
@@ -177,18 +177,18 @@
     "key": "ctrl+shift+up",
     "command": "workbench.action.terminal.resizePaneUp"
   },
-  {
-    "key": "ctrl+shift+right",
-    "command": "workbench.action.terminal.resizePaneRight"
-  },
+  // {
+  //   "key": "ctrl+shift+right",
+  //   "command": "workbench.action.terminal.resizePaneRight"
+  // },
   {
     "key": "ctrl+shift+down",
     "command": "workbench.action.terminal.resizePaneDown"
   },
-  {
-    "key": "ctrl+shift+left",
-    "command": "workbench.action.terminal.resizePaneLeft"
-  },
+  // {
+  //   "key": "ctrl+shift+left",
+  //   "command": "workbench.action.terminal.resizePaneLeft"
+  // },
   {
     "key": "alt+f",
     "command": "workbench.action.toggleMaximizedPanel"
