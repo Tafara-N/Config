@@ -2,4 +2,4 @@
 
 **Settings >> Keyboard >> View and Customize Shortcuts**
 
-[Shortcuts](shortcuts.png)
+![Shortcuts](shortcuts.png)
