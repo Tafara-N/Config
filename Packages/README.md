@@ -2,12 +2,16 @@
 
 **To install packages from this file:**
 
+**File location: `Ubuntu-24.04/packages.txt`**
+
 ```bash
-sudo xargs -a ubuntu_24.txt apt install
+sudo xargs -a packages.txt apt install
 ```
 
 **To generate a list of installed packages into a file:**
 
+> **Tip:** You name the file anyname.
+
 ```bash
-sudo dpkg --get-selections > filename.txt
+sudo dpkg --get-selections > packages.txt
 ```
