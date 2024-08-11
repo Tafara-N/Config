@@ -14,8 +14,21 @@
 
 **Windows:**
 
-`C:\Users\<YourUsername>\AppData\Roaming\Code\User\keybindings.json`
+C:\Users\<YourUsername>\AppData\Roaming\Code\User\keybindings.json
 
 **Ubuntu:**
 
 `/home/$USER/.config/Code/User/keybindings.json`
+
+**Optional**
+
+```json
+  {
+    "key": "ctrl+shift+left",
+    "command": "workbench.action.terminal.resizePaneLeft"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "workbench.action.terminal.resizePaneRight"
+  },
+```
