@@ -32,5 +32,3 @@ C:\Users\<YourUsername>\AppData\Roaming\Code\User\keybindings.json
     "command": "workbench.action.terminal.resizePaneRight"
   },
 ```
-
-
