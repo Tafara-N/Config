@@ -73,3 +73,9 @@ Set the wallpaper of your choice.
         ├── 2k
         └── 4k
 ```
+
+9. ### Tweak it!!!
+
+**Open: Tweaks**
+
+![Tweaks: Fonts](images/tweaks_fonts.png)
