@@ -66,6 +66,8 @@ cd WhiteSur-icon-theme/
 
 Set the wallpaper of your choice.
 
+[Wallpapers](wallpapers/)
+
 ```bash
 └── Wallpapers
     └── MacOS
