@@ -10,6 +10,8 @@
 
 ## Launchers
 
+![Launchers](images/launchers.png)
+
 ## Navigation
 
 ## Screenshots
