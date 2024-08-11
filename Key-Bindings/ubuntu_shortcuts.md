@@ -6,7 +6,7 @@
 
 ## Accesibility
 
-![Accesibility](accessibility.png)
+![Accesibility](images/accessibility.png)
 
 ## Launchers
 
