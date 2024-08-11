@@ -40,4 +40,6 @@
 
 ![Windows](images/windows_1.png)
 
-## Custom
+## Custom Shortcuts
+
+![Custom Shortcuts](images/custom.png)
