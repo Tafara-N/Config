@@ -91,3 +91,5 @@ Set the wallpaper of your choice.
 **Set cursor**
 
 [Phinger Cursors](https://github.com/phisch/phinger-cursors)
+
+[macOS Cursors](https://github.com/ful1e5/apple_cursor)
