@@ -25,3 +25,11 @@ sudo apt install gnome-tweaks gnome-shell-extensions gnome-shell-extension-manag
 ![Extensions Manager](images/extensions_manager.png)
 
 ![Extensions Manager](images/extensions_manager_1.png)
+
+4. ### Clone
+
+[WhiteSur GTK Theme](https://github.com/vinceliuice/WhiteSur-gtk-theme)
+
+```bash
+git clone git@github.com:vinceliuice/WhiteSur-gtk-theme.git
+```
