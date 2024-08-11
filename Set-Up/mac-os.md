@@ -32,6 +32,8 @@ sudo apt install gnome-tweaks gnome-shell-extensions gnome-shell-extension-manag
 
 ```bash
 git clone git@github.com:vinceliuice/WhiteSur-gtk-theme.git
+git clone git@github.com:vinceliuice/WhiteSur-icon-theme.git
+git clone git@github.com:vinceliuice/WhiteSur-wallpapers.git
 ```
 
 5. ### `cd` into WhiteSur GTK Theme directory
@@ -43,4 +45,31 @@ Inside the WhiteSur GTK Theme directory, install all the themes [optional], look
 ```bash
 cd WhiteSur-gtk-theme/
 ./install.sh -t all -N glassy
+```
+
+6. ### Tweak it!!
+
+Time to modify Ubuntu!!
+
+```bash
+sudo ./tweaks.sh
+```
+
+7. ### `cd` into WhiteSur Icon Theme directory
+
+```bash
+cd WhiteSur-icon-theme/
+./install.sh
+```
+
+8. ### Set The Wallpapers [Optional]
+
+Set the wallpaper of your choice.
+
+```bash
+└── Wallpapers
+    └── MacOS
+        ├── 1080p
+        ├── 2k
+        └── 4k
 ```
