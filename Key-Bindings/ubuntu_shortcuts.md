@@ -14,6 +14,10 @@
 
 ## Navigation
 
+![Navigation](images/navigation.png)
+
+![Navigation](images/navigation_1.png)
+
 ## Screenshots
 
 ## Sound And Media
