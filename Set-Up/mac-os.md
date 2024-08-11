@@ -33,3 +33,12 @@ sudo apt install gnome-tweaks gnome-shell-extensions gnome-shell-extension-manag
 ```bash
 git clone git@github.com:vinceliuice/WhiteSur-gtk-theme.git
 ```
+
+5. ### `cd` into WhiteSur GTK Theme directory
+
+Inside the WhiteSur GTK Theme directory, install all the themes [optional], look into the WhiteSur GTK Theme [README.md](https://github.com/vinceliuice/WhiteSur-gtk-theme/blob/master/README.md) for more installation guides.
+
+```bash
+cd WhiteSur-gtk-theme/
+./install.sh -t all
+```
