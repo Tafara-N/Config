@@ -8,3 +8,5 @@
 
 ### Steps
 
+1. **Settings >> Appearance >> Dock**
+- ![Settings >> Appearance >> Dock](images/dock.png)
