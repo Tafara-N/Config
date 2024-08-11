@@ -79,3 +79,5 @@ Set the wallpaper of your choice.
 **Open: Tweaks**
 
 ![Tweaks: Fonts](images/tweaks_fonts.png)
+
+![Tweaks: Appearance](images/tweaks_appearance.png)
