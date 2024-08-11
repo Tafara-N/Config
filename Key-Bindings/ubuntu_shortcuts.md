@@ -33,3 +33,7 @@
 ## Typing
 
 ![Typing](images/typing.png)
+
+## Windows
+
+![Windows](images/windows.png)
