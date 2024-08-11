@@ -87,3 +87,7 @@ Set the wallpaper of your choice.
 ![Tweaks: Fonts](images/tweaks_fonts.png)
 
 ![Tweaks: Appearance](images/tweaks_appearance.png)
+
+**Set cursor**
+
+[Phinger Cursors](https://github.com/phisch/phinger-cursors)
