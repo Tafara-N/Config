@@ -2,7 +2,7 @@
 
 **Settings >> Keyboard >> View and Customize Shortcuts**
 
-![Shortcuts](shortcuts.png)
+![Shortcuts](images/shortcuts.png)
 
 ## Accesibility
 
