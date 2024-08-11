@@ -29,3 +29,7 @@
 ## System
 
 ![System](images/system.png)
+
+## Typing
+
+![Typing](images/typing.png)
