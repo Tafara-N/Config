@@ -11,14 +11,14 @@
 1. **Settings >> Appearance >> Dock**
 - ![Settings >> Appearance >> Dock](images/dock.png)
 
-### Open: Terminal
+2. ### Open: Terminal
 
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install gnome-tweaks gnome-shell-extensions gnome-shell-extension-manager -y
 ```
 
-### Open: Extensions Manager
+3. ### Open: Extensions Manager
 
 > **Note:** Some apps may need to be installed: Go to `Browse` tab and search for missing apps.
 
