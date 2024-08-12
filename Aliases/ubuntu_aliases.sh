@@ -146,8 +146,8 @@ alias node-uninstall="nvm uninstall"
 alias release="lsb_release -a"
 
 	# Packages list: Ubuntu
-alias packages="sudo dpkg --get-selections > completePackages.txt"
-alias i-packages="sudo xargs -a completePackages.txt apt install"
+alias packages="sudo dpkg --get-selections > packages.txt"
+alias i-packages="sudo xargs -a packages.txt apt install"
 
 	# Packages list: VS Code
 alias code-packages="code --list-extensions > vscode-extensions.list"
