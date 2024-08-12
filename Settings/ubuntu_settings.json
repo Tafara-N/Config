@@ -86,7 +86,9 @@
   "[c]": {
     "files.autoSave": "afterDelay",
     "editor.tabSize": 4,
-    "editor.rulers": [80],
+    "editor.rulers": [
+      80
+    ],
     "editor.insertSpaces": false,
     "editor.detectIndentation": false,
     "editor.defaultFormatter": "ms-vscode.cpptools"
@@ -175,7 +177,7 @@
   "database-client.reloadAfterDML": true,
   "database-client.showUser": true,
   "[django-html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "monosans.djlint"
   },
   "docker.languageserver.formatter.ignoreMultilineInstructions": true,
   "editor.autoClosingBrackets": "always",
@@ -191,7 +193,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.folding": true,
   "editor.fontFamily": "SF Compact Rounded Regular",
-  "editor.fontWeight": "bold",
+  "editor.fontWeight": "normal",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
@@ -204,6 +206,7 @@
   "editor.guides.bracketPairs": "active",
   "editor.guides.bracketPairsHorizontal": false,
   "editor.largeFileOptimizations": false,
+  "editor.linkedEditing": true,
   "editor.renderWhitespace": "boundary",
   "editor.semanticTokenColorCustomizations": {
     // optionally wrap the following in a "[Color Theme Name]": { ... }
@@ -275,6 +278,9 @@
   "files.refactoring.autoSave": false,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "fiveServer.browser": [
+    "firefox"
+  ],
   "files.watcherExclude": {
     "**/.git/**": true,
     "**/node_modules/**": true,
@@ -348,9 +354,13 @@
     },
     "editor.suggest.insertMode": "replace"
   },
+  "liveServer.settings.CustomBrowser": "firefox",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.fullReload": true,
-  "makefile.additionalCompilerNames": ["gcc", "cc"],
+  "makefile.additionalCompilerNames": [
+    "gcc",
+    "cc"
+  ],
   "[markdown]": {
     // 快速补全
     "editor.quickSuggestions": {
@@ -362,7 +372,9 @@
   },
   "mediaPreview.video.autoPlay": true,
   "mypy.runUsingActiveInterpreter": true,
-  "mypy-type-checker.interpreter": ["/home/tafara/.pyenv/shims/python3"],
+  "mypy-type-checker.interpreter": [
+    "/home/tafara/.pyenv/shims/python3"
+  ],
   "mypy-type-checker.preferDaemon": true,
   "oracledevtools.bookmarkFileFolder": "/home/tafara/Oracle/oracle.oracledevtools",
   "oracledevtools.download.otherFolder": "/home/tafara/downloads",
@@ -415,7 +427,9 @@
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
-    "editor.rulers": [79],
+    "editor.rulers": [
+      79
+    ],
     "editor.tabSize": 4,
     "files.autoSave": "afterDelay"
   },
@@ -423,7 +437,9 @@
   "remoteHub.commitDirectlyWarning": "off",
   "remote.autoForwardPortsSource": "hybrid",
   "remote.SSH.connectTimeout": 120,
-  "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
+  "remote.SSH.defaultExtensions": [
+    "gitpod.gitpod-remote-ssh"
+  ],
   "remote.SSH.remotePlatform": {
     "load-balancer": "linux",
     "Ubuntu": "linux",
@@ -437,7 +453,9 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.insertSpaces": true,
-    "editor.rulers": [120],
+    "editor.rulers": [
+      120
+    ],
     "editor.tabSize": 2,
     "editor.semanticHighlighting.enabled": true,
     "files.insertFinalNewline": true,
@@ -490,6 +508,7 @@
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.fontWeight": "normal",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.tabs.defaultIcon": "terminal-bash",
   "terminal.integrated.tabStopWidth": 4,
   "typescript.preferences.quoteStyle": "single",
   "vscode-color-picker.languages": [
@@ -553,7 +572,7 @@
   },
   "workbench.editor.enablePreview": false,
   "workbench.editor.closeOnFileDelete": true,
-  "workbench.externalBrowser": "brave",
+  "workbench.externalBrowser": "firefox",
   "workbench.list.smoothScrolling": true,
   "workbench.iconTheme": "file-icons",
   "workbench.sideBar.location": "right",
@@ -562,5 +581,5 @@
   "workbench.tree.renderIndentGuides": "none",
   "yaml.schemas": {
     "file:///home/tafara/.vscode-server/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  }
+  },
 }
