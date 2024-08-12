@@ -104,8 +104,9 @@ alias django-shell="bpython manage.py shell"  # Django shell
 alias django-superuser="python3 manage.py createsuperuser"
 
 	# Flask Project
-alias flask-runapp="flask --app"
 alias flask-run="flask run"
+alias flask-runapp="flask --app"
+alias flask-shell="flask shell"
 
 	# Unit Testing
 alias test-file="python3 -m unittest"
@@ -171,6 +172,7 @@ alias set-zsh="p10k configure"
 alias clean="sudo apt-get clean"
 alias autoclean="sudo apt-get autoclean"
 alias daemon-reload="sudo systemctl daemon-reload"
+alias list-running="sudo systemctl list-units --type=service --state=running"
 
 	# Remove and purge
 alias purge="sudo apt-get purge"
