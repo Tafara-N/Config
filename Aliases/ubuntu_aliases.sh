@@ -176,18 +176,18 @@ alias list-running="sudo systemctl list-units --type=service --state=running"
 
 	# Clear APT cache
 alias show-cache="sudo du -sh /var/cache/apt"
-alias clear-cache="sudo apt-get clean"
+alias clean-cache="sudo apt-get clean"
 
 	# Clear systemd journal
 alias journal-usage="journalctl --disk-usage"
-alias journal-clear="sudo journalctl --vacuum-time=2d"
+alias journal-clean="sudo journalctl --vacuum-time=2d"
 
 	# Clear old snaps
 alias show-snaps="du -h /var/lib/snapd/snaps"
 
 	# Clear Thumbnail Cache
 alias show-thumbnail="du -sh ~/.cache/thumbnails"
-alias clear-thumbnail="rm -rf ~/.cache/thumbnails/*"
+alias clean-thumbnail="rm -rf ~/.cache/thumbnails/*"
 
 	# Remove and purge
 alias purge="sudo apt-get purge"
