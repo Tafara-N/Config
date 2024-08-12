@@ -150,8 +150,8 @@ alias packages="sudo dpkg --get-selections > packages.txt"
 alias i-packages="sudo xargs -a packages.txt apt install"
 
 	# Packages list: VS Code
-alias code-packages="code --list-extensions > vscode-extensions.list"
-alias i-code-packages="cat vscode-extensions.list | xargs -L 1 code --install-extension"
+alias code-extensions="code --list-extensions > vscode-extensions.list"
+alias i-code-extensions="cat vscode-extensions.list | xargs -L 1 code --install-extension"
 
 	# Search Packages
 alias search="apt-cache search"
