@@ -183,7 +183,7 @@ alias journal-usage="journalctl --disk-usage"
 alias journal-clean="sudo journalctl --vacuum-time=2d"
 
 	# Clear old snaps
-alias show-snaps="du -h /var/lib/snapd/snaps"
+alias show-snaps="du -h /var/lib/snapd/snaps"  # Then run rmv-old-snaps
 
 	# Clear Thumbnail Cache
 alias show-thumbnail="du -sh ~/.cache/thumbnails"
