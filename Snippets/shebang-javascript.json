@@ -12,5 +12,12 @@
             "#!/usr/bin/env node"
         ],
         "description": "Adds a shebang for JavaScript executed with Node.js"
+    },
+    "shebang-js": {
+        "prefix": "#!js",
+        "body": [
+            "#!/usr/bin/env node"
+        ],
+        "description": "Adds a shebang for JavaScript executed with Node.js"
     }
 }
