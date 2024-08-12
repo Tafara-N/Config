@@ -185,6 +185,9 @@ alias journal-clean="sudo journalctl --vacuum-time=2d"
 	# Clear old snaps
 alias show-snaps="du -h /var/lib/snapd/snaps"  # Then run rmv-old-snaps
 
+	# Free up memory, OR: free-memory
+alias free-mem="free -h && sudo sysctl -w vm.drop_caches=3 && sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches && free -h"
+
 	# Clear Thumbnail Cache
 alias show-thumbnail="du -sh ~/.cache/thumbnails"
 alias clean-thumbnail="rm -rf ~/.cache/thumbnails/*"
