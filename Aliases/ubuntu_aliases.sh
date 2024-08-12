@@ -347,6 +347,10 @@ alias branch-merged="git branch --merged"
 alias checkout="git checkout"
 alias checkin="git checkout -b"
 
+	# Pull conflicts
+alias pull-norebase="git pull --no-rebase"
+alias push-origin="git push origin main"
+
 	# Merge conflicts
 alias merge="git merge"
 alias merge-abort="git merge --abort"
