@@ -1,12 +1,24 @@
-# VS Code User Keybindings
+# User Keybindings
+
+## Table of Content
+- [Author](#author)
+- [Description](#description)
+- [List Of Fonts](#list-of-fonts)
+- [Location](#location)
+- [Optional](#optional)
+- [Ubuntu Shortcuts](ubuntu_shortcuts.md)
+- [VS Code Keys: Ubuntu](ubuntu_keybindings.json)
+- [VS Code Keys: Windows](windows_keybindings.json)
+
+## Description
 
 # Windows
 
-`windows_keybindings.json`
+- [windows_keybindings](windows_keybindings.json)
 
 # Ubuntu 24.04
 
-`ubuntu_keybindings.json`
+- [ubuntu_keybindings](ubuntu_keybindings.json)
 
 ## Location
 
@@ -20,7 +32,7 @@ C:\Users\<YourUsername>\AppData\Roaming\Code\User\keybindings.json
 
 `/home/$USER/.config/Code/User/keybindings.json`
 
-**Optional**
+## Optional
 
 ```json
   {
@@ -32,3 +44,7 @@ C:\Users\<YourUsername>\AppData\Roaming\Code\User\keybindings.json
     "command": "workbench.action.terminal.resizePaneRight"
   },
 ```
+
+## Author
+
+**Tafara Nyamhunga  - [Github](https://github.com/tafara-n) / [Twitter](https://twitter.com/tafaranyamhunga)**
