@@ -3,8 +3,8 @@
 ## Table of Content
 - [Installation](#installation)
 - [Plugins](#plugins)
-- [Set Up](#setup)
-- [Author](#authors)
+- [Set Up](#set-up)
+- [Author](#author)
 
 ## Installation
 
