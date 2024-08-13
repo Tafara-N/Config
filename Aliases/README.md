@@ -6,12 +6,17 @@
 - [Description](#description)
 - [Ubuntu Aliases](ubuntu_aliases.sh)
 - [WSL Aliases](windows_aliases.sh)
+- [ZSH: Installation and Setup](Set-Up/installation.md#zsh-installation)
 
 ## Description
 
 A list of Bash and Zsh `aliases`: to be placed in either `.bashrc` or `.zshrc` files.
 
 > **Better with ZSH:** *Make sure zsh is installed:*
+
+## Zsh Installation
+
+> **For `Zsh` installation: Visit [zsh setup](Set-Up/installation.md) and scroll to the bottom.**
 
 ## On Windows (WSL)
 
