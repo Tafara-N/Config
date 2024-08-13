@@ -25,7 +25,7 @@
 
 **Windows:**
 
-C:\Users\<YourUsername>\AppData\Roaming\Code\User\keybindings.json
+`C:\Users\<YourUsername>\AppData\Roaming\Code\User\keybindings.json`
 
 **Ubuntu:**
 
