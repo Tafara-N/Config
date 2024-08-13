@@ -1,5 +1,21 @@
 # System Configurations
 
+## Table of Content
+- [Author](#author)
+- [Aliases](Aliases/README.md#aliases)
+- [Description](#description)
+- [Fonts](Fonts/README.md#fonts)
+- [Key Bindings](Key-Bindings/README.md#key-bindings)
+- [Packages](Packages/README.md#packages)
+- [Scripts](Scripts/README.md#scripts)
+- [Settings](Settings/README.md#settings)
+- [Set Up](Set-Up/README.md#set-up)
+- [Snippets](Snippets/README.md#snippets)
+- [Templates](Templates/README.md#templates)
+- [Vim](Vim/README.md#vim)
+
+# Description
+
 ## Systems:
 - Ubuntu 24.04
 - Windows (WSL)
@@ -36,4 +52,6 @@
 - Gedit
 - ...
 
-**Author: Tafara Nyamhunga**
+## Author
+
+**Tafara Nyamhunga  - [Github](https://github.com/tafara-n) / [Twitter](https://twitter.com/tafaranyamhunga)**
