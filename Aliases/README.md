@@ -15,7 +15,7 @@ A list of Bash and Zsh `aliases`: to be placed in either `.bashrc` or `.zshrc` f
 
 ## Zsh Installation
 
-> **For `Zsh` installation: Visit [zsh setup](Set-Up/installation.md) and scroll to the bottom.**
+> **For `Zsh` installation: Visit [zsh setup](../Set-Up/installation.md) and scroll to the bottom.**
 
 ## On Windows (WSL)
 
