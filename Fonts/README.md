@@ -12,6 +12,8 @@
 
 A collection of fonts I use on my system.
 
+> On Linux: Place all downloaded fonts [here](#location)
+
 ## Sites To Get Fonts
 
 - [Google Fonts](https://fonts.google.com/)
