@@ -51,7 +51,7 @@ ___
 
 > **File usage: [README](../Scripts/README.md)**
 
-1. Download The Files
+1. **Download The Files**
 
 ```bash
 wget https://raw.githubusercontent.com/Tafara-N/Config/main/Scripts/Python/load_config.py
@@ -66,7 +66,7 @@ curl -O https://raw.githubusercontent.com/Tafara-N/Config/main/Scripts/Python/lo
 ```
 __
 
-2. Lets you run the script from anywhere
+2. **Lets you run the script from anywhere**
 
 ```bash
 sudo cp path/to/file/load_config.py /usr/local/bin/load-config
@@ -76,7 +76,7 @@ sudo cp path/to/file/load_gitignore.py /usr/local/bin/load-gitignore
 > **Replace `path/to/file/` with the actual file path to the file.**
 ____
 
-3. Load [Config Files](config/)
+3. **Load [Config Files](config/)**
 
 ```bash
 load-config
@@ -96,7 +96,7 @@ ls -la
     rw-rw-r--    1   <$USER>   <$GROUP>    921 B     Tue Aug 13 23:39:18 2024    .editorconfig
 ```
 
-4. Load [Git Ignore Templates](gitignore/templates/)
+4. **Load [Git Ignore Templates](gitignore/templates/)**
 
 ```bash
 load-gitignore
