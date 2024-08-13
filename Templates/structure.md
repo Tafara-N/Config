@@ -1,5 +1,10 @@
 # Basic structure of the Templates directory
 
+## Table of Content
+- [Author](#author)
+- [Basic Usage](README.md#basic-templates-usage)
+- [List Of Templates](README.md#list-of-templates)
+
 ## To generate a tree view
 
 **On Linux: Use the tree command**
