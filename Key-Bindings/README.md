@@ -13,11 +13,11 @@
 
 ## Windows
 
-- [windows_keybindings](windows_keybindings.json)
+- [VS Code Windows keys](windows_keybindings.json)
 
 # Ubuntu 24.04
 
-- [ubuntu_keybindings](ubuntu_keybindings.json)
+- [VS Code Ubuntu keys](ubuntu_keybindings.json)
 
 ## Location
 
