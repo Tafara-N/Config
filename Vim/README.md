@@ -1,10 +1,10 @@
 # Vim
 
 ## Table of Content
+- [Author](#author)
 - [Installation](#installation)
 - [Plugins](#plugins)
 - [Set Up](#set-up)
-- [Author](#author)
 
 ## Installation
 
