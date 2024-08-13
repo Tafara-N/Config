@@ -23,7 +23,9 @@
 
 ```bash
 mkdir ~/.local/share/fonts
-mv Fira-Code/ JetBrains/ Mac/ Noto/ Noto-Sans/ ~/.local/share/fonts
+cp -r * ~/.local/share/fonts/
+cd ~/.local/share/fonts/ && ls
+rm README.md
 ```
 
 ## Author
