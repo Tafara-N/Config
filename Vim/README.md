@@ -1,11 +1,28 @@
 # Vim
 
-- Installation
-- Set up
-- Plugins
+## Table of Content
+- [Installation](#installation)
+- [Plugins](#plugins)
+- [Set Up](#setup)
+- [Author](#authors)
+
+## Installation
+
+For `vim` [installation](install.sh)
 
 ## Plugins
 
 [Vim Plug](https://github.com/junegunn/vim-plug?tab=readme-ov-file)
 
-**Author: Tafara Nyamhunga**
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+## Set Up
+
+For vim [set up](.vimrc)
+
+## Author
+
+**Tafara Nyamhunga  - [Github](https://github.com/tafara-n) / [Twitter](https://twitter.com/tafaranyamhunga)**
