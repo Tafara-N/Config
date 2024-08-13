@@ -3,7 +3,6 @@
 ## Table of Content
 - [Author](#author)
 - [Description](#description)
-- [List Of Fonts](#list-of-fonts)
 - [Location](#location)
 - [Optional](#optional)
 - [Ubuntu Shortcuts](ubuntu_shortcuts.md)
