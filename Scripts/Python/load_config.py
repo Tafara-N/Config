@@ -16,7 +16,7 @@ config_dir = (
 config_files = [
     f
     for f in os.listdir(config_dir)
-    if f in [".python-version", ".ruby-version", ".nvmrc", ".editorconfig"]
+    if f in [".editorconfig", ".flake8", ".nvmrc", ".pycodestyle", ".python-version", ".ruby-version", "setup.cfg" ]
 ]
 
 # Step 2: Display options
