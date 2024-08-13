@@ -2,7 +2,7 @@
 
 ## Table of Content
 - [Author](#author)
-- [Aliases](Aliases/README.md#aliases)
+- [Aliases](README.md#aliases)
 - [Description](#description)
 - [Ubuntu Aliases](ubuntu_aliases.sh)
 - [WSL Aliases](windows_aliases.sh)
