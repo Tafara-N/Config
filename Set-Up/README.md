@@ -4,7 +4,7 @@
 - [Author](#author)
 - [Description](#description)
 - [Fonts](fonts/)
-- [Icons](.icons)
+- [Icons](.icons/)
 - [MacOS Set Up](mac-os.md)
 - [Quickemu](Quickemu/README.md)
 - [Ubuntu: Install Packages](installation.md)
