@@ -5,7 +5,7 @@
 - [Description](#description)
 - [Ubuntu Aliases](ubuntu_aliases.sh)
 - [WSL Aliases](windows_aliases.sh)
-- [ZSH: Installation and Setup](Set-Up/installation.md#zsh-installation)
+- [ZSH: Installation and Setup](../Set-Up/installation.md#zsh-installation)
 
 ## Description
 
