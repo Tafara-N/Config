@@ -3,11 +3,20 @@
 ## Table of Content
 - [Author](#author)
 - [Description](#description)
+- [Download Fonts](#sites-to-get-fonts)
 - [List Of Fonts](#list-of-fonts)
 - [Location](#location)
 - [Settings: Fonts](../Set-Up/mac-os.md)
 
 ## Description
+
+A collection of fonts I use on my system.
+
+## Sites To Get Fonts
+
+- [Google Fonts](https://fonts.google.com/)
+- [Nerd Fonts](https://www.nerdfonts.com/)
+- [Nerd Fonts: GitHub](https://github.com/ryanoasis/nerd-fonts)
 
 ## List of Fonts
 
