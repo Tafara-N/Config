@@ -32,13 +32,21 @@ cd Config ; cd Scripts
 **Script prints Python docs: Module, Function/Method and Classes.**
 - [Python Docs](Bash/documentation.sh)
 
+____
+
 **Script is used to free up memory in Linux systems.**
 - [Free Memory](Bash/free_memory.sh)
 
+____
+
 **Script removes old revisions of snaps.**
+
 -[Remove Old Snaps](Bash/old_snaps.sh)
 
+____
+
 **Script fixes speaker problems on Huawei Matebook D15: 'No sound'.**
+
 - [Fix No Sound Issues](Bash/speakers.sh)
 
 ### Bash: Cronjobs
@@ -46,6 +54,7 @@ cd Config ; cd Scripts
 **Cron job to update the system every day at 5 a.m, 12 pm, 6 pm and 10 pm**
 
 - [Cronjob: Update System](Bash/Cronjobs/update.sh)
+_____
 
 **File explains how to use Cronjob.**
 
@@ -56,22 +65,26 @@ cd Config ; cd Scripts
 **Script reads a requirements.txt file and removes the version numbers from each line.**
 
 - [Clean requirements](Python/clean_requirements.py)
+_____
 
 **Script prints Python docs: Module, Function/Method and Classes.**
 
 - [Python Docs](Python/documentation.py)
+_____
 
 **Script to load a config template into the current directory.**
 
 - [Load config file.](Python/load_config.py)
 
 > **Files: *".editorconfig", ".flake8", ".nvmrc", ".pycodestyle", ".python-version", ".ruby-version", "setup.cfg"***
+_____
 
 **Script to load a .gitignore template into a .gitignore file.**
 
 - [Load .gitignore file.](Python/load_gitignore.py)
 
 > **Files: *Over 400 to choose from `<using numbers>`***
+_____
 
 **Script validates HTML and CSS files.**
 
