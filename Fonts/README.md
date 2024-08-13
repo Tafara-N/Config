@@ -30,7 +30,7 @@ A collection of fonts I use on my system.
 
 ## Location
 
-> **Note:** If not available, make the directory
+> **Note:** If not available, create the directory
 
 ```bash
 mkdir ~/.local/share/fonts
