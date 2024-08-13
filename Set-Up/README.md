@@ -3,12 +3,12 @@
 ## Table of Content
 - [Author](#author)
 - [Description](#description)
-- [icons](.icons)
-- [fonts](fonts/)
-- [macOS Set Up](mac-os.md)
-- [wallpaper](wallpapers/)
-- [Ubuntu: Install Packages](installation.md)
+- [Fonts](fonts/)
+- [Icons](.icons)
+- [MacOS Set Up](mac-os.md)
 - [Quickemu](Quickemu/README.md)
+- [Ubuntu: Install Packages](installation.md)
+- [Wallpapers](wallpapers/)
 
 # Description
 
