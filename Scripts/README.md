@@ -21,28 +21,32 @@ cd Config ; cd Scripts
 ## Scripts
 
 - [keys](keys): Generates RSA pair keys. Private `key name` provided by the `$USER`. Bits in the key `4096`.
+____
 - [package_backup](package_backup): Script re-creates your software environment, you can generate a list of all installed packages.
+____
 - [packages](packages): Installs some packages.
+____
 - [setup](setup): Script is used to setup the environment for the first time.
+____
 - [shell](shell): Last script to be ran after the environment has been configured.
+____
 - [zsh](zsh): Installs and sets up zsh shell.
 
 ## Bash
 
 **Script prints Python docs: Module, Function/Method and Classes.**
-- [Python Docs](Bash/documentation.sh)
 
+- [Python Docs](Bash/documentation.sh)
 ____
 
 **Script is used to free up memory in Linux systems.**
-- [Free Memory](Bash/free_memory.sh)
 
+- [Free Memory](Bash/free_memory.sh)
 ____
 
 **Script removes old revisions of snaps.**
 
--[Remove Old Snaps](Bash/old_snaps.sh)
-
+- [Remove Old Snaps](Bash/old_snaps.sh)
 ____
 
 **Script fixes speaker problems on Huawei Matebook D15: 'No sound'.**
