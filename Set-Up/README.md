@@ -8,7 +8,7 @@
 - [macOS Set Up](mac-os.md)
 - [wallpaper](wallpapers/)
 - [Ubuntu: Install Packages](installation.md)
-- [Quickemu](Quickemu/)
+- [Quickemu](Quickemu/README.md)
 
 # Description
 
