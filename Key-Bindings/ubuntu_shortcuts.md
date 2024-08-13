@@ -48,9 +48,9 @@
 
 ![MongoDB Compass](images/custom_MongoDB-Compass.png)
 
-## Custom: MongoDB Compass
+## Custom: Postman
 
-![MongoDB Compass](images/custom_MongoDB-Compass.png)
+![Postman](images/custom_Postman.png)
 
 ## Custom: Virtual Box
 
