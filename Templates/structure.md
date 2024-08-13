@@ -1,5 +1,40 @@
 # Basic structure of the Templates directory
 
+## To generate a tree view
+
+**On Linux: Use the tree command**
+
+```bash
+tree
+```
+
+To display only the directories and not their contents using the tree command, you can use the `-d` flag. This flag tells tree to list directories only.
+
+Here's the command:
+
+```bash
+tree -d
+```
+
+If you want to limit the depth of the directory tree, you can use the `-L` flag followed by the desired depth level. For example, to display directories up to a depth of 2:
+
+```bash
+tree -d -L 2
+```
+
+## OR use the VS Code Extenstion
+
+### [file-tree-generator](https://marketplace.visualstudio.com/items?itemName=Shinotatwu-DS.file-tree-generator)
+
+1. Right-click on the folder for which you want to generate a tree.
+2. Click `Generate to tree`.
+
+Once you generate the directory structure, you can select the output and copy it.
+
+If you want to remove the icons, click on the `icon off` button.
+
+Now, paste the output into your markdown file and don't forget to wrap it in three backticks or  the `<pre></pre>` tag if you can't get the backtick characters to work.
+
 ```bash
 /home/tafara/
 │
@@ -670,3 +705,7 @@
             ├── Zsh.gitignore
             └── ZukenCR8000.gitignore
 ```
+
+## Author
+
+**Tafara Nyamhunga  - [Github](https://github.com/tafara-n) / [Twitter](https://twitter.com/tafaranyamhunga)**
