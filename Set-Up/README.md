@@ -1,5 +1,17 @@
 # System Configurations
 
+## Table of Content
+- [Author](#author)
+- [Description](#description)
+- [icons](.icons)
+- [fonts](fonts/)
+- [macOS Set Up](mac-os.md)
+- [wallpaper](wallpapers/)
+- [Ubuntu: Install Packages](installation.md)
+- [Quickemu](Quickemu/)
+
+# Description
+
 ## Systems:
 - Ubuntu 24.04
 - Windows (WSL)
@@ -36,4 +48,6 @@
 - Gedit
 - ...
 
-**Author: Tafara Nyamhunga**
+## Author
+
+**Tafara Nyamhunga  - [Github](https://github.com/tafara-n) / [Twitter](https://twitter.com/tafaranyamhunga)**
