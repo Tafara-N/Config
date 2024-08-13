@@ -15,11 +15,11 @@ A list of Bash and Zsh `aliases`: to be placed in either `.bashrc` or `.zshrc` f
 
 ## On Windows (WSL)
 
-`.zshrc`
+`.zshrc` **OR** `.bashrc`
 
 ## On Ubuntu
 
-`.zshrc`
+`.zshrc` **OR** `.bashrc`
 
 ## Author
 
