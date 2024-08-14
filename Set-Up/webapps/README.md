@@ -4,6 +4,7 @@
 - [Author](#author)
 - [Description](#description)
 - [Installation](#installation)
+- [Issues](#problem-with-webapp-manager-in-ubuntu-2404-lts-and-2204-lts)
 - [Set Up](#set-up)
 - [Shortcuts](#webapp-manager-shortcuts)
 
