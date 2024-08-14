@@ -5,6 +5,7 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Set Up](#set-up)
+- [Shortcuts](#webapp-manager-shortcuts)
 
 # Description
 
@@ -73,6 +74,39 @@ Once created, these web apps can be accessed either from the Webapp Manager inte
 > To pin the app: Just pin as you would with any other apps.
 
 ![Pinning Apps](images/pinned_to_dock.png)
+
+## Webapp Manager Shortcuts
+
+From within the Webapp Manager, you can use the following shortcuts to manage web apps efficiently.
+
+- `CTRL+N` - Add a new web app.
+- `CTRL+E` - Edit a Web app's settings.
+- `CTRL+D` - Remove a web app.
+- `CTRL+K` - Open the Shortcuts window.
+- `ENTER` key - Launch the selected web app.
+- `ESC` - Go back.
+- `F1` - Show About section of Webapp Manager.
+- `CTRL+Q` - Exit Webapp manager.
+
+## Problem with Webapp Manager in Ubuntu `24.04 LTS` and `22.04 LTS`
+
+If you're using Ubuntu `24.04`, `22.04` you'll need to install a different web browser instead of the default Firefox browser, which comes as a Snap package.
+
+This is because the WebApp Manager won't be able to detect your browser if it's isolated within a container like Snap. Consequently, you won't be able to run Web apps.
+
+**Solution:**
+
+In order to run web apps using Webapp Manager in Ubuntu `24.04 LTS` and `22.04 LTS`, follow the steps below:
+
+1. **Install a Non-Snap Browser:**
+
+To use Webapp Manager on Ubuntu `24.04 LTS` and `22.04 LTS`, you should install a web browser that isn't packaged as a Snap. This could be a different version of [Firefox](https://www.mozilla.org/en-US/firefox/) (not the Snap version) or another browser like [Google Chrome](https://www.google.com/chrome/), [Brave](https://brave.com/download/), or even an alternative like [Chromium](https://www.chromium.org/) (if it's not a Snap package).
+
+2. **Use Webapp Manager:**
+
+Once the **non-Snap browser** is installed, you should be able to use Webapp Manager without issues. Create web apps as you would normally as shown earlier, using the newly installed browser as the base.
+
+This workaround allows you to continue using Webapp Manager on Ubuntu `24.04 LTS` and `22.04 LTS`, taking advantage of its features to integrate web apps into your desktop environment seamlessly.
 
 ## Author
 
