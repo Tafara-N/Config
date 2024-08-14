@@ -68,7 +68,7 @@ Once created, these web apps can be accessed either from the Webapp Manager inte
 
 **Apps can be pinned to the dock as well:**
 
-> To pin the app: Just pin as you with other apps.
+> To pin the app: Just pin as you would with any other apps.
 
 ![Pinning Apps](images/pinned_to_dock.png)
 
