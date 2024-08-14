@@ -58,7 +58,19 @@ ___
 
 Once created, these web apps can be accessed either from the Webapp Manager interface itself or from the system's application menu, just like any other installed software.
 
+> **From Webapp Manager Menu:**
+
 ![Accessing Apps](images/apps.png)
+
+> **From System's Application Menu:**
+
+![Accessing Apps](images/search.png)
+
+**Apps can be pinned to the dock as well:**
+
+> To pin the app: Just pin as you with other apps.
+
+![Pinning Apps](images/pinned_to_dock.png)
 
 ## Author
 
