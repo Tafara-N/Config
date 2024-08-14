@@ -47,7 +47,7 @@ ___
 
 **Creating, Adding, Modifying Apps**
 
-In the Webapp Manager application window, click the plus (+) icon and enter the URL of the website you want to turn into an app.
+In the Webapp Manager application window, click the plus (+) icon or `ctrl+N` and enter the URL of the website you want to turn into an app.
 
 You can also customize the web app by adjusting the different settings . For instance, you can set the icon for your web app, the default browser to open that app (E.g. Firefox or Google Chrome), category of the web app (E.g. Website or Office), and enable or disable navigation bars and incognito window etc.
 
