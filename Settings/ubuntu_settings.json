@@ -400,6 +400,7 @@
   "python.analysis.completeFunctionParens": true,
   "python.analysis.diagnosticMode": "openFilesOnly",
   "python.analysis.diagnosticSeverityOverrides": {
+    "reportArgumentType": "warning",
     "reportMissingImports": "none",
     "reportImplicitStringConcatenation": "warning",
     "reportUnboundVariable": "warning",
