@@ -62,6 +62,8 @@ cd WhiteSur-icon-theme/
 ./install.sh
 ```
 
+> **Tip: To make the right `Quick Settings` bold: Run `./install.sh -b`**
+
 8. ### Set The Wallpapers [Optional]
 
 Set the wallpaper of your choice.
