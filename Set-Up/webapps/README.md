@@ -38,9 +38,27 @@ sudo gdebi webapp-manager_1.3.7_all.deb
 **Search Web App:**
 
 ![Search Web App](images/webapp.png)
+___
 
+**This is how the default interface of Webapp Manager looks like.**
 
+![Interface](images/interface.png)
+___
 
+In the Webapp Manager application window, click the plus (+) icon and enter the URL of the website you want to turn into an app.
+
+You can also customize the web app by adjusting the different settings . For instance, you can set the icon for your web app, the default browser to open that app (E.g. Firefox or Google Chrome), category of the web app (E.g. Website or Office), and enable or disable navigation bars and incognito window etc.
+
+Once you entered all the details, click the OK button.
+
+![Create or Manage Apps](images/create.png)
+___
+
+**Accessing Web Apps**
+
+Once created, these web apps can be accessed either from the Webapp Manager interface itself or from the system's application menu, just like any other installed software.
+
+![Accessing Apps](images/apps.png)
 
 ## Author
 
