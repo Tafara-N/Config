@@ -108,6 +108,7 @@ alias flask-run="flask run"
 alias flask-runapp="flask --app"
 alias flask-shell="flask shell"
 
+
 	# Unit Testing
 alias test-file="python3 -m unittest"
 alias tests-dir="python3 -m unittest discover tests"
@@ -148,6 +149,7 @@ alias release="lsb_release -a"
 	# Packages list: Ubuntu
 alias packages="sudo dpkg --get-selections > packages.txt"
 alias i-packages="sudo xargs -a packages.txt apt install"
+alias snap-list="snap list --all"
 
 	# Packages list: VS Code
 alias code-extensions="code --list-extensions > vscode-extensions.list"
@@ -159,6 +161,7 @@ alias show="apt-cache show"
 alias check="sudo apt-get check"
 
 	# Install, update and upgrade
+alias i-dpkg="sudo dpkg -i"
 alias install="sudo apt-get install -y"
 alias update="sudo apt-get update"
 alias upgrade="sudo apt-get upgrade -y"
@@ -261,6 +264,7 @@ alias mysql-restart="sudo systemctl restart mysql"
 alias mysql-start="sudo systemctl start mysql"
 alias mysql-stop="sudo systemctl stop mysql"
 alias mysql-enable="sudo systemctl enable mysql"
+alias mysql-disable="sudo systemctl disable mysql"
 
 # MySQL USERS
 alias mysql="sudo mycli -u $MySQL -p $MySQL_PASSWD"
@@ -278,6 +282,7 @@ alias pgsql-restart="sudo systemctl restart postgresql"
 alias pgsql-start="sudo systemctl start postgresql"
 alias pgsql-stop="sudo systemctl stop postgresql"
 alias pgsql-enable="sudo systemctl enable postgresql"
+alias pgsql-disable="sudo systemctl disable postgresql"
 
 # PostgresSQL USERS
 alias postgres='pgcli -h "127.0.0.1" -U postgres -d postgres'
@@ -290,6 +295,7 @@ alias mongodb-restart="sudo systemctl restart mongod"
 alias mongodb-start="sudo systemctl start mongod"
 alias mongodb-stop="sudo systemctl stop mongod"
 alias mongodb-enable="sudo systemctl enable mongod"
+alias mongodb-disable="sudo systemctl disable mongod"
 
 # Mongo Users
 alias mongo-atlas="mongosh 'mongodb+srv://$MONGO_USER:$MONGO_USER_PASSWD@$APP.ntw59k5.mongodb.net/?retryWrites=true&w=majority&appName=$APP_NAME'"
@@ -300,6 +306,7 @@ alias redis-restart="sudo systemctl restart redis"
 alias redis-start="sudo systemctl start redis"
 alias redis-stop="sudo systemctl stop redis"
 alias redis-enable="sudo systemctl enable redis"
+alias redis-disable="sudo systemctl disable redis"
 
 # Redis Users
 alias redis-tafara="redis-cli -u redis://$REDIS:$REDIS_USER_PASSWD@$REDIS_ENDPOINT"
@@ -317,6 +324,7 @@ alias nginx-restart="sudo systemctl restart nginx"
 alias nginx-start="sudo systemctl start nginx"
 alias nginx-stop="sudo systemctl stop nginx"
 alias nginx-enable="sudo systemctl enable nginx"
+alias nginx-disable="sudo systemctl disable nginx"
 
 # Apache2
 alias apache-status="sudo systemctl status apache2"
@@ -324,6 +332,7 @@ alias apache-restart="sudo systemctl restart apache2"
 alias apache-start="sudo systemctl start apache2"
 alias apache-stop="sudo systemctl stop apache2"
 alias apache-enable="sudo systemctl enable apache2"
+alias apache-disable="sudo systemctl disable apache2"
 
 # HAProxy
 alias haproxy-status="sudo systemctl status haproxy"
@@ -331,6 +340,7 @@ alias haproxy-restart="sudo systemctl restart haproxy"
 alias haproxy-start="sudo systemctl start haproxy"
 alias haproxy-stop="sudo systemctl stop haproxy"
 alias haproxy-enable="sudo systemctl enable haproxy"
+alias haproxy-disable="sudo systemctl disable haproxy"
 
 # Puppetserver
 alias puppet-status="sudo systemctl status puppetserver"
@@ -338,6 +348,7 @@ alias puppet-restart="sudo systemctl restart puppetserver"
 alias puppet-start="sudo systemctl start puppetserver"
 alias puppet-stop="sudo systemctl stop puppetserver"
 alias puppet-enable="sudo systemctl enable puppetserver"
+alias puppet-disable="sudo systemctl disable puppetserver"
 
 # Docker
 alias docker-status="sudo systemctl status docker"
@@ -345,6 +356,7 @@ alias docker-restart="sudo systemctl restart docker"
 alias docker-start="sudo systemctl start docker"
 alias docker-stop="sudo systemctl stop docker"
 alias docker-enable="sudo systemctl enable docker"
+alias docker-disable="sudo systemctl disable docker"
 
 # Docker Commands
 alias docker-run="docker run -i -t"
@@ -494,7 +506,7 @@ alias prettier-fix="npx prettier --write"
 
 # To run pyautogui
 export DISPLAY=:0
-xhost +local:
+# xhost +local:
 
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"
