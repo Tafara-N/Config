@@ -3,16 +3,6 @@
   "accessibility.signals.terminalBell": {
     "sound": "on"
   },
-  "atlascode.jira.jqlList": [
-    {
-      "id": "33169eaf-b5f9-4fb3-8222-c831c4b965ee",
-      "enabled": true,
-      "name": "My tafaranyamhunga Issues",
-      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-      "siteId": "e4b30215-a809-41c5-88ec-e0b88273e916",
-      "monitor": true
-    }
-  ],
   "auto-close-tag.enableAutoCloseTag": true,
   "autoDocstring.docstringFormat": "sphinx",
   "autoDocstring.startOnNewLine": true,
@@ -91,7 +81,7 @@
     ],
     "editor.insertSpaces": false,
     "editor.detectIndentation": false,
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": null
   },
   "C_Cpp.autocompleteAddParentheses": true,
   "C_Cpp.codeAnalysis.clangTidy.enabled": true,
@@ -177,7 +167,12 @@
   "database-client.reloadAfterDML": true,
   "database-client.showUser": true,
   "[django-html]": {
-    "editor.defaultFormatter": "monosans.djlint"
+    "editor.defaultFormatter": "monosans.djlint",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    }
   },
   "docker.languageserver.formatter.ignoreMultilineInstructions": true,
   "editor.autoClosingBrackets": "always",
@@ -266,8 +261,12 @@
   "files.autoSave": "afterDelay",
   "files.associations": {
     "*html": "html",
+    "*.css": "css",
+    "*.html": "html",
+    "*.js": "javascript",
+    "*.md": "markdown",
     "*.py": "python",
-    "*.html": "html"
+    "**/templates/*.html": "django-html"
   },
   "files.eol": "\n",
   "files.readonlyInclude": {
@@ -450,7 +449,7 @@
     "*.gitpod.io": "linux"
   },
   "[ruby]": {
-    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.defaultFormatter": null,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.insertSpaces": true,
@@ -487,28 +486,21 @@
     "zsh": {
       "path": "zsh"
     },
-    "fish": {
-      "path": "fish"
-    },
     "tmux": {
       "path": "tmux",
       "icon": "terminal-tmux"
-    },
-    "pwsh": {
-      "path": "pwsh",
-      "icon": "terminal-powershell"
     },
     "zsh (2)": {
       "path": "/usr/bin/zsh"
     }
   },
-  "terminal.integrated.defaultProfile.windows": "Ubuntu-24 (WSL)",
   "terminal.integrated.enableMultiLinePasteWarning": "auto",
   "terminal.integrated.enableVisualBell": true,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.fontWeight": "normal",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.sendKeybindingsToShell": true,
   "terminal.integrated.tabs.defaultIcon": "terminal-bash",
   "terminal.integrated.tabStopWidth": 4,
   "typescript.preferences.quoteStyle": "single",
@@ -528,11 +520,6 @@
     "vue",
     "vue-html"
   ],
-  "vs-kubernetes": {
-    "vscode-kubernetes.helm-path-linux": "/home/tafara/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
-    "vscode-kubernetes.kubectl-path-linux": "/home/gitpod/.local/state/vs-kubernetes/tools/kubectl/kubectl",
-    "vscode-kubernetes.minikube-path-linux": "/home/gitpod/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
-  },
   "window.menuBarVisibility": "toggle",
   "window.newWindowDimensions": "fullscreen",
   "window.titleBarStyle": "custom",
