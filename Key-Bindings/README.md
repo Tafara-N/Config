@@ -42,6 +42,11 @@
     "key": "ctrl+shift+right",
     "command": "workbench.action.terminal.resizePaneRight"
   },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  }
 ```
 
 ## Author
