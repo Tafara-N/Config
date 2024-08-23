@@ -136,6 +136,8 @@ sudo service mysql start
 
 ## To set password for root User
 
+### Option 1
+
 ```shell
 sudo mysql
 ```
@@ -175,7 +177,38 @@ mysql -u root -p
 ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
 ```
 
+### Option 2
+
 ### Exit out of mysql
+
+```bash
+sudo mysql
+```
+___
+
+**Inside MySQL: terminal**
+
+```SQL
+USE mysql;
+SELECT user, authentication_string, plugin, host FROM mysql.user;
+SHOW variables LIKE 'validate_password%';
+\q;
+```
+___
+
+```bash
+sudo mysql_secure_installation
+```
+___
+
+```SQL
+SHOW variables LIKE 'validate_password%';
+SET GLOBAL validate_password.policy=LOW;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '<password here>';
+SET GLOBAL validate_password.policy=MEDIUM;
+FLUSH PRIVILEGES;
+\q;
+```
 
 ## Install mycli for mySQL
 
