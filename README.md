@@ -3,6 +3,7 @@
 ## Table of Content
 - [Author](#author)
 - [Aliases](Aliases/README.md#aliases)
+- [Backup](Backup/README.md)
 - [Description](#description)
 - [Fonts](Fonts/README.md#fonts)
 - [Key Bindings](Key-Bindings/README.md#key-bindings)
