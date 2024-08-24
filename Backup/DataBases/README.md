@@ -2,7 +2,6 @@
 
 ## Table of Content
 - [Author](#author)
-- [DataBases](DataBases/README.md)
 
 ### DataBase Dumps
 
