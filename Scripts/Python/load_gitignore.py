@@ -8,10 +8,10 @@ Choose a template from the available options and write it to .gitignore
 import os
 
 # Step 1: List available templates
-templates_dir = (
-    "/home/tafara/Templates/gitignore/templates"
-)
-templates = [f for f in os.listdir(templates_dir) if f.endswith(".gitignore")]
+templates_dir = "/home/tafara/Templates/gitignore/templates"
+templates = sorted([
+    f for f in os.listdir(templates_dir) if f.endswith(".gitignore")
+    ])
 
 # Step 2: Display options
 print("Available .gitignore templates:")
