@@ -9,15 +9,14 @@ import os
 import shutil
 
 # Step 1: List available config files
-config_dir = (
-    "/home/tafara/Templates/config"
-)
+config_dir = "/home/tafara/Templates/config"
 
-config_files = [
-    f
-    for f in os.listdir(config_dir)
-    if f in [".editorconfig", ".flake8", ".nvmrc", ".pycodestyle", ".python-version", ".ruby-version", "setup.cfg" ]
-]
+config_files = sorted([
+    f for f in os.listdir(config_dir) if f in [
+        ".editorconfig", ".flake8", ".nvmrc", ".pycodestyle", ".python-version",
+        ".ruby-version", "setup.cfg",
+        ]
+    ])
 
 # Step 2: Display options
 print("Available configuration files:")
