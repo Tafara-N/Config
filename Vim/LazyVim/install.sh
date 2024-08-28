@@ -12,6 +12,9 @@ sudo rm nvim-linux64.tar.gz
 # Create a symbolic link
 sudo ln -s ./nvim-linux64/bin/nvim ./nvim
 
+# Back to the home directory
+cd ~ || exit
+
 # Back up current Neovim
 
 # (# required)
