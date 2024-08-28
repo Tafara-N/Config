@@ -3,7 +3,7 @@
 # Downloading and Installing Neovim
 wget "https://github.com/neovim/neovim/releases/download/v0.10.1/nvim-linux64.tar.gz"
 sudo mv nvim-linux64.tar.gz /usr/local/bin
-cd /usr/local/bin
+cd /usr/local/bin || exit
 sudo tar xzvf nvim-linux64.tar.gz
 
 # Remove nvim-linux64.tar.gz, because we have the nvim-linux64 file
