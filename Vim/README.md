@@ -3,6 +3,7 @@
 ## Table of Content
 - [Author](#author)
 - [Installation](#installation)
+- [LazyVim](LazyVim/README.md)
 - [Plugins](#plugins)
 - [Set Up](#set-up)
 
