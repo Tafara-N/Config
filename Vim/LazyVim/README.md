@@ -7,10 +7,10 @@
 
 ## Installation
 
-[LazyVim: Official](https://www.lazyvim.org/)
-[LazyVim: GitHub](https://github.com/LazyVim/LazyVim)
+- [LazyVim: Official](https://www.lazyvim.org/)
+- [LazyVim: GitHub](https://github.com/LazyVim/LazyVim)
 
-1. Download `nvim-linux64.tar.gz` from [Neovim: GitHub](https://github.com/neovim/neovim/releases)
+**Download `nvim-linux64.tar.gz` from [Neovim: GitHub](https://github.com/neovim/neovim/releases)**
 
 ```bash
 wget "https://github.com/neovim/neovim/releases/download/v0.10.1/nvim-linux64.tar.gz"
