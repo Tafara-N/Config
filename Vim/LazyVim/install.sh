@@ -7,7 +7,7 @@ cd /usr/local/bin || exit
 sudo tar xzvf nvim-linux64.tar.gz
 
 # Remove nvim-linux64.tar.gz, because we have the nvim-linux64 file
-rm nvim-linux64.tar.gz
+sudo rm nvim-linux64.tar.gz
 
 # Create a symbolic link
 sudo ln -s ./nvim-linux64/bin/nvim ./nvim
