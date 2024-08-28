@@ -93,11 +93,12 @@ rm -rf ~/.config/nvim/.git
 ```
 
 ### Customizing nvim
+
 ### Navigate to:
 
-### Linux:
+## Linux:
 
-.Config >> nvim >> lua >> config >> options.lua
+`.config/nvim/lua/`
 
 ## Windows:
 
