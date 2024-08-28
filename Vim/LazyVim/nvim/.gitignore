@@ -1,0 +1,23 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+# Python
+__pycache__/
+.venv/
+venv/
+.python-version
+.env
+
+# NVM: Node
+node_modules/
+.nvmrc
+
+# Ruby
+.ruby-version
+
