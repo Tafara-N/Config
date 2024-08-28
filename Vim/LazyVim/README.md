@@ -69,7 +69,7 @@ rm -rf ~/.config/nvim/.git
 
 ## Configuration Files
 
-**For Basic LazyVim Setup
+**For Basic LazyVim Setup**
 
 [Basic Config](nvim/)
 
