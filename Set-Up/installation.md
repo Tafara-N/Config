@@ -54,7 +54,7 @@ cd /usr/local/bin
 sudo tar xzvf nvim-linux64.tar.gz
 ```
 
-5. Remove nvim-linux64.tar.gz, because we have the nvim-linux64 file
+**Remove nvim-linux64.tar.gz, because we have the nvim-linux64 file**
 
 ```bash
 rm nvim-linux64.tar.gz
