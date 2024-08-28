@@ -1,0 +1,9 @@
+-- EditorConfig plugin
+-- return {
+--   {
+--     "gpanders/editorconfig.nvim",
+--     config = function()
+--       -- Plugin automatically integrates with Neovim, no extra config needed
+--     end,
+--   }
+-- }
