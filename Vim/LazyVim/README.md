@@ -75,6 +75,7 @@ rm -rf ~/.config/nvim/.git
 
 ```bash
 nvim/
+├── .gitignore
 ├── init.lua
 ├── lazyvim.json
 ├── lua
