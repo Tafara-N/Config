@@ -88,6 +88,7 @@ nvim/
 │       ├── example.lua
 │       ├── twilight.lua
 │       └── ui.lua
+├── .neoconf.json
 ├── README.md
 └── stylua.toml
 ```
