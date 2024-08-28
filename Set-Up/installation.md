@@ -40,7 +40,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ### Installing NVIM
 
-1. Download `nvim-linux64.tar.gz` from (https://github.com/neovim/neovim/releases)
+1. Download `nvim-linux64.tar.gz` from [Neovim: GitHub](https://github.com/neovim/neovim/releases)
 
 ```bash
 wget "https://github.com/neovim/neovim/releases/download/v0.10.1/nvim-linux64.tar.gz"
