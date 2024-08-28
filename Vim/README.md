@@ -7,6 +7,7 @@
 - [Plugins](#plugins)
 - [Set Up](#set-up)
 
+
 ## Installation
 
 For `vim` [installation](install.sh)
