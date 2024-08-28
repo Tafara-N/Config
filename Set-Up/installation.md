@@ -28,7 +28,7 @@ vim --version
 sudo apt install -y bat
 ```
 
-## Adding plugins
+## Adding Vim plugins
 
 Plugin manager that lets us add/remove plugins Vundle
 
@@ -36,7 +36,8 @@ Plugin manager that lets us add/remove plugins Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-## For VIM setup, look into the Setup file
+> **For VIM setup, [README](../Vim/README.md)**
+
 ### Installing NVIM
 
 1. Download `nvim-linux64.tar.gz` from (https://github.com/neovim/neovim/releases)
