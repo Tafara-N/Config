@@ -22,7 +22,11 @@ mv ~/.local/share/nvim{,.bak}
 mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 
+# Now clone the LazyVim starter repo
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 
 # Remove the .git folder, so you can add it to your own repo later
 rm -rf ~/.config/nvim/.git
+
+# Check if the installation was successful
+nvim --version
