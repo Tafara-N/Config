@@ -99,30 +99,113 @@ ls -la
 
 4. **Load [Git Ignore Templates](gitignore/templates/)**
 
+> **Tip: Files are in alphabetical order.**
+
 ```bash
 load-gitignore
+
 Available .gitignore templates:
-1. NotepadPP.gitignore
-2. fastlane.gitignore
-3. HomeAssistant.gitignore
-4. Csharp.gitignore
-5. ElasticBeanstalk.gitignore
-6. Bazaar.gitignore
-7. TextMate.gitignore
-8. EPiServer.gitignore
-9. vs.gitignore
-10. OCaml.gitignore
-11. Text.gitignore
+1. 1C-Bitrix.gitignore
+2. 1C.gitignore
+3. A-Frame.gitignore
+4. AL.gitignore
+5. ASPNETCore.gitignore
+6. ATE.gitignore
+7. ATS.gitignore
+8. AWR.gitignore
+9. Actionscript.gitignore
+10. Ada.gitignore
+11. Adobe.gitignore
+12. AdvancedInstaller.gitignore
+13. AdventureGameStudio.gitignore
+14. Agda.gitignore
+15. AlteraQuartusII.gitignore
+16. Altium.gitignore
+17. Amplify.gitignore
+18. Android.gitignore
+19. AndroidStudio.gitignore
+20. Angular.gitignore
+21. Anjuta.gitignore
+22. Ansible.gitignore
+23. AnsibleTower.gitignore
+24. ApacheCordova.gitignore
+25. ApacheHadoop.gitignore
+26. AppBuilder.gitignore
+27. AppCode+all.gitignore
+28. AppCode+iml.gitignore
+29. AppCode.gitignore
+30. AppEngine.gitignore
+31. AppceleratorTitanium.gitignore
+32. AptanaStudio.gitignore
+33. Arcanist.gitignore
+34. ArchLinuxPackages.gitignore
+35. Archive.gitignore
+36. Archives.gitignore
+37. Assembler.gitignore
+38. Astro.gitignore
+39. AtmelStudio.gitignore
+40. Audio.gitignore
+41. Autohotkey.gitignore
+42. AutomationStudio.gitignore
+43. Autotools+strict.gitignore
+44. Autotools.gitignore
+45. AzureFunctions.gitignore
+46. Azurite.gitignore
+47. Backup.gitignore
+48. Ballerina.gitignore
+49. Basic.gitignore
+50. Batch.gitignore
+51. Bazaar.gitignore
+52. Bazel.gitignore
+53. BitTorrent.gitignore
+54. Bitrise.gitignore
+55. Bitrix.gitignore
+56. Blackbox.gitignore
+57. Blender.gitignore
+58. Bloop.gitignore
+59. Bookdown.gitignore
+60. Bower.gitignore
+61. BricxCC.gitignore
+62. Buck.gitignore
+63. C++.gitignore
+64. C.gitignore
+65. CFWheels.gitignore
+66. CLion+all.gitignore
+67. CLion+iml.gitignore
+68. CLion.gitignore
+69. CMake.gitignore
+70. CRBasic.gitignore
 ...
 ...
 ...
-566. Flatpak.gitignore
-567. TurboGears2.gitignore
-568. Diff.gitignore
-569. AlteraQuartusII.gitignore
-570. SAM.gitignore
-571. Angular.gitignore
-Select a template by number: 206
+...
+...
+...
+...
+550. macOS.gitignore
+551. mule.gitignore
+552. nova.gitignore
+553. now.gitignore
+554. oXygenXMLEditor.gitignore
+555. pH7CMS.gitignore
+556. pico8.gitignore
+557. premake-gmake.gitignore
+558. puppet-librarian.gitignore
+559. pydev.gitignore
+560. react.gitignore
+561. replit.gitignore
+562. retool.gitignore
+563. robotframework.gitignore
+564. rust-analyzer.gitignore
+565. vRealizeOrchestrator.gitignore
+566. vcpkg.gitignore
+567. venv.gitignore
+568. vs.gitignore
+569. xmake.gitignore
+570. yalc.gitignore
+571. yarn.gitignore
+572. zig.gitignore
+Select a template by number: 375
 Loaded Python.gitignore into .gitignore
 
 ls -la
