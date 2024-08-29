@@ -225,13 +225,5 @@
   {
     "key": "ctrl+shift+pagedown",
     "command": "-workbench.action.moveEditorRightInGroup"
-  },
-  {
-    "key": "ctrl+alt+n",
-    "command": "welcome.showNewFileEntries"
-  },
-  {
-    "key": "ctrl+alt+meta+n",
-    "command": "-welcome.showNewFileEntries"
   }
 ]
