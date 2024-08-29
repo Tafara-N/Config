@@ -4,6 +4,7 @@
 - [Author](#author)
 - [Basic Usage](#basic-templates-usage)
 - [Description](#description)
+- [Favicons](favicon/)
 - [List Of Templates](#list-of-templates)
 - [Packages](Packages/README.md#packages)
 - [Structure](#on-ubuntu)
