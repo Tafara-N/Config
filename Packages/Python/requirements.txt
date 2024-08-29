@@ -7,6 +7,7 @@ aioitertools
 aiosignal
 aiosqlite
 alabaster
+alembic
 altair
 aniso8601
 annotated-types
@@ -42,7 +43,7 @@ Authlib
 Automat
 autopage
 autopep8
-Babel
+babel
 backcall
 backports.functools-lru-cache
 backports.tempfile
@@ -59,12 +60,14 @@ blinker
 blosc2
 bokeh
 boltons
+Bootstrap-Flask
 boto3
 botocore
 Bottleneck
 bpython
 Brotli
 brotlipy
+bs4
 build
 CacheControl
 cachelib
@@ -151,6 +154,7 @@ entrypoints
 ephem
 et-xmlfile
 executing
+fake-useragent
 Faker
 fastapi
 fastapi-cli
@@ -161,7 +165,9 @@ flake8-polyfill
 Flask
 Flask-Cors
 Flask-DebugToolbar
+Flask-Login
 Flask-RESTful
+Flask-Session
 Flask-SocketIO
 flexcache
 flexparser
@@ -239,6 +245,7 @@ jeepney
 jellyfish
 Jinja2
 jinja2-time
+jiter
 jmespath
 joblib
 jsbeautifier
@@ -290,6 +297,7 @@ lux-api
 lux-widget
 lxml
 lz4
+Mako
 Markdown
 markdown-it-py
 MarkupSafe
@@ -321,6 +329,7 @@ mypy-extensions
 mysql-connector
 mysql-connector-python
 mysqlclient
+narwhals
 nbclassic
 nbclient
 nbconvert
@@ -330,6 +339,7 @@ nest-asyncio
 netaddr
 netifaces
 networkx
+nh3
 ninja
 nltk
 nodeenv
@@ -354,6 +364,8 @@ nvidia-nvjitlink-cu12
 nvidia-nvtx-cu12
 oauthlib
 omegaconf
+openai
+openapi
 openpyxl
 ordered-set
 overrides
@@ -363,6 +375,7 @@ pandocfilters
 panel
 param
 paramiko
+parse
 parsel
 parso
 partd
@@ -380,8 +393,9 @@ pgcli
 pgspecial
 pickleDB
 pickleshare
-Pillow
+pillow
 Pint
+pipdeptree
 pivottablejs
 pkce
 pkginfo
@@ -434,6 +448,7 @@ pydeck
 PyDispatcher
 pydocstyle
 pydot
+pyee
 pyerfa
 pyfiglet
 pyflakes
@@ -466,6 +481,7 @@ PyOpenGL
 pyOpenSSL
 pyparsing
 pyperclip
+pyppeteer
 pyproject_hooks
 PyQt5
 PyQt5-Qt5
@@ -477,6 +493,8 @@ PyRect
 pyright
 pyrsistent
 PyScreeze
+PySDL2
+pysdl2-dll
 pyserial
 PySocks
 pyspnego
@@ -496,7 +514,7 @@ python-slugify
 python-snappy
 python-socketio
 python3-xlib
-pytiled-parser
+pytiled_parser
 pytoolconfig
 pytorch-lightning
 pytweening
@@ -516,17 +534,22 @@ qtconsole
 QtPy
 queuelib
 rapidfuzz
+readme_renderer
 redis
 referencing
+reflex
+reflex-hosting-cli
 regex
 requests
 requests-file
+requests-html
 requests-toolbelt
 requests_ntlm
 requirements-detector
 resolvelib
 responses
 rfc3339-validator
+rfc3986
 rfc3986-validator
 rich
 rich-cli
@@ -558,6 +581,7 @@ setproctitle
 setuptools
 sh
 shellingham
+shtab
 simple-websocket
 simplejson
 sip
@@ -579,10 +603,12 @@ spyder
 spyder-kernels
 SQLAlchemy
 sqlglot
+sqlmodel
 sqlparse
 ssh-import-id
 stack-data
 starlette
+starlette-admin
 statsmodels
 stevedore
 streamlit
@@ -614,6 +640,7 @@ time-machine
 tinycss2
 tk
 tldextract
+tldr
 tokenizers
 toml
 tomli
@@ -631,6 +658,7 @@ triton
 trove-classifiers
 truststore
 trypackage
+twine
 Twisted
 typer
 types-mysqlclient
@@ -667,6 +695,7 @@ wheel
 widgetsnbextension
 wrapt
 wsproto
+WTForms
 wurlitzer
 xarray
 xgboost
