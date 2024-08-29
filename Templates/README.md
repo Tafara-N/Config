@@ -80,15 +80,16 @@ ____
 
 ```bash
 load-config
+
 Available configuration files:
-1. .flake8
-2. .editorconfig
-3. .ruby-version
+1. .editorconfig
+2. .flake8
+3. .nvmrc
 4. .pycodestyle
-5. setup.cfg
-6. .nvmrc
-7. .python-version
-Select a configuration file by number: 2
+5. .python-version
+6. .ruby-version
+7. setup.cfg
+Select a configuration file by number: 1
 Loaded .editorconfig into the current directory
 
 ls -la
