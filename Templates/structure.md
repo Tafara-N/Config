@@ -321,6 +321,7 @@ Now, paste the output into your markdown file and don't forget to wrap it in thr
             ├── JabRef.gitignore
             ├── Janet.gitignore
             ├── Java.gitignore
+            ├── JavaScript.gitignore
             ├── JBoss-4-2-3-GA.gitignore
             ├── JBoss4.gitignore
             ├── JBoss6.gitignore
