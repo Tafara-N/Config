@@ -1,380 +1,379 @@
-1password					install
-7zip						install
-accountsservice					install
-acl						install
-adb						install
-adduser						install
-adwaita-icon-theme				install
-alsa-base					install
-alsa-topology-conf				install
-alsa-ucm-conf					install
-alsa-utils					install
-amd64-microcode					install
-anacron						install
-android-libbase:amd64				install
-android-libboringssl:amd64			install
-android-libcutils:amd64				install
-android-liblog:amd64				install
-android-libziparchive:amd64			install
-android-sdk-platform-tools-common		install
-ansible						install
-ansible-core					install
-apache2						install
-apache2-bin					install
-apache2-data					install
-apache2-utils					install
-apg						install
-apparmor					install
-apport						install
-apport-core-dump-handler			install
-apport-gtk					install
-apport-symptoms					install
-appstream					install
-appstream-util					install
-apt						install
-apt-config-icons				install
-apt-config-icons-hidpi				install
-apt-transport-https				install
-apt-utils					install
-aptdaemon					install
-aptdaemon-data					install
-aspell						install
-aspell-en					install
-at-spi2-common					install
-at-spi2-core					install
-autoconf					install
-automake					install
-autotools-dev					install
-avahi-daemon					install
-baobab						install
-base-files					install
-base-passwd					install
-bash						install
-bash-completion					install
-bat						install
-bc						install
-beekeeper-studio				install
-bind9-dnsutils					install
-bind9-host					install
-bind9-libs:amd64				install
-binutils					install
-binutils-common:amd64				install
-binutils-x86-64-linux-gnu			install
-bison						install
-bleachbit					install
-blt						install
-bluez						install
-bluez-cups					install
-bluez-obexd					install
-bolt						install
-bpfcc-tools					install
-bpftrace					install
+1password					
+7zip						
+accountsservice					
+acl						
+adb						
+adduser						
+adwaita-icon-theme				
+alsa-base					
+alsa-topology-conf				
+alsa-ucm-conf					
+alsa-utils					
+amd64-microcode					
+anacron						
+android-libbase:amd64				
+android-libboringssl:amd64			
+android-libcutils:amd64				
+android-liblog:amd64				
+android-libziparchive:amd64			
+android-sdk-platform-tools-common		
+ansible						
+ansible-core					
+apache2						
+apache2-bin					
+apache2-data					
+apache2-utils					
+apg						
+apparmor					
+apport						
+apport-core-dump-handler			
+apport-gtk					
+apport-symptoms					
+appstream					
+appstream-util					
+apt						
+apt-config-icons				
+apt-config-icons-hidpi				
+apt-transport-https				
+apt-utils					
+aptdaemon					
+aptdaemon-data					
+aspell						
+aspell-en					
+at-spi2-common					
+at-spi2-core					
+autoconf					
+automake					
+autotools-dev					
+avahi-daemon					
+baobab						
+base-files					
+base-passwd					
+bash						
+bash-completion					
+bat						
+bc						
+beekeeper-studio				
+bind9-dnsutils					
+bind9-host					
+bind9-libs:amd64				
+binutils					
+binutils-common:amd64				
+binutils-x86-64-linux-gnu			
+bison						
+bleachbit					
+blt						
+bluez						
+bluez-cups					
+bluez-obexd					
+bolt						
+bpfcc-tools					
+bpftrace					
 brave-keyring
-brltty						install
-bsdextrautils					install
-bsdutils					install
-bubblewrap					install
-build-essential					install
-busybox-initramfs				install
-busybox-static					install
-byobu						install
-bzip2						install
-bzip2-doc					install
-ca-certificates					install
-chrome-gnome-shell				install
-cloud-guest-utils				install
-cloud-init					install
-cmake						install
-cmake-data					install
-code						install
-colord						install
-colord-data					install
-comerr-dev:amd64				install
-command-not-found				install
-console-setup					install
-console-setup-linux				install
-containerd.io					install
-coreutils					install
-cpio						install
-cpp						install
-cpp-13						install
-cpp-13-x86-64-linux-gnu				install
-cpp-x86-64-linux-gnu				install
-cracklib-runtime				install
-cron						install
-cron-daemon-common				install
-cups						install
-cups-browsed					install
-cups-bsd					install
-cups-client					install
-cups-common					install
-cups-core-drivers				install
-cups-daemon					install
-cups-filters					install
-cups-filters-core-drivers			install
-cups-ipp-utils					install
-cups-pk-helper					install
-cups-ppdc					install
-cups-server-common				install
-curl						install
-dash						install
-dbus						install
-dbus-bin					install
-dbus-daemon					install
-dbus-session-bus-common				install
-dbus-system-bus-common				install
-dbus-user-session				install
-dbus-x11					install
-dc						install
-dconf-cli					install
-dconf-gsettings-backend:amd64			install
-dconf-service					install
-debconf						install
-debconf-i18n					install
-debianutils					install
-deja-dup					install
-desktop-file-utils				install
-dhcpcd-base					install
-dictionaries-common				install
-diffstat					install
-diffutils					install
-dirmngr						install
-distro-info					install
-distro-info-data				install
-dkms						deinstall
-dmidecode					install
-dmsetup						install
-dmz-cursor-theme				install
-dns-root-data					install
-dnsmasq-base					install
-docbook-xml					install
-docker-buildx-plugin				install
-docker-ce					install
-docker-ce-cli					install
-docker-ce-rootless-extras			install
-docker-compose-plugin				install
-dosfstools					install
-dpkg						install
-dpkg-dev					install
-dracut-install					install
-duplicity					install
-e2fsprogs					install
-e2fsprogs-l10n					install
-eatmydata					install
-ed						install
-efibootmgr					install
-eject						install
-emacsen-common					install
-enchant-2					install
-eog						install
-espeak-ng-data:amd64				install
-ethtool						install
-evemu-tools					install
-evince						install
-evince-common					install
-evolution-data-server				install
-evolution-data-server-common			install
-evtest						install
-fakeroot					install
-fcitx						install
-fcitx-bin					install
-fcitx-config-common				install
-fcitx-config-gtk				install
-fcitx-data					install
-fcitx-frontend-all				install
-fcitx-frontend-gtk2				install
-fcitx-frontend-gtk3				install
-fcitx-frontend-qt5:amd64			install
-fcitx-frontend-qt6:amd64			install
-fcitx-libs-dev					install
-fcitx-module-dbus				install
-fcitx-module-kimpanel				install
-fcitx-module-lua				install
-fcitx-module-quickphrase-editor5:amd64		install
-fcitx-module-x11				install
-fcitx-modules					install
-fcitx-ui-classic				install
-fdisk						install
-ffmpeg						install
-file						install
-findutils					install
-firefox						install
-firmware-sof-signed				install
-flatpak						install
-font-manager					install
-font-manager-common:amd64			install
-font-viewer					install
-fontconfig					install
-fontconfig-config				install
-fonts-dejavu-core				install
-fonts-dejavu-mono				install
-fonts-droid-fallback				install
-fonts-freefont-ttf				install
-fonts-liberation				install
-fonts-liberation-sans-narrow			install
-fonts-noto-cjk					install
-fonts-noto-color-emoji				install
-fonts-noto-core					install
-fonts-noto-mono					install
-fonts-opensymbol				install
-fonts-ubuntu					install
-fonts-urw-base35				install
-foomatic-db-compressed-ppds			install
-fprintd						install
-franz						deinstall
-friendly-recovery				install
-ftp						install
-fuse3						install
-fwupd						install
-fwupd-signed					install
-fzf						install
-g++						install
-g++-13						install
-g++-13-x86-64-linux-gnu				install
-g++-x86-64-linux-gnu				install
-gamemode					install
-gamemode-daemon					install
-gawk						install
-gcc						install
-gcc-11-base:amd64				install
-gcc-13						install
-gcc-13-base:amd64				install
-gcc-13-x86-64-linux-gnu				install
-gcc-14-base:amd64				install
-gcc-14-base:i386				install
-gcc-9-base:amd64				install
-gcc-x86-64-linux-gnu				install
-gcr						install
-gcr4						install
-gdb						install
-gdebi						install
-gdebi-core					install
-gdisk						install
-gdm3						install
-gedit						install
-gedit-common					install
-geoclue-2.0					install
-geocode-glib-common				install
-gettext						install
-gettext-base					install
-gfortran					install
-gfortran-13					install
-gfortran-13-x86-64-linux-gnu			install
-gfortran-x86-64-linux-gnu			install
-ghostscript					install
-gir1.2-accountsservice-1.0:amd64		install
-gir1.2-adw-1:amd64				install
-gir1.2-amtk-5:amd64				install
-gir1.2-atk-1.0:amd64				install
-gir1.2-atspi-2.0:amd64				install
-gir1.2-dbusmenu-glib-0.4:amd64			install
-gir1.2-dee-1.0:amd64				install
-gir1.2-fcitx-1.0				install
-gir1.2-freedesktop:amd64			install
-gir1.2-freedesktop-dev:amd64			install
-gir1.2-gck-2:amd64				install
-gir1.2-gcr-4:amd64				install
-gir1.2-gdesktopenums-3.0:amd64			install
-gir1.2-gdkpixbuf-2.0:amd64			install
-gir1.2-gdm-1.0					install
-gir1.2-geoclue-2.0:amd64			install
-gir1.2-girepository-2.0:amd64			install
-gir1.2-girepository-2.0-dev:amd64		install
-gir1.2-glib-2.0:amd64				install
-gir1.2-glib-2.0-dev:amd64			install
-gir1.2-gmenu-3.0:amd64				install
-gir1.2-gnomeautoar-0.1:amd64			install
-gir1.2-gnomebg-4.0:amd64			install
-gir1.2-gnomebluetooth-3.0:amd64			install
-gir1.2-gnomedesktop-3.0:amd64			install
-gir1.2-gnomedesktop-4.0:amd64			install
-gir1.2-graphene-1.0:amd64			install
-gir1.2-gst-plugins-base-1.0:amd64		install
-gir1.2-gstreamer-1.0:amd64			install
-gir1.2-gtk-3.0:amd64				install
-gir1.2-gtk-4.0:amd64				install
-gir1.2-gtksource-300:amd64			install
-gir1.2-gtop-2.0:amd64				install
-gir1.2-gudev-1.0:amd64				install
-gir1.2-gweather-4.0:amd64			install
-gir1.2-handy-1:amd64				install
-gir1.2-harfbuzz-0.0:amd64			install
-gir1.2-ibus-1.0:amd64				install
-gir1.2-javascriptcoregtk-4.1:amd64		install
-gir1.2-javascriptcoregtk-6.0:amd64		install
-gir1.2-mutter-14:amd64				install
-gir1.2-nm-1.0:amd64				install
-gir1.2-nma4-1.0:amd64				install
-gir1.2-notify-0.7:amd64				install
-gir1.2-packagekitglib-1.0			install
-gir1.2-pango-1.0:amd64				install
-gir1.2-peas-1.0:amd64				install
-gir1.2-polkit-1.0				install
-gir1.2-rb-3.0:amd64				install
-gir1.2-rsvg-2.0:amd64				install
-gir1.2-secret-1:amd64				install
-gir1.2-snapd-2:amd64				install
-gir1.2-soup-3.0:amd64				install
-gir1.2-tepl-6:amd64				install
-gir1.2-totem-1.0:amd64				install
-gir1.2-totemplparser-1.0:amd64			install
-gir1.2-udisks-2.0:amd64				install
-gir1.2-unity-7.0:amd64				install
-gir1.2-upowerglib-1.0:amd64			install
-gir1.2-vte-2.91:amd64				install
-gir1.2-webkit-6.0:amd64				install
-gir1.2-webkit2-4.1:amd64			install
-gir1.2-wnck-3.0:amd64				install
-gir1.2-xapp-1.0					install
-git						install
-git-man						install
-gjs						install
-gkbd-capplet					install
-glib-networking:amd64				install
-glib-networking-common				install
-glib-networking-services			install
-gnome-accessibility-themes			install
-gnome-bluetooth-3-common			install
-gnome-bluetooth-sendto				install
-gnome-browser-connector				install
-gnome-calculator				install
-gnome-calendar					install
-gnome-characters				install
-gnome-clocks					install
-gnome-control-center				install
-gnome-control-center-data			install
-gnome-control-center-faces			install
-gnome-desktop-testing				install
-gnome-desktop3-data				install
-gnome-disk-utility				install
-gnome-font-viewer				install
-gnome-initial-setup				install
-gnome-keyring					install
-gnome-keyring-pkcs11:amd64			install
-gnome-logs					install
-gnome-menus					install
-gnome-online-accounts				install
-gnome-power-manager				install
-gnome-remote-desktop				install
-gnome-session-bin				install
-gnome-session-canberra				install
-gnome-session-common				install
-gnome-settings-daemon				install
-gnome-settings-daemon-common			install
-gnome-shell					install
-gnome-shell-common				install
-gnome-shell-extension-appindicator		install
-gnome-shell-extension-desktop-icons-ng		install
-gnome-shell-extension-manager			install
-gnome-shell-extension-prefs			install
-gnome-shell-extension-ubuntu-dock		install
-gnome-shell-extension-ubuntu-tiling-assistant	install
-gnome-shell-extensions				install
-gnome-snapshot					install
-gnome-startup-applications			install
-gnome-system-monitor				install
-gnome-terminal					install
-gnome-terminal-data				install
+brltty						
+bsdextrautils					
+bsdutils					
+bubblewrap					
+build-essential					
+busybox-initramfs				
+busybox-static					
+byobu						
+bzip2						
+bzip2-doc					
+ca-certificates					
+chrome-gnome-shell				
+cloud-guest-utils				
+cloud-init					
+cmake						
+cmake-data					
+code						
+colord						
+colord-data					
+comerr-dev:amd64				
+command-not-found				
+console-setup					
+console-setup-linux				
+containerd.io					
+coreutils					
+cpio						
+cpp						
+cpp-13						
+cpp-13-x86-64-linux-gnu				
+cpp-x86-64-linux-gnu				
+cracklib-runtime				
+cron						
+cron-daemon-common				
+cups						
+cups-browsed					
+cups-bsd					
+cups-client					
+cups-common					
+cups-core-drivers				
+cups-daemon					
+cups-filters					
+cups-filters-core-drivers			
+cups-ipp-utils					
+cups-pk-helper					
+cups-ppdc					
+cups-server-common				
+curl						
+dash						
+dbus						
+dbus-bin					
+dbus-daemon					
+dbus-session-bus-common				
+dbus-system-bus-common				
+dbus-user-session				
+dbus-x11					
+dc						
+dconf-cli					
+dconf-gsettings-backend:amd64			
+dconf-service					
+debconf						
+debconf-i18n					
+debianutils					
+deja-dup					
+desktop-file-utils				
+dhcpcd-base					
+dictionaries-common				
+diffstat					
+diffutils					
+dirmngr						
+distro-info					
+distro-info-data				
+dkms
+dmidecode					
+dmsetup						
+dmz-cursor-theme				
+dns-root-data					
+dnsmasq-base					
+docbook-xml					
+docker-buildx-plugin				
+docker-ce					
+docker-ce-cli					
+docker-ce-rootless-extras			
+docker-compose-plugin				
+dosfstools					
+dpkg						
+dpkg-dev					
+dracut-install				
+duplicity					
+e2fsprogs					
+e2fsprogs-l10n					
+eatmydata					
+ed						
+efibootmgr					
+eject						
+emacsen-common					
+enchant-2					
+eog						
+espeak-ng-data:amd64				
+ethtool						
+evemu-tools					
+evince						
+evince-common					
+evolution-data-server				
+evolution-data-server-common			
+evtest						
+fakeroot					
+fcitx						
+fcitx-bin					
+fcitx-config-common				
+fcitx-config-gtk				
+fcitx-data					
+fcitx-frontend-all				
+fcitx-frontend-gtk2				
+fcitx-frontend-gtk3				
+fcitx-frontend-qt5:amd64			
+fcitx-frontend-qt6:amd64			
+fcitx-libs-dev					
+fcitx-module-dbus				
+fcitx-module-kimpanel				
+fcitx-module-lua				
+fcitx-module-quickphrase-editor5:amd64		
+fcitx-module-x11				
+fcitx-modules					
+fcitx-ui-classic				
+fdisk						
+ffmpeg						
+file						
+findutils					
+firefox						
+firmware-sof-signed				
+flatpak						
+font-manager					
+font-manager-common:amd64			
+font-viewer					
+fontconfig					
+fontconfig-config				
+fonts-dejavu-core				
+fonts-dejavu-mono				
+fonts-droid-fallback				
+fonts-freefont-ttf				
+fonts-liberation				
+fonts-liberation-sans-narrow			
+fonts-noto-cjk					
+fonts-noto-color-emoji				
+fonts-noto-core					
+fonts-noto-mono					
+fonts-opensymbol				
+fonts-ubuntu					
+fonts-urw-base35				
+foomatic-db-compressed-ppds			
+fprintd						F
+friendly-recovery				
+ftp						
+fuse3						
+fwupd						
+fwupd-signed					
+fzf						
+g++						
+g++-13						
+g++-13-x86-64-linux-gnu				
+g++-x86-64-linux-gnu				
+gamemode					
+gamemode-daemon					
+gawk						
+gcc						
+gcc-11-base:amd64				
+gcc-13						
+gcc-13-base:amd64				
+gcc-13-x86-64-linux-gnu				
+gcc-14-base:amd64				
+gcc-14-base:i386				
+gcc-9-base:amd64				
+gcc-x86-64-linux-gnu				
+gcr						
+gcr4						
+gdb						
+gdebi						
+gdebi-core					
+gdisk						
+gdm3						
+gedit						
+gedit-common					
+geoclue-2.0					
+geocode-glib-common				
+gettext						
+gettext-base					
+gfortran					
+gfortran-13					
+gfortran-13-x86-64-linux-gnu			
+gfortran-x86-64-linux-gnu			
+ghostscript					
+gir1.2-accountsservice-1.0:amd64		
+gir1.2-adw-1:amd64				
+gir1.2-amtk-5:amd64				
+gir1.2-atk-1.0:amd64				
+gir1.2-atspi-2.0:amd64				
+gir1.2-dbusmenu-glib-0.4:amd64			
+gir1.2-dee-1.0:amd64				
+gir1.2-fcitx-1.0				
+gir1.2-freedesktop:amd64			
+gir1.2-freedesktop-dev:amd64			
+gir1.2-gck-2:amd64				
+gir1.2-gcr-4:amd64				
+gir1.2-gdesktopenums-3.0:amd64			
+gir1.2-gdkpixbuf-2.0:amd64			
+gir1.2-gdm-1.0					
+gir1.2-geoclue-2.0:amd64			
+gir1.2-girepository-2.0:amd64			
+gir1.2-girepository-2.0-dev:amd64		
+gir1.2-glib-2.0:amd64				
+gir1.2-glib-2.0-dev:amd64			
+gir1.2-gmenu-3.0:amd64				
+gir1.2-gnomeautoar-0.1:amd64			
+gir1.2-gnomebg-4.0:amd64			
+gir1.2-gnomebluetooth-3.0:amd64			
+gir1.2-gnomedesktop-3.0:amd64			
+gir1.2-gnomedesktop-4.0:amd64			
+gir1.2-graphene-1.0:amd64			
+gir1.2-gst-plugins-base-1.0:amd64		
+gir1.2-gstreamer-1.0:amd64			
+gir1.2-gtk-3.0:amd64				
+gir1.2-gtk-4.0:amd64				
+gir1.2-gtksource-300:amd64			
+gir1.2-gtop-2.0:amd64				
+gir1.2-gudev-1.0:amd64				
+gir1.2-gweather-4.0:amd64			
+gir1.2-handy-1:amd64				
+gir1.2-harfbuzz-0.0:amd64			
+gir1.2-ibus-1.0:amd64				
+gir1.2-javascriptcoregtk-4.1:amd64		
+gir1.2-javascriptcoregtk-6.0:amd64		
+gir1.2-mutter-14:amd64				
+gir1.2-nm-1.0:amd64				
+gir1.2-nma4-1.0:amd64				
+gir1.2-notify-0.7:amd64				
+gir1.2-packagekitglib-1.0			
+gir1.2-pango-1.0:amd64				
+gir1.2-peas-1.0:amd64				
+gir1.2-polkit-1.0				
+gir1.2-rb-3.0:amd64				
+gir1.2-rsvg-2.0:amd64				
+gir1.2-secret-1:amd64				
+gir1.2-snapd-2:amd64				
+gir1.2-soup-3.0:amd64				
+gir1.2-tepl-6:amd64				
+gir1.2-totem-1.0:amd64				
+gir1.2-totemplparser-1.0:amd64			
+gir1.2-udisks-2.0:amd64				
+gir1.2-unity-7.0:amd64				
+gir1.2-upowerglib-1.0:amd64			
+gir1.2-vte-2.91:amd64				
+gir1.2-webkit-6.0:amd64				
+gir1.2-webkit2-4.1:amd64			
+gir1.2-wnck-3.0:amd64				
+gir1.2-xapp-1.0					
+git						
+git-man						
+gjs						
+gkbd-capplet					
+glib-networking:amd64				
+glib-networking-common				
+glib-networking-services			
+gnome-accessibility-themes			
+gnome-bluetooth-3-common			
+gnome-bluetooth-sendto				
+gnome-browser-connector				
+gnome-calculator				
+gnome-calendar					
+gnome-characters				
+gnome-clocks					
+gnome-control-center				
+gnome-control-center-data			
+gnome-control-center-faces			
+gnome-desktop-testing				
+gnome-desktop3-data				
+gnome-disk-utility				
+gnome-font-viewer				
+gnome-initial-setup				
+gnome-keyring					
+gnome-keyring-pkcs11:amd64			
+gnome-logs					
+gnome-menus					
+gnome-online-accounts				
+gnome-power-manager				
+gnome-remote-desktop				
+gnome-session-bin				
+gnome-session-canberra				
+gnome-session-common				
+gnome-settings-daemon				
+gnome-settings-daemon-common			
+gnome-shell					
+gnome-shell-common				
+gnome-shell-extension-appindicator		
+gnome-shell-extension-desktop-icons-ng		
+gnome-shell-extension-manager			
+gnome-shell-extension-prefs			
+gnome-shell-extension-ubuntu-dock		
+gnome-shell-extension-ubuntu-tiling-assistant	
+gnome-shell-extensions				
+gnome-snapshot					
+gnome-startup-applications			
+gnome-system-monitor				
+gnome-terminal					
+gnome-terminal-data				
 gnome-text-editor				
 gnome-themes-extra:amd64			
 gnome-themes-extra-data				
@@ -470,7 +469,7 @@ initramfs-tools
 initramfs-tools-bin				
 initramfs-tools-core				
 inputattach					
-TODO-info					
+install-info					
 intel-media-va-driver:amd64			
 intel-microcode					
 intltool-debian					
