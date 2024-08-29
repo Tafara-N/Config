@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="A basic Flask app: Tafara Nyamhunga">
+  <meta name="description" content="Flask App">
+
+  <!-- Favicon -->
+  <link rel="icon" href="{{ url_for('static', filename='images/favicons/flask/flask.ico') }}">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/bootstrap.min.css') }}">
+
+  <!-- Custom CSS Block -->
+  {% block css %}
+  {% endblock css %}
+
+  <title> {% block title %} Flask App {% endblock title %} </title>
+
+</head>
+
+<body>
+
+  {% block body %}
+  {% endblock body %}
+
+  <!-- jQuery -->
+  <script src="{{ url_for('static', filename='jQuery/jquery-3.7.1.min.js') }}"> </script>
+
+  <!-- Bootstrap JS -->
+  <script type="text/javascript" src="{{ url_for('static', filename='scripts/bootstrap.min.js') }}"> </script>
+
+  <!-- Custom JS Block -->
+  {% block js %}
+  {% endblock js %}
+
+</body>
+</html>
