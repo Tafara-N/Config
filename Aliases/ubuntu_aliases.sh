@@ -1,9 +1,12 @@
 #!/usr/bin/env sh
 
 	# Navigation
-alias .="cd"
 alias back="cd -"
+alias .="cd"
 alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 
 	# List files, directories and hidden files
 alias ls="colorls"
@@ -26,11 +29,7 @@ alias x-="chmod 644"     # r = 4, w = 2, x = 1
 alias link="sudo ln -s"  # sudo ln -s /path/to/file /path/to/symlink
 
 	# Compress files and directories
-alias zip="gzip"
-alias zip-d="gzip -d"  # Decompress files and directories
-# alias unzip="gunzip"
-# alias zip2="bzip2"
-# alias unzip2="bunzip2"
+alias zip-dir="gzip -d"  # Decompress files and directories
 alias untar="sudo tar -zxvf"
 
 alias grep-e="grep -E"
@@ -77,12 +76,11 @@ alias stop="deactivate"
 # Conda
 alias enable-base="conda config --set auto_activate_base true"
 alias disable-base="conda config --set auto_activate_base false"
-alias conda-start="conda create --name $(basename $PWD)"
-alias conda-venv="conda activate $(basename $PWD)"
+alias conda-start="conda create --name .venv"
+alias conda-venv="conda activate .venv"
 alias conda-base="conda activate base"
 alias conda-envs="conda info --envs"
 alias conda-stop="conda deactivate"
-# alias conda-remove="conda remove --name environment --all"
 
 alias requirements="pip3 freeze > requirements.txt"
 alias conda-requirements="pip list --format=freeze > requirements.txt"
@@ -161,6 +159,8 @@ alias show="apt-cache show"
 alias check="sudo apt-get check"
 
 	# Install, update and upgrade
+alias reboot-now="sudo reboot now"
+alias poweroff="sudo shutdown now"
 alias i-dpkg="sudo dpkg -i"
 alias install="sudo apt-get install -y"
 alias update="sudo apt-get update"
@@ -359,9 +359,24 @@ alias docker-enable="sudo systemctl enable docker"
 alias docker-disable="sudo systemctl disable docker"
 
 # Docker Commands
-alias docker-run="docker run -i -t"
+alias docker-run="docker run -it --name"  # Pass a container name and image
+# alias docker-start="docker start"  # Pass a container
+# alias docker-stop="docker stop"  # Pass a container
+alias docker-remove="docker rm"  # Pass a container
+alias docker-exec="docker exec -it"  # Pass a container and shell eg /bin/bash
 alias puppetserver="docker run -i -t techsk8/puppetserver-ubuntu22 /bin/bash"
 alias puppetagent="docker run -i -t techsk8/puppetagent-ubuntu22 /bin/bash"
+
+# Vagrant
+alias vagrant-status="sudo systemctl status vagrant"
+alias vagrant-restart="sudo systemctl restart vagrant"
+alias vagrant-start="sudo systemctl start vagrant"
+alias vagrant-stop="sudo systemctl stop vagrant"
+alias vagrant-enable="sudo systemctl enable vagrant"
+alias vagrant-disable="sudo systemctl disable vagrant"
+
+# vagrant Commands
+alias vagrant-remove="vagrant box remove"  # Pass the box name
 
 # GIT
 alias add="git add"
@@ -428,7 +443,7 @@ alias fetch="git fetch origin"
 alias del-branch="git push origin --delete"
 
 	# Delete committed and pushed: AFter deleting, commit and force-push
-alias cache="git rm --cached"  # Remove file from remote repo, but keeps it locally
+alias rm-cache="git rm --cached"  # Remove file from remote repo, but keeps it locally
 alias delete-file="git rm"
 alias delete-folder="git rm -r"
 alias force-push="git push --force -u origin main"
@@ -521,3 +536,15 @@ export NVM_DIR="$HOME/.nvm"
 
 # Go
 export PATH=$PATH:/usr/local/go/bin
+
+# Added by `rbenv init` on Tue Aug 20 11:32:49 PM SAST 2024
+eval "$(~/.rbenv/bin/rbenv init - --no-rehash zsh)"
+
+# assuming that rbenv was installed to `~/.rbenv`
+FPATH=~/.rbenv/completions:"$FPATH"
+
+autoload -U compinit
+compinit
+
+# Clip-View: clip
+export PATH=$HOME/.local/bin:$PATH
