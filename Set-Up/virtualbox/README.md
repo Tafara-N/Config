@@ -3,6 +3,7 @@
 ## Table of Content
 - [Author](#author)
 - [Description](#description)
+- [Setup](#steps)
 
 # Description
 
@@ -10,7 +11,7 @@
 
 ## Steps
 
-1. Visit [Virtual Box](https://www.virtualbox.org/)
+**Visit [Virtual Box](https://www.virtualbox.org/)**
 
 ```bash
 wget "https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb"
