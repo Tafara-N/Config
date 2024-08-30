@@ -4,6 +4,7 @@
 - [Author](#author)
 - [Description](#description)
 - [Setup](#steps)
+- [Usage](#using-vagrant-on-ubuntu-2404)
 
 # Description
 
@@ -32,6 +33,25 @@ wget "https://releases.hashicorp.com/vagrant/2.2.19/vagrant_2.4.1_x86_64.deb"
 sudo apt install ./vagrant_2.4.1_x86_64.deb
 vagrant --version
 ```
+
+## Using Vagrant On Ubuntu 24.04
+
+```bash
+mkdir ~/vagrant_project && cd ~/vagrant_project
+```
+
+**Visit the [website](https://portal.cloud.hashicorp.com/vagrant/discover) and choose your VagrantBox (built-in virtual environment image of operating system).**
+
+> In our case, we picked **debian/jessie64** and run the following command
+
+```bash
+vagrant init debian/jessie64
+vagrant up
+```
+
+> **If successful:** To view it, open the VirtualBox on your system.
+
+> **Note:** You must have a virtualization provider software on your machine as we have [VirtualBox](../virtualbox/README.md).
 
 ## Author
 
