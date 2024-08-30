@@ -2307,6 +2307,7 @@ rhythmbox					install
 rhythmbox-data					install
 rhythmbox-plugin-alternative-toolbar		install
 rhythmbox-plugins				install
+ripgrep						install
 rpcsvc-proto					install
 rsync						install
 rsyslog						install
@@ -2532,6 +2533,7 @@ xorg						install
 xorg-docs-core					install
 xorg-sgml-doctools				install
 xorriso						install
+xsel						install
 xserver-common					install
 xserver-xephyr					install
 xserver-xorg					install
@@ -2555,6 +2557,7 @@ xvfb						install
 xwayland					install
 xxd						install
 xz-utils					install
+yank						install
 yaru-theme-gnome-shell				install
 yaru-theme-gtk					install
 yaru-theme-icon					install
