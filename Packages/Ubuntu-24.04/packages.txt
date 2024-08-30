@@ -69,7 +69,8 @@ bluez-obexd					install
 bolt						install
 bpfcc-tools					install
 bpftrace					install
-brave-keyring					deinstall
+brave-browser					install
+brave-keyring					install
 brltty						install
 bsdextrautils					install
 bsdutils					install
@@ -1958,6 +1959,7 @@ nautilus					install
 nautilus-data					install
 nautilus-extension-gnome-terminal:amd64		install
 nautilus-sendto					install
+ncal						install
 ncurses-base					install
 ncurses-bin					install
 ncurses-term					install
@@ -2426,6 +2428,7 @@ util-linux					install
 uuid-dev:amd64					install
 uuid-runtime					install
 va-driver-all:amd64				install
+vagrant						install
 vdpau-driver-all:amd64				install
 vim						install
 vim-common					install
