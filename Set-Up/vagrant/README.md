@@ -50,6 +50,7 @@ vagrant up
 ```
 
 > ***SSH:** Now we can SSH into the vagrant machine.
+
 > **Tip: Make sure the machine is up and running.**
 
 ```bash
