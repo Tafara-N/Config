@@ -22,6 +22,7 @@ gtk-common-themes          0.1-81-g442e511             1535   latest/stable/… 
 httpie                     3.2.2                       474    latest/stable    jakubroztocil    -
 icloud-for-linux           0.22                        283    latest/stable    marcustomlinson  -
 kotlin                     2.0.20                      84     latest/stable    jetbrains**      classic
+kubectl                    1.30.4                      3344   latest/stable    canonical**      classic
 libreoffice                24.2.5.2                    324    latest/stable    canonical**      -
 mesa-2404                  24.0.9                      143    latest/stable    canonical**      -
 nativefier                 52.0.0                      33     latest/stable    kz6fittycent     -
