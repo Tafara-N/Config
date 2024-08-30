@@ -42,7 +42,7 @@ mkdir ~/vagrant_project && cd ~/vagrant_project
 
 **Visit the [website](https://portal.cloud.hashicorp.com/vagrant/discover) and choose your VagrantBox (built-in virtual environment image of operating system).**
 
-> In our case, we picked **debian/jessie64** and run the following command
+> In our case, we picked **bento/ubuntu-20.04** and run the following command
 
 ```bash
 vagrant init debian/jessie64
