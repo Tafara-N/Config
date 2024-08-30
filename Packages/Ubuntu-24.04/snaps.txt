@@ -1,7 +1,7 @@
 Name                       Version                     Rev    Tracking         Publisher        Notes
 bare                       1.0                         5      latest/stable    canonical**      base
 bash-language-server       4.7.0                       69     latest/stable    alexmurray*      classic
-brave                      1.69.153                    432    latest/stable    brave**          -
+brave                      1.69.160                    435    latest/stable    brave**          -
 canonical-livepatch        10.8.3                      282    latest/stable    canonical**      -
 cheat                      4.4.0.build.2               4279   latest/stable    bernermic        -
 core                       16-2.61.4-20240607          17200  latest/stable    canonical**      core
@@ -33,4 +33,5 @@ snapd-desktop-integration  0.9                         178    latest/stable/… 
 spotify                    1.2.42.290.g242057a2        78     latest/stable    spotify**        -
 thunderbird                128.1.0esr-1                507    latest/stable/…  canonical**      -
 tldr                       3.3.0                       627    latest/stable    kbdk             -
+valgrind                   3.22.0                      160    latest/stable    ralight          classic
 whatsapp-for-linux         1.6.5                       59     latest/stable    nshecan          -
