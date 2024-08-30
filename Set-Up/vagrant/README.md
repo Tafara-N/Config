@@ -45,7 +45,7 @@ mkdir ~/vagrant_project && cd ~/vagrant_project
 > In our case, we picked **bento/ubuntu-20.04** and run the following command
 
 ```bash
-vagrant init debian/jessie64
+vagrant init bento/ubuntu-20.04
 vagrant up
 ```
 
