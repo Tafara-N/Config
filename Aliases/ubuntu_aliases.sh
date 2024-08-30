@@ -359,11 +359,13 @@ alias docker-enable="sudo systemctl enable docker"
 alias docker-disable="sudo systemctl disable docker"
 
 # Docker Commands
-alias docker-run="docker run -it --name" # Pass a container name and image
+alias docker-run="docker run -it --name"  # Pass a container name and image
 # alias docker-start="docker start"  # Pass a container
+alias docker-exec="docker exec -it"  # Pass a container and shell eg /bin/bash
 # alias docker-stop="docker stop"  # Pass a container
-alias docker-remove="docker rm"     # Pass a container
-alias docker-exec="docker exec -it" # Pass a container and shell eg /bin/bash
+alias docker-remove="docker rm"  # Pass a container
+
+# Docker: Puppet
 alias puppetserver="docker run -i -t techsk8/puppetserver-ubuntu22 /bin/bash"
 alias puppetagent="docker run -i -t techsk8/puppetagent-ubuntu22 /bin/bash"
 
