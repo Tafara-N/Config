@@ -46,6 +46,7 @@ autoconf					install
 automake					install
 autotools-dev					install
 avahi-daemon					install
+aview						install
 baobab						install
 base-files					install
 base-passwd					install
@@ -82,11 +83,13 @@ byobu						install
 bzip2						install
 bzip2-doc					install
 ca-certificates					install
+cbonsai						install
 chrome-gnome-shell				install
 cloud-guest-utils				install
 cloud-init					install
 cmake						install
 cmake-data					install
+cmatrix						install
 code						install
 colord						install
 colord-data					install
@@ -96,6 +99,7 @@ console-setup					install
 console-setup-linux				install
 containerd.io					install
 coreutils					install
+cowsay						install
 cpio						install
 cpp						install
 cpp-13						install
@@ -197,6 +201,7 @@ fcitx-modules					install
 fcitx-ui-classic				install
 fdisk						install
 ffmpeg						install
+figlet						install
 file						install
 findutils					install
 firefox						install
@@ -211,6 +216,7 @@ fonts-dejavu-core				install
 fonts-dejavu-mono				install
 fonts-droid-fallback				install
 fonts-freefont-ttf				install
+fonts-lato					install
 fonts-liberation				install
 fonts-liberation-sans-narrow			install
 fonts-noto-cjk					install
@@ -463,6 +469,9 @@ icu-devtools					install
 ieee-data					install
 iio-sensor-proxy				install
 im-config					install
+imagemagick					install
+imagemagick-6-common				install
+imagemagick-6.q16				install
 inetutils-telnet				install
 info						install
 init						install
@@ -1055,6 +1064,7 @@ libieee1284-3t64:amd64				install
 libigdgmm12:amd64				install
 libijs-0.35:amd64				install
 libimagequant0:amd64				install
+libimath-3-1-29t64:amd64			install
 libimobiledevice6:amd64				install
 libimport-into-perl				install
 libini-config5t64:amd64				install
@@ -1107,6 +1117,8 @@ libjson-perl					install
 libjson-xs-perl					install
 libjsoncpp25:amd64				install
 libjxl0.7:amd64					install
+libjxr-tools					install
+libjxr0t64:amd64				install
 libk5crypto3:amd64				install
 libkadm5clnt-mit12:amd64			install
 libkadm5srv-mit12:amd64				install
@@ -1149,6 +1161,7 @@ liblouis20:amd64				install
 liblouisutdml-bin				install
 liblouisutdml-data				install
 liblouisutdml9t64:amd64				install
+liblqr-1-0:amd64				install
 liblsan0:amd64					install
 libltdl-dev:amd64				install
 libltdl7:amd64					install
@@ -1170,6 +1183,9 @@ libm17n-0:amd64					install
 libmad0:amd64					install
 libmagic-mgc					install
 libmagic1t64:amd64				install
+libmagickcore-6.q16-7-extra:amd64		install
+libmagickcore-6.q16-7t64:amd64			install
+libmagickwand-6.q16-7t64:amd64			install
 libmailtools-perl				install
 libmalcontent-0-0:amd64				install
 libmanette-0.2-0:amd64				install
@@ -1234,6 +1250,7 @@ libnet-smtp-ssl-perl				install
 libnet-ssleay-perl:amd64			install
 libnetaddr-ip-perl				install
 libnetfilter-conntrack3:amd64			install
+libnetpbm11t64:amd64				install
 libnetplan1:amd64				install
 libnettle8t64:amd64				install
 libnewt0.52:amd64				install
@@ -1271,6 +1288,7 @@ libopenal-data					install
 libopenal1:amd64				install
 libopencc-data					install
 libopencc1.1					install
+libopenexr-3-1-30:amd64				install
 libopengl-dev:amd64				install
 libopengl0:amd64				install
 libopenjp2-7:amd64				install
@@ -1476,6 +1494,8 @@ librsvg2-common:amd64				install
 librsync2t64:amd64				install
 librtmp1:amd64					install
 librubberband2:amd64				install
+libruby:amd64					install
+libruby3.2:amd64				install
 librygel-core-2.8-0:amd64			install
 librygel-db-2.8-0:amd64				install
 librygel-renderer-2.8-0:amd64			install
@@ -1899,6 +1919,7 @@ locales						install
 login						install
 logrotate					install
 logsave						install
+lolcat						install
 lp-solve					install
 lsb-release					install
 lshw						install
@@ -1966,6 +1987,7 @@ ncurses-term					install
 net-tools					install
 netbase						install
 netcat-openbsd					install
+netpbm						install
 netplan-generator				install
 netplan.io					install
 network-manager					install
@@ -2270,6 +2292,7 @@ r-cran-spatial					install
 r-cran-survival					install
 r-doc-html					install
 r-recommended					install
+rake						install
 readline-common					install
 redis						install
 redis-server					install
@@ -2288,6 +2311,16 @@ rpcsvc-proto					install
 rsync						install
 rsyslog						install
 rtkit						install
+ruby						install
+ruby-net-telnet					install
+ruby-optimist					install
+ruby-paint					install
+ruby-rubygems					install
+ruby-sdbm:amd64					install
+ruby-webrick					install
+ruby-xmlrpc					install
+ruby3.2						install
+rubygems-integration				install
 run-one						install
 rustc						install
 rvm						deinstall
@@ -2370,6 +2403,8 @@ timeshift					install
 tk8.6-blt2.5					install
 tmux						install
 tnftp						install
+toilet						install
+toilet-fonts					install
 totem						install
 totem-common					install
 totem-plugins					install
