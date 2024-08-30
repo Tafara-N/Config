@@ -29,7 +29,7 @@ sudo apt update && sudo apt install vagrant
 2. **Choose the release [version](https://releases.hashicorp.com/vagrant/) you want**
 
 ```bash
-wget "https://releases.hashicorp.com/vagrant/2.2.19/vagrant_2.4.1_x86_64.deb"
+wget "https://releases.hashicorp.com/vagrant/2.4.1/vagrant_2.4.1_x86_64.deb"
 sudo apt install ./vagrant_2.4.1_x86_64.deb
 vagrant --version
 ```
