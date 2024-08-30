@@ -11,7 +11,7 @@
 
 ## Steps
 
-**Visit [Download Vagrant](https://developer.hashicorp.com/vagrant)**
+**Visit [Vagrant](https://developer.hashicorp.com/vagrant) | [Install](https://developer.hashicorp.com/vagrant/install)**
 
 ```bash
 wget "https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb"
