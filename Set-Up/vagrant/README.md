@@ -49,6 +49,14 @@ vagrant init debian/jessie64
 vagrant up
 ```
 
+> ***SSH:** Now we can SSH into the vagrant machine.
+> **Tip: Make sure the machine is up and running.**
+
+```bash
+vagrant up
+vagrant ssh
+```
+
 > **If successful:** To view it, open the VirtualBox on your system.
 
 > **Note:** You must have a virtualization provider software on your machine as we have [VirtualBox](../virtualbox/README.md).
