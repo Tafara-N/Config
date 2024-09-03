@@ -268,6 +268,7 @@ gfortran					install
 gfortran-13					install
 gfortran-13-x86-64-linux-gnu			install
 gfortran-x86-64-linux-gnu			install
+gh						install
 ghostscript					install
 gir1.2-accountsservice-1.0:amd64		install
 gir1.2-adw-1:amd64				install
