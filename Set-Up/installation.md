@@ -6,6 +6,8 @@
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install -y software-properties-common build-essential
 ```
+___
+
 
 ### Uninstalling VIM
 
@@ -21,12 +23,50 @@ sudo apt update
 sudo apt install -y vim
 vim --version
 ```
+___
 
 ### Batcat command (cat)
 
 ```shell
 sudo apt install -y bat
 ```
+____
+
+### Installing Git
+
+1. **Using apt**
+
+```bash
+sudo apt update && sudo apt upgrade
+sudo apt install git
+git --version
+```
+
+2. **From source**
+
+**From the [Git project website](https://git-scm.com/), you can navigate to the tarball list available at [https://mirrors.edge.kernel.org/pub/software/scm/git/](https://mirrors.edge.kernel.org/pub/software/scm/git/) and download the version you of your choosing. At the time of writing, the most recent version is `2.45.1`. Use `curl` and output the file downloaded to `git.tar.gz`.**
+
+```bash
+sudo apt update && sudo apt upgrade
+sudo apt install libz-dev libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext cmake gcc
+cd /tmp
+curl -o git.tar.gz https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.45.1.tar.gz
+tar -zxf git.tar.gz
+cd git-*
+make prefix=/usr/local all
+sudo make prefix=/usr/local install
+exec bash
+git --version
+```
+
+**Basic git setup**
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+git config --list
+```
+____
 
 ## Adding Vim plugins
 
@@ -104,6 +144,7 @@ rm -rf ~/.config/nvim/.git
 ## Windows:
 
 AppData >> Local >> nvim >> lua >> config >> options.lua
+___
 
 # Databases
 
@@ -274,6 +315,7 @@ sudo apt-get install -y pgcli
 ## Install litecli for SQLite
 
 [litecli](https://litecli.com/)
+____
 
 # NoSQL
 
@@ -337,6 +379,8 @@ sudo apt purge "mongodb-org*"
 sudo rm -r /var/log/mongodb
 sudo rm -r /var/lib/mongodb
 ```
+____
+
 
 # Installing redis
 
@@ -363,6 +407,7 @@ sed -i "s/bind .*/bind 127.0.0.1/g" /etc/redis/redis.conf
 ## Install iredis for Redis DB
 
 [iredis](https://github.com/laixintao/iredis)
+____
 
 # Installing Apache2
 
@@ -370,6 +415,7 @@ sed -i "s/bind .*/bind 127.0.0.1/g" /etc/redis/redis.conf
 sudo apt update
 sudo apt install -y apache2
 ```
+____
 
 # Installing Nginx
 
@@ -422,6 +468,7 @@ Or apache2 is listening on the same port and can be stopped:
 ```shell
 sudo /etc/init.d/apache2 stop
 ```
+____
 
 # Virtual Environments
 
@@ -442,6 +489,7 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ```bash
 ~/.rbenv/bin/rbenv init
 ```
+____
 
 # Node
 
@@ -495,6 +543,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
+____
 
 # Python
 
@@ -574,8 +623,7 @@ You can ignore it.
 [Ptpython](https://github.com/prompt-toolkit/ptpython)
 
 [Bpython]()
-
---------------------------------------------------------------------------------------------------------------------
+___
 
 # LINTERS
 
@@ -640,6 +688,7 @@ To check style:
 ```shell
 betty filename.c
 ```
+___
 
 ## GNU Indent Formatter
 
@@ -652,6 +701,7 @@ Usage:
 ```shell
 indent <filename.c>
 ```
+___
 
 # CSS and HTML
 
@@ -705,6 +755,7 @@ python3 -m pip install requests
 ```
 
 If you don't have `pip` installed, you can get it [here](https://pypi.org/project/pip/).
+___
 
 # JavaScript
 
@@ -725,6 +776,7 @@ To format:
 ```shell
 semi-standard --fix <filename>
 ```
+___
 
 ### Vim
 Install [Syntastic](https://vimawesome.com/plugin/syntastic) and add these lines to .vimrc:
@@ -766,6 +818,7 @@ To format our files:
 ```shell
 npx prettier --write <filename>
 ```
+___
 
 # Python
 
@@ -853,7 +906,7 @@ black <filename.py>
 ```shell
 pip3 install pycodestyle
 ```
-------------------------------------------------------------------------------------------------------------------------------------------
+___
 
 # Languages
 
@@ -1107,6 +1160,7 @@ nvm alias default  # (version you want)
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
+___
 
 # Docker
 
@@ -1168,6 +1222,7 @@ sudo docker run -d --name <Name> --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:r
 𝐋𝐨𝐠 𝐢𝐧𝐭𝐨 𝐭𝐡𝐞 𝐂𝐨𝐧𝐭𝐚𝐢𝐧𝐞𝐫 :
 sudo docker exec -it <Name> bash
 ```
+___
 
 # Terminal Set Up
 
