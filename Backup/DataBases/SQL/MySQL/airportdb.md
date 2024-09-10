@@ -21,6 +21,7 @@ mysqlsh <user>@<IP_or_localhost>:<port>
 mysqlsh root@localhost:3306
 ```
 
+**Inside mysqlsh, switch to python by (\py) and execute:**
 
 ```MySQL
 util.load_dump("airport-db", {
@@ -29,3 +30,52 @@ util.load_dump("airport-db", {
     "ignoreVersion": True
 })
 ```
+
+**If you get any errors:**
+
+- Check if `LOCAL` for `LOAD DATA LOCAL INFILE` is enabled on your machine:
+
+**Inside your MySQL**
+
+```
+SHOW VARIABLES LIKE 'local_infile';
+
++---------------+-------+
+| Variable_name | Value |
++---------------+-------+
+| local_infile  | OFF   |
++---------------+-------+
+```
+
+**If it's off, you need to enabled it by:**
+
+#### STEPS
+
+1. Using `my.cnf`
+
+**Open:**
+
+```bash
+vi `/etc/mysql/my.cnf`
+```
+
+**Add**
+
+```
+[mysqld]
+local-infile=1
+```
+
+**Restart MySQL and check again 'local_infile':**
+
+```
+SHOW VARIABLES LIKE 'local_infile';
+
++---------------+-------+
+| Variable_name | Value |
++---------------+-------+
+| local_infile  | ON    |
++---------------+-------+
+```
+
+> **After setup you can then edit the 'my.cnf' file and remove the line we just added**
