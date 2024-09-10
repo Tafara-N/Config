@@ -119,6 +119,11 @@ SHOW VARIABLES LIKE 'local_infile';
 
 **Visit [MySQL](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install-linux-quick.html)**
 
+```bash
+sudo apt-get update
+sudo apt-get install mysql-shell
+```
+
 ## Author
 
 **Tafara Nyamhunga  - [Github](https://github.com/tafara-n) / [Twitter](https://twitter.com/tafaranyamhunga)**
