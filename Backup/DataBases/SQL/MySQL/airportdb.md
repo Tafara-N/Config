@@ -79,3 +79,36 @@ SHOW VARIABLES LIKE 'local_infile';
 ```
 
 > **After setup you can then edit the 'my.cnf' file and remove the line we just added**
+___
+
+2. Inside MySQL shell
+
+- Check if `LOCAL` for `LOAD DATA LOCAL INFILE` is enabled on your machine:
+
+```
+SHOW VARIABLES LIKE 'local_infile';
+
++---------------+-------+
+| Variable_name | Value |
++---------------+-------+
+| local_infile  | OFF   |
++---------------+-------+
+```
+
+**If it's off, you need to enabled it by:**
+
+```
+SET GLOBAL local_infile=ON;
+
+SHOW VARIABLES LIKE 'local_infile';
+
++---------------+-------+
+| Variable_name | Value |
++---------------+-------+
+| local_infile  | ON    |
++---------------+-------+
+```
+
+## Author
+
+**Tafara Nyamhunga  - [Github](https://github.com/tafara-n) / [Twitter](https://twitter.com/tafaranyamhunga)**
