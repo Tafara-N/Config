@@ -3,6 +3,7 @@
 ## Table of Content
 - [Author](#author)
 - [Installing MySQL Shell](#installing-mysql-shell-on-linux)
+___
 
 **Visit [MySQL Sample Databases](https://dev.mysql.com/doc/index-other.html)**
 
