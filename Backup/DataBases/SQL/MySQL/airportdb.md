@@ -1,5 +1,9 @@
 # To load airportdb from MySQL site
 
+## Table of Content
+- [Author](#author)
+- []()
+
 **Visit [MySQL Sample Databases](https://dev.mysql.com/doc/index-other.html)**
 
 **Download and extract the database**
@@ -110,6 +114,10 @@ SHOW VARIABLES LIKE 'local_infile';
 ```
 
 > **Tip: This will work for the menagerie database as well**
+
+## Installing MySQL Shell on Linux
+
+**Visit [MySQL](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install-linux-quick.html)**
 
 ## Author
 
