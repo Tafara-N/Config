@@ -109,6 +109,8 @@ SHOW VARIABLES LIKE 'local_infile';
 +---------------+-------+
 ```
 
+> **Tip: This will work for the menagerie database as well**
+
 ## Author
 
 **Tafara Nyamhunga  - [Github](https://github.com/tafara-n) / [Twitter](https://twitter.com/tafaranyamhunga)**
