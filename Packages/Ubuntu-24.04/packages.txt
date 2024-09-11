@@ -54,7 +54,7 @@ bash						install
 bash-completion					install
 bat						install
 bc						install
-beekeeper-studio				install
+beekeeper-studio				deinstall
 bind9-dnsutils					install
 bind9-host					install
 bind9-libs:amd64				install
