@@ -28,6 +28,7 @@ libreoffice                24.2.6.2                    326    latest/stable    c
 mesa-2404                  24.0.9                      143    latest/stable    canonical**      -
 musikcube                  0.96.3                      8      latest/stable    clangen          -
 mysql-workbench-community  8.0.36                      13     latest/stable    tonybolzan       -
+okular                     24.05.2                     156    latest/stable    kde**            -
 postman                    11.12.0                     275    latest/stable    postman-inc**    -
 snap-store                 0+git.e3dd562               1173   latest/stable/…  canonical**      -
 snapcraft                  8.3.3                       12503  latest/stable    canonical**      classic
