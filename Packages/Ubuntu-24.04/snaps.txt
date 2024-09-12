@@ -1,7 +1,8 @@
 Name                       Version                     Rev    Tracking         Publisher        Notes
 bare                       1.0                         5      latest/stable    canonical**      base
 bash-language-server       4.7.0                       69     latest/stable    alexmurray*      classic
-brave                      1.69.162                    436    latest/stable    brave**          -
+brave                      1.69.168                    438    latest/stable    brave**          -
+brave                      1.69.162                    436    latest/stable    brave**          disabled
 btop                       1.3.2                       802    latest/stable    kz6fittycent     -
 canonical-livepatch        10.8.3                      282    latest/stable    canonical**      -
 cheat                      4.4.0.build.2               4279   latest/stable    bernermic        -
@@ -22,6 +23,7 @@ gnome-calendar             44.1                        182    latest/stable    c
 gtk-common-themes          0.1-81-g442e511             1535   latest/stable/…  canonical**      -
 httpie                     3.2.2                       474    latest/stable    jakubroztocil    -
 icloud-for-linux           0.22                        283    latest/stable    marcustomlinson  -
+kf6-core22                 6.5.0                       36     latest/stable    kde**            -
 kotlin                     2.0.20                      84     latest/stable    jetbrains**      classic
 kubectl                    1.31.0                      3340   latest/stable    canonical**      classic
 libreoffice                24.2.6.2                    326    latest/stable    canonical**      -
