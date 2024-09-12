@@ -2508,6 +2508,7 @@ thunderbird-locale-en-us			install
 time						install
 timeshift					install
 tk8.6-blt2.5					install
+tmpreaper					install
 tmux						install
 tnftp						install
 toilet						install
