@@ -526,6 +526,11 @@ alias npx-fix="npx eslint --fix"
 alias prettier="npx prettier --check"
 alias prettier-fix="npx prettier --write"
 
+# JSON tools
+alias jsonify="jq ."
+alias valid-json="jq empty"  # Check if JSON is valid
+alias py-json="python3 -m json.tool"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
