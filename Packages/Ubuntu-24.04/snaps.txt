@@ -2,7 +2,6 @@ Name                       Version                     Rev    Tracking         P
 bare                       1.0                         5      latest/stable    canonical**      base
 bash-language-server       4.7.0                       69     latest/stable    alexmurray*      classic
 brave                      1.69.168                    438    latest/stable    brave**          -
-brave                      1.69.162                    436    latest/stable    brave**          disabled
 btop                       1.3.2                       802    latest/stable    kz6fittycent     -
 canonical-livepatch        10.8.3                      282    latest/stable    canonical**      -
 cheat                      4.4.0.build.2               4279   latest/stable    bernermic        -
