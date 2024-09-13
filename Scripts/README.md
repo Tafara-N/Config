@@ -94,6 +94,15 @@ _____
 
 - [Validate HTML and CSS](Python/w3c_validator.py)
 
+**Convert JSON to CSV**
+
+- [JSON to CSV](Python/from_json.py)
+
+**Convert CSV to JSON**
+
+- [CSV to JSON](Python/to_json.py)
+___
+
 ## Author
 
 **Tafara Nyamhunga  - [Github](https://github.com/tafara-n) / [Twitter](https://twitter.com/tafaranyamhunga)**
