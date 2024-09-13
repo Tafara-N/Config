@@ -2,10 +2,10 @@ npm install semistandard
 npm install semistandard --global
 npm install eslint --global
 npm install --global itunes-remote
+npm install -g jsonlint
 npm install -g @nestjs/cli
 npm install -g tldr
 npm install -g npm
 npm install -g dockly
 npm install -g neovim
 npm install -g @mrodrig/json-2-csv-cli
-
