@@ -528,8 +528,12 @@ alias prettier-fix="npx prettier --write"
 
 # JSON tools
 alias jsonify="jq ."
+alias json="rich --json"
 alias valid-json="jq empty"  # Check if JSON is valid
 alias py-json="python3 -m json.tool"
+
+# CSV tools: Print CSV files in a table format
+alias csv="rich --csv"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
