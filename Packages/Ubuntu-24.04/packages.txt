@@ -339,6 +339,7 @@ gir1.2-webkit2-4.1:amd64			install
 gir1.2-wnck-3.0:amd64				install
 gir1.2-xapp-1.0					install
 git						install
+git-lfs						install
 git-man						install
 gjs						install
 gkbd-capplet					install
