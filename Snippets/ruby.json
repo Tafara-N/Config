@@ -37,7 +37,7 @@
         "description": "Adds a magic comment for Ruby file encoding"
     },
     "Ruby Multiline Comment": {
-      "prefix": "ruby-comment",
+      "prefix": "multiline",
       "body": [
         "=begin",
         "",
