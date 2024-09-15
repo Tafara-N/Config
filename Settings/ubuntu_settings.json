@@ -4,9 +4,11 @@
     "sound": "on"
   },
   "auto-close-tag.enableAutoCloseTag": true,
-  "autoDocstring.docstringFormat": "sphinx",
+  "autoDocstring.customTemplatePath": "/home/tafara/.config/Code/User/pep257.mustache",
+  "autoDocstring.docstringFormat": "pep257",
+  "autoDocstring.guessTypes": true,
+  "autoDocstring.includeName": false,
   "autoDocstring.startOnNewLine": true,
-  "autoDocstring.includeName": true,
   "better-comments.tags": [
     {
       "tag": "#!",
@@ -74,14 +76,15 @@
   ],
   "betterFolding.excludedLanguages": [],
   "[c]": {
-    "files.autoSave": "afterDelay",
-    "editor.tabSize": 4,
+    "editor.defaultFormatter": null,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false,
+    "editor.inlineSuggest.enabled": false,
     "editor.rulers": [
       80
     ],
-    "editor.insertSpaces": false,
-    "editor.detectIndentation": false,
-    "editor.defaultFormatter": null
+    "editor.tabSize": 4,
+    "files.autoSave": "afterDelay"
   },
   "C_Cpp.autocompleteAddParentheses": true,
   "C_Cpp.codeAnalysis.clangTidy.enabled": true,
@@ -175,6 +178,29 @@
     }
   },
   "docker.languageserver.formatter.ignoreMultilineInstructions": true,
+  "doxdocgen.c.commentPrefix": " * ",
+  "doxdocgen.c.firstLine": "/**",
+  "doxdocgen.c.lastLine": " */",
+  "doxdocgen.c.triggerSequence": "/**",
+  "doxdocgen.c.getterText": "Get the {name} object",
+  "doxdocgen.c.setterText": "Set the {name} object",
+  "doxdocgen.c.factoryMethodText": "Create a {name} object",
+  "doxdocgen.generic.includeTypeAtReturn": true,
+  "doxdocgen.generic.briefTemplate": "{function_name} - Description",
+  "doxdocgen.generic.returnTemplate": "Return: {type}\n      : {description}",
+  "doxdocgen.generic.paramTemplate": "@{param}: {description}",
+  "doxdocgen.generic.authorName": "Tafara Nyamhunga",
+  "doxdocgen.generic.authorTag": "@author: {author}",
+  "doxdocgen.generic.dateTemplate": "@date: {date}",
+  "doxdocgen.generic.useGitUserName": false,
+  "doxdocgen.generic.order": [
+    "brief",
+    "empty",
+    "param",
+    "empty",
+    "return"
+  ],
+  "doxdocgen.generic.commandSuggestion": true,
   "editor.autoClosingBrackets": "always",
   "editor.autoClosingComments": "always",
   "editor.autoClosingQuotes": "always",
@@ -202,6 +228,8 @@
   "editor.guides.bracketPairsHorizontal": false,
   "editor.largeFileOptimizations": false,
   "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
   "editor.semanticTokenColorCustomizations": {
     // optionally wrap the following in a "[Color Theme Name]": { ... }
@@ -245,6 +273,8 @@
     ]
   },
   "editor.tabCompletion": "on",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.quickSuggestions": {
     "other": "inline",
     "strings": "inline"
@@ -258,6 +288,7 @@
   "emmet.triggerExpansionOnTab": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
   "files.autoSave": "afterDelay",
   "files.associations": {
     "*html": "html",
@@ -266,6 +297,7 @@
     "*.js": "javascript",
     "*.md": "markdown",
     "*.py": "python",
+    "**/views/**/*.html": "django-html",
     "**/templates/*.html": "django-html"
   },
   "files.eol": "\n",
@@ -290,12 +322,15 @@
     "**/.vscode-server/**": true
   },
   "github.copilot.advanced": {},
+  "github.copilot.chat.experimental.generateTests.codeLens": true,
+  "github.copilot.chat.terminalChatLocation": "quickChat",
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
     "*": true,
     "plaintext": true,
-    "markdown": false,
-    "scminput": false
+    "markdown": true,
+    "scminput": false,
+    "python": true
   },
   "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "always",
@@ -414,8 +449,9 @@
   "python.defaultInterpreterPath": "/home/tafara/.venv/bin/python3",
   "python.globalModuleInstallation": true,
   "python.languageServer": "Pylance",
+  "python.testing.cwd": "tests",
   "python.testing.unittestEnabled": true,
-  "python.testing.pytestEnabled": true,
+  "python.testing.pyTestEnabled": true,
   "python.terminal.activateEnvironment": true,
   "python.terminal.activateEnvInCurrentTerminal": true,
   "pythonTestExplorer.testplanEnabled": true,
@@ -424,14 +460,19 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": "always" // If you have something like Ruff or isort installed.
     },
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "ms-python.autopep8",
     "editor.detectIndentation": false,
+    "editor.inlayHints.enabled": "offUnlessPressed",
     "editor.insertSpaces": true,
     "editor.rulers": [
       79
     ],
     "editor.tabSize": 4,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "isort.args": [
+      "--profile",
+      "black"
+    ]
   },
   "redhat.telemetry.enabled": true,
   "remoteHub.commitDirectlyWarning": "off",
@@ -494,15 +535,17 @@
       "path": "/usr/bin/zsh"
     }
   },
-  "terminal.integrated.enableMultiLinePasteWarning": "auto",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.enableVisualBell": true,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.fontWeight": "normal",
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.sendKeybindingsToShell": true,
+  "terminal.integrated.sendKeybindingsToShell": false,
   "terminal.integrated.tabs.defaultIcon": "terminal-bash",
   "terminal.integrated.tabStopWidth": 4,
+  "testExplorer.hideWhen": "noTests",
+  "testing.alwaysRevealTestOnStateChange": true,
   "typescript.preferences.quoteStyle": "single",
   "vscode-color-picker.languages": [
     "php",
@@ -520,6 +563,7 @@
     "vue",
     "vue-html"
   ],
+  "window.autoDetectHighContrast": true,
   "window.menuBarVisibility": "toggle",
   "window.newWindowDimensions": "fullscreen",
   "window.titleBarStyle": "custom",
@@ -556,18 +600,19 @@
   "workbench.commandPalette.experimental.suggestCommands": true,
   "workbench.commandPalette.preserveInput": true,
   "workbench.editorAssociations": {
-    "*.html": "default"
+    "*.html": "default",
+    "*.db": "default"
   },
   "workbench.editor.enablePreview": false,
   "workbench.editor.closeOnFileDelete": true,
   "workbench.externalBrowser": "firefox",
-  "workbench.list.smoothScrolling": true,
   "workbench.iconTheme": "file-icons",
+  "workbench.list.smoothScrolling": true,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.renderIndentGuides": "none",
   "yaml.schemas": {
     "file:///home/tafara/.vscode-server/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
+  }
 }
