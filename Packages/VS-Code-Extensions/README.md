@@ -1,6 +1,7 @@
 # A list of installed VS Code Extensions
 
 ## Table of Content
+- [Author](#author)
 - [Description](#description)
 - [Configuration](#configurations)
 - [To generate extensions list](#to-generate-a-list-of-the-extensions)
@@ -57,3 +58,7 @@ cat vscode-extensions.list | xargs -L 1 code --install-extension
   "autoDocstring.includeName": false,
   "autoDocstring.startOnNewLine": true,
 ```
+
+## Author
+
+**Tafara Nyamhunga  - [Github](https://github.com/tafara-n) / [Twitter](https://twitter.com/tafaranyamhunga)**
