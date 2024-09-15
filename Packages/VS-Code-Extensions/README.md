@@ -1,8 +1,8 @@
 # A list of installed VS Code Extensions
 
 ## Table of Content
-- [Author](#author)
 - [Description](#description)
+- [Configuration](#configurations)
 - [To generate extensions list](#to-generate-a-list-of-the-extensions)
 - [To install from the file](#to-install-the-extensions-from-the-file)
 - [VS Code: Extensions](vscode-extensions.list)
@@ -38,4 +38,22 @@ Get-Content vscode-extensions.list | ForEach-Object { code --install-extension $
 
 ```bash
 cat vscode-extensions.list | xargs -L 1 code --install-extension
+```
+
+## Configurations
+
+**autoDocstring - Python Docstring Generator**
+
+- These are configurations for the Python autoDocstring Generator extension.
+
+- More configurations for the docstringFormat can be found [here](pep257.mustache)
+     - It's a custom template for the PEP257 docstring format.
+
+```json
+  "auto-close-tag.enableAutoCloseTag": true,
+  "autoDocstring.customTemplatePath": "path/to/pep257.mustache",
+  "autoDocstring.docstringFormat": "pep257",
+  "autoDocstring.guessTypes":true,
+  "autoDocstring.includeName": false,
+  "autoDocstring.startOnNewLine": true,
 ```
