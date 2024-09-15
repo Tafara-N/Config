@@ -30,9 +30,9 @@
     "description": "Adds a shebang for 'sh' shell scripts and a magic comment for file encoding"
   },
   "shebang-bash-r": {
-    "prefix": "shebang-bash",
+    "prefix": "#!",
     "body": [
-      "#!/usr/bin/env bash"
+      "#!/usr/bin/bash"
     ],
     "description": "Adds a shebang for 'bash' shell scripts"
   },
