@@ -21,6 +21,13 @@
     ],
     "description": "Adds a shebang for Python scripts"
   },
+  "shebang": {
+    "prefix": "#!",
+    "body": [
+      "#!/usr/bin/env ${1|python3,python|}"
+    ],
+    "description": "Adds a shebang for Python scripts"
+  },
   "shebang-python-encoding": {
     "prefix": "#!python+encoding",
     "body": [
@@ -37,7 +44,7 @@
     "description": "Adds a magic comment for Python file encoding"
   },
   "Python Docstring": {
-    "prefix": "docstring",
+    "prefix": "'''",
     "body": [
       "\"\"\"",
       "",
