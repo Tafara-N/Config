@@ -24,7 +24,7 @@ httpie                     3.2.2                       474    latest/stable    j
 icloud-for-linux           0.22                        283    latest/stable    marcustomlinson  -
 kf6-core22                 6.5.0                       36     latest/stable    kde**            -
 kotlin                     2.0.20                      84     latest/stable    jetbrains**      classic
-kubectl                    1.31.0                      3340   latest/stable    canonical**      classic
+kubectl                    1.31.1                      3373   latest/stable    canonical**      classic
 libreoffice                24.2.6.2                    326    latest/stable    canonical**      -
 mesa-2404                  24.0.9                      143    latest/stable    canonical**      -
 musikcube                  0.96.3                      8      latest/stable    clangen          -
@@ -32,11 +32,10 @@ mysql-workbench-community  8.0.36                      13     latest/stable    t
 okular                     24.05.2                     156    latest/stable    kde**            -
 postman                    11.12.0                     275    latest/stable    postman-inc**    -
 snap-store                 0+git.e3dd562               1173   latest/stable/…  canonical**      -
-snapcraft                  8.3.3                       12503  latest/stable    canonical**      classic
+snapcraft                  8.3.4                       12563  latest/stable    canonical**      classic
 snapd                      2.63                        21759  latest/stable    canonical**      snapd
 snapd-desktop-integration  0.9                         178    latest/stable/…  canonical**      -
 spotify                    1.2.42.290.g242057a2        78     latest/stable    spotify**        -
 thunderbird                128.2.0esr-1                509    latest/stable/…  canonical**      -
 tldr                       3.3.0                       627    latest/stable    kbdk             -
 valgrind                   3.22.0                      160    latest/stable    ralight          classic
-whatsapp-for-linux         1.6.5                       59     latest/stable    nshecan          -
