@@ -1,12 +1,14 @@
 aaron-bond.better-comments
+adriano-markovic.c-cpp-makefile-project
 batisteo.vscode-django
+bierner.emojisense
 bierner.markdown-checkbox
 bierner.markdown-preview-github-styles
 cardinal90.multi-cursor-case-preserve
 celianriboulet.webvalidator
-chrmarti.regex
 clemenspeters.format-json
 cschlosser.doxdocgen
+cweijan.dbclient-jdbc
 cweijan.vscode-mysql-client2
 darkriszty.markdown-table-prettify
 dbaeumer.vscode-eslint
@@ -26,6 +28,7 @@ harry-ross-software.c-snippets
 hbenl.vscode-test-explorer
 janisdd.vscode-edit-csv
 junstyle.vscode-django-support
+kevinrose.vsc-python-indent
 littlefoxteam.vscode-python-test-adapter
 matangover.mypy
 mechatroner.rainbow-csv
@@ -43,7 +46,6 @@ ms-python.isort
 ms-python.mypy-type-checker
 ms-python.python
 ms-python.vscode-pylance
-ms-vscode-remote.remote-ssh
 ms-vscode.cpptools
 ms-vscode.hexeditor
 ms-vscode.test-adapter-converter
@@ -56,5 +58,6 @@ shopify.ruby-lsp
 sibiraj-s.vscode-scss-formatter
 timonwong.shellcheck
 vincaslt.highlight-matching-tag
+wayou.vscode-todo-highlight
 yandeu.five-server
 zhangyd.ascii-table
