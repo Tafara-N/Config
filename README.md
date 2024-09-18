@@ -23,6 +23,7 @@
 - Windows (WSL)
 
 ### These are my configurations for:
+
 - Bash
 - JavaScript
 - LazyVim
