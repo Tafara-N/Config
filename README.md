@@ -48,6 +48,7 @@
 - Projects: Python, JavaScript, Node.js, Ruby etc...
 
 ### Extensions
+
 - VS Code
 - ...
 
