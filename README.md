@@ -33,6 +33,7 @@
 - ...
 
 ### Basic Templates:
+
 - Editor Config
 - FrameWork
 - Git ignore
