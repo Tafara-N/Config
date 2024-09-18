@@ -53,6 +53,7 @@
 - ...
 
 ### Plugins
+
 - Vim
 - MySQL
 - Gedit
