@@ -619,5 +619,5 @@
   "workbench.tree.renderIndentGuides": "none",
   "yaml.schemas": {
     "file:///home/tafara/.vscode-server/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
+  }
 }
