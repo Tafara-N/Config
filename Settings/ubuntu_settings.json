@@ -76,7 +76,7 @@
   ],
   "betterFolding.excludedLanguages": [],
   "[c]": {
-    "editor.defaultFormatter": null,
+    "editor.defaultFormatter": "ms-vscode.cpptools",
     "editor.detectIndentation": false,
     "editor.insertSpaces": false,
     "editor.inlineSuggest.enabled": false,
@@ -86,12 +86,22 @@
     "editor.tabSize": 4,
     "files.autoSave": "afterDelay"
   },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "C_Cpp.autocomplete": "default",
   "C_Cpp.autocompleteAddParentheses": true,
   "C_Cpp.codeAnalysis.clangTidy.enabled": true,
   "C_Cpp.files.exclude": {
     "**/.vscode": true,
     "**/.vs": true
   },
+  "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+  "C_Cpp.inlayHints.parameterNames.enabled": true,
+  "C_Cpp.inlayHints.referenceOperator.enabled": true,
+  "C_Cpp.inlayHints.referenceOperator.showSpace": false,
+  "C_Cpp.intelliSenseEngineFallback": "enabled",
   "C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
   "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
   "C_Cpp.vcFormat.indent.accessSpecifiers": true,
@@ -292,11 +302,20 @@
   "files.autoSave": "afterDelay",
   "files.associations": {
     "*html": "html",
+    "*.c": "c",
+    "*.cpp": "cpp",
     "*.css": "css",
+    "*.go": "go",
     "*.html": "html",
+    "*.java": "java",
     "*.js": "javascript",
     "*.md": "markdown",
+    "*.pl": "perl",
     "*.py": "python",
+    "*.rb": "ruby",
+    "*.sh": "shellscript",
+    "*.sql": "sql",
+    "*.ts": "typecript",
     "**/views/**/*.html": "django-html",
     "**/templates/*.html": "django-html"
   },
@@ -330,7 +349,8 @@
     "plaintext": true,
     "markdown": true,
     "scminput": false,
-    "python": true
+    "python": true,
+    "c": true
   },
   "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "always",
@@ -446,7 +466,7 @@
   "python.analysis.inlayHints.pytestParameters": true,
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.typeCheckingMode": "basic",
-  "python.defaultInterpreterPath": "/home/tafara/.venv/bin/python3",
+  "python.defaultInterpreterPath": "/home/tafara/.venv",
   "python.globalModuleInstallation": true,
   "python.languageServer": "Pylance",
   "python.testing.cwd": "tests",
@@ -547,23 +567,8 @@
   "testExplorer.hideWhen": "noTests",
   "testing.alwaysRevealTestOnStateChange": true,
   "typescript.preferences.quoteStyle": "single",
-  "vscode-color-picker.languages": [
-    "php",
-    "html",
-    "css",
-    "rust",
-    "python",
-    "json",
-    "jsonc",
-    "yaml",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "vue",
-    "vue-html"
-  ],
   "window.autoDetectHighContrast": true,
+  "window.confirmSaveUntitledWorkspace": false,
   "window.menuBarVisibility": "toggle",
   "window.newWindowDimensions": "fullscreen",
   "window.titleBarStyle": "custom",
@@ -614,5 +619,5 @@
   "workbench.tree.renderIndentGuides": "none",
   "yaml.schemas": {
     "file:///home/tafara/.vscode-server/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  }
+  },
 }
