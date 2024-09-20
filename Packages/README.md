@@ -32,6 +32,18 @@ sudo dpkg --get-selections > packages.txt
 snap list --all > snaps.txt
 ```
 
+**To generate a list of installed NPM packages into a file:**
+
+```bash
+
+```
+
+**To generate a list of installed Ruby Gems packages into a file:**
+
+```bash
+
+```
+
 ## Author
 
 **Tafara Nyamhunga  - [Github](https://github.com/tafara-n) / [Twitter](https://twitter.com/tafaranyamhunga)**
