@@ -1,11 +1,6 @@
-npm install semistandard
-npm install semistandard --global
-npm install eslint --global
-npm install --global itunes-remote
-npm install -g jsonlint
-npm install -g @nestjs/cli
-npm install -g tldr
-npm install -g npm
-npm install -g dockly
-npm install -g neovim
-npm install -g @mrodrig/json-2-csv-cli
+/home/tafara
+├── @mrodrig/json-2-csv-cli@5.5.5 extraneous
+├── commander@12.1.0 extraneous
+├── deeks@3.1.0 extraneous
+└── doc-path@4.1.1 extraneous
+
