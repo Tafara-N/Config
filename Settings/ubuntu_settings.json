@@ -3,7 +3,6 @@
   "accessibility.signals.terminalBell": {
     "sound": "on"
   },
-  "auto-close-tag.enableAutoCloseTag": true,
   "autoDocstring.customTemplatePath": "/home/tafara/.config/Code/User/pep257.mustache",
   "autoDocstring.docstringFormat": "pep257",
   "autoDocstring.guessTypes": true,
@@ -455,7 +454,7 @@
   "python.analysis.diagnosticMode": "openFilesOnly",
   "python.analysis.diagnosticSeverityOverrides": {
     "reportArgumentType": "warning",
-    "reportMissingImports": "none",
+    "reportMissingImports": "warning",
     "reportImplicitStringConcatenation": "warning",
     "reportUnboundVariable": "warning",
     "reportUnusedImport": "information"
@@ -478,7 +477,7 @@
   "pythonTestExplorer.testFramework": "unittest",
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "always" // If you have something like Ruff or isort installed.
+      "source.organizeImports": "explicit" // If you have something like Ruff or isort installed.
     },
     "editor.defaultFormatter": "ms-python.autopep8",
     "editor.detectIndentation": false,
@@ -492,7 +491,7 @@
     "isort.args": [
       "--profile",
       "black"
-    ]
+    ],
   },
   "redhat.telemetry.enabled": true,
   "remoteHub.commitDirectlyWarning": "off",
@@ -619,5 +618,5 @@
   "workbench.tree.renderIndentGuides": "none",
   "yaml.schemas": {
     "file:///home/tafara/.vscode-server/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  }
+  },
 }
