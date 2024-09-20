@@ -35,7 +35,7 @@ snap list --all > snaps.txt
 **To generate a list of installed NPM packages into a file:**
 
 ```bash
-
+npm list > npm.txt
 ```
 
 **To generate a list of installed Ruby Gems packages into a file:**
