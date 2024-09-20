@@ -1,6 +1,16 @@
-/home/tafara
-├── @mrodrig/json-2-csv-cli@5.5.5 extraneous
-├── commander@12.1.0 extraneous
-├── deeks@3.1.0 extraneous
-└── doc-path@4.1.1 extraneous
-
+/home/tafara/.nvm/versions/node/v22.6.0/lib
+├── @mrodrig/json-2-csv-cli@5.5.5
+├── @nestjs/cli@10.4.4
+├── corepack@0.29.3
+├── dockly@3.24.3
+├── eslint@9.10.0
+├── express-generator@4.16.1
+├── express@4.19.2
+├── itunes-remote@2.3.0
+├── jsonlint@1.6.3
+├── nativefier@52.0.0
+├── neovim@5.2.0
+├── npm@10.8.2
+├── prettier@3.3.3
+├── rename-cli@7.0.2
+└── semistandard@17.0.0
