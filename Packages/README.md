@@ -26,6 +26,12 @@ sudo xargs -a packages.txt apt install
 sudo dpkg --get-selections > packages.txt
 ```
 
+**To generate a list of installed Snap packages into a file:**
+
+```bash
+snap list --all > snaps.txt
+```
+
 ## Author
 
 **Tafara Nyamhunga  - [Github](https://github.com/tafara-n) / [Twitter](https://twitter.com/tafaranyamhunga)**
