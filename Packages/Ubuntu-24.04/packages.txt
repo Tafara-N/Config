@@ -281,6 +281,7 @@ gir1.2-atk-1.0:amd64				install
 gir1.2-atspi-2.0:amd64				install
 gir1.2-dbusmenu-glib-0.4:amd64			install
 gir1.2-dee-1.0:amd64				install
+gir1.2-evince-3.0:amd64				install
 gir1.2-fcitx-1.0				install
 gir1.2-freedesktop:amd64			install
 gir1.2-freedesktop-dev:amd64			install
@@ -306,6 +307,7 @@ gir1.2-gstreamer-1.0:amd64			install
 gir1.2-gtk-3.0:amd64				install
 gir1.2-gtk-4.0:amd64				install
 gir1.2-gtksource-300:amd64			install
+gir1.2-gtksource-4:amd64			install
 gir1.2-gtop-2.0:amd64				install
 gir1.2-gudev-1.0:amd64				install
 gir1.2-gweather-4.0:amd64			install
@@ -315,6 +317,7 @@ gir1.2-ibus-1.0:amd64				install
 gir1.2-javascriptcoregtk-4.1:amd64		install
 gir1.2-javascriptcoregtk-6.0:amd64		install
 gir1.2-mutter-14:amd64				install
+gir1.2-nautilus-4.0:amd64			install
 gir1.2-nm-1.0:amd64				install
 gir1.2-nma4-1.0:amd64				install
 gir1.2-notify-0.7:amd64				install
@@ -385,6 +388,7 @@ gnome-shell-extension-ubuntu-tiling-assistant	install
 gnome-shell-extensions				install
 gnome-snapshot					install
 gnome-startup-applications			install
+gnome-sushi					install
 gnome-system-monitor				install
 gnome-terminal					install
 gnome-terminal-data				install
@@ -991,6 +995,7 @@ libgrilo-0.3-0:amd64				install
 libgs-common					install
 libgs10:amd64					install
 libgs10-common					install
+libgsecuredelete0				install
 libgsf-1-114:amd64				install
 libgsf-1-common					install
 libgsm1:amd64					install
@@ -1020,6 +1025,8 @@ libgtk2.0-common				install
 libgtk3-perl					install
 libgtkmm-3.0-1t64:amd64				install
 libgtkmm-4.0-0:amd64				install
+libgtksourceview-4-0:amd64			install
+libgtksourceview-4-common			install
 libgtksourceview-5-0:amd64			install
 libgtksourceview-5-common			install
 libgtop-2.0-11:amd64				install
@@ -1828,6 +1835,7 @@ libxau-dev:amd64				install
 libxau6:amd64					install
 libxaw7:amd64					install
 libxcb-composite0:amd64				install
+libxcb-cursor0:amd64				install
 libxcb-damage0:amd64				install
 libxcb-dri2-0:amd64				install
 libxcb-dri3-0:amd64				install
@@ -1850,6 +1858,7 @@ libxcb-xfixes0:amd64				install
 libxcb-xinerama0:amd64				install
 libxcb-xinput0:amd64				install
 libxcb-xkb1:amd64				install
+libxcb-xtest0:amd64				install
 libxcb-xv0:amd64				install
 libxcb1:amd64					install
 libxcb1-dev:amd64				install
@@ -2029,9 +2038,12 @@ mythes-en-au					install
 mythes-en-us					install
 nano						install
 nautilus					install
+nautilus-admin					install
 nautilus-data					install
 nautilus-extension-gnome-terminal:amd64		install
+nautilus-image-converter			install
 nautilus-sendto					install
+nautilus-wipe:amd64				install
 ncal						install
 ncurses-base					install
 ncurses-bin					install
@@ -2251,6 +2263,7 @@ python3-more-itertools				install
 python3-mpmath					install
 python3-msgpack					install
 python3-nacl					install
+python3-nautilus				install
 python3-netaddr					install
 python3-netifaces:amd64				install
 python3-netplan					install
@@ -2438,6 +2451,7 @@ sbsigntool					install
 scrcpy						install
 scrcpy-server					install
 seahorse					install
+secure-delete					install
 secureboot-db					install
 sed						install
 sensible-utils					install
@@ -2679,6 +2693,7 @@ zip						install
 zlib1g:amd64					install
 zlib1g:i386					install
 zlib1g-dev:amd64				install
+zoom						install
 zsh						install
 zsh-common					install
 zstd						install
