@@ -41,7 +41,7 @@ snap list --all > snaps.txt
 **To generate a list of installed Ruby Gems packages into a file:**
 
 ```bash
-
+gem list > gems.txt
 ```
 
 ## Author
