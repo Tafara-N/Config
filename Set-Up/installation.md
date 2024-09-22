@@ -321,6 +321,8 @@ sudo apt-get install -y pgcli
 [Visit duckdb](https://duckdb.org/docs/installation)
 
 ```shell
+
+```
 ____
 
 # NoSQL
