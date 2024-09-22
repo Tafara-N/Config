@@ -2200,6 +2200,7 @@ python3-decorator				install
 python3-defer					install
 python3-deprecated				install
 python3-dev					install
+python3-distlib					install
 python3-distro					install
 python3-distro-info				install
 python3-distupgrade				install
@@ -2286,6 +2287,7 @@ python3-pil.imagetk:amd64			install
 python3-pip					install
 python3-pip-whl					install
 python3-pkg-resources				install
+python3-platformdirs				install
 python3-problem-report				install
 python3-prompt-toolkit				install
 python3-psutil					install
@@ -2361,11 +2363,14 @@ python3-uno					install
 python3-update-manager				install
 python3-uritemplate				install
 python3-urllib3					install
+python3-venv					install
+python3-virtualenv				install
 python3-wadllib					install
 python3-wcwidth					install
 python3-webencodings				install
 python3-webob					install
 python3-wheel					install
+python3-wheel-whl				install
 python3-winrm					install
 python3-wrapt					install
 python3-xdg					install
