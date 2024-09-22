@@ -315,6 +315,9 @@ sudo apt-get install -y pgcli
 ## Install litecli for SQLite
 
 [litecli](https://litecli.com/)
+
+## Installing DuckDB
+
 ____
 
 # NoSQL
