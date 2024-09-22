@@ -326,6 +326,8 @@ unzip duckdb-linux-amd64.zip
 cd duckdb-linux-amd64
 ./duckdb
 ```
+
+**You can only be able to run it inside the DuckDB directory**
 ____
 
 # NoSQL
