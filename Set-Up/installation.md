@@ -339,6 +339,12 @@ sudo cp duckdb /usr/local/bin/duckdb
 ```
 
 **This will allow us to run DuckDB from any directory**
+
+OR
+
+```shell
+pip install duckdb
+```
 ____
 
 # NoSQL
