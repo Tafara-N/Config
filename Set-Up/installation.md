@@ -328,6 +328,17 @@ cd duckdb-linux-amd64
 ```
 
 **You can only be able to run it inside the DuckDB directory**
+
+> **Tip:**
+
+```shell
+wget "https://github.com/duckdb/duckdb/releases/download/v0.3.2/duckdb-linux-amd64.zip"
+unzip duckdb-linux-amd64.zip
+cd duckdb-linux-amd64
+sudo cp duckdb /usr/local/bin/duckdb
+```
+
+**This will allow us to run DuckDB from any directory**
 ____
 
 # NoSQL
