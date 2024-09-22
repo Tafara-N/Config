@@ -322,6 +322,7 @@ sudo apt-get install -y pgcli
 
 ```shell
 wget "https://github.com/duckdb/duckdb/releases/download/v0.3.2/duckdb-linux-amd64.zip"
+unzip duckdb-linux-amd64.zip
 ```
 ____
 
