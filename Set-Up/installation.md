@@ -318,6 +318,9 @@ sudo apt-get install -y pgcli
 
 ## Installing DuckDB
 
+[Visit duckdb](https://duckdb.org/docs/installation)
+
+```shell
 ____
 
 # NoSQL
