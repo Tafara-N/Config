@@ -2,7 +2,6 @@ Name                       Version                     Rev    Tracking         P
 bare                       1.0                         5      latest/stable    canonical**      base
 bash-language-server       4.7.0                       69     latest/stable    alexmurray*      classic
 brave                      1.70.117                    440    latest/stable    brave**          -
-brave                      1.69.168                    438    latest/stable    brave**          disabled
 btop                       1.3.2                       802    latest/stable    kz6fittycent     -
 canonical-livepatch        10.8.3                      282    latest/stable    canonical**      -
 cheat                      4.4.0.build.2               4279   latest/stable    bernermic        -
@@ -11,7 +10,6 @@ core18                     20240612                    2829   latest/stable    c
 core20                     20240705                    2379   latest/stable    canonical**      base
 core22                     20240823                    1612   latest/stable    canonical**      base
 core24                     20240710                    490    latest/stable    canonical**      base
-discord                    0.0.68                      207    latest/stable    snapcrafters*    disabled
 discord                    0.0.68                      208    latest/stable    snapcrafters*    -
 drawio                     24.7.8                      226    latest/stable    jgraph**         -
 firefox                    130.0.1-1                   4955   latest/stable    mozilla**        -
@@ -29,12 +27,13 @@ kf6-core22                 6.5.0                       36     latest/stable    k
 kotlin                     2.0.20                      84     latest/stable    jetbrains**      classic
 kubectl                    1.31.1                      3373   latest/stable    canonical**      classic
 libreoffice                24.2.6.2                    326    latest/stable    canonical**      -
+lxd                        6.1-78a3d8f                 30130  latest/stable    canonical**      -
 mesa-2404                  24.0.9                      143    latest/stable    canonical**      -
 musikcube                  0.96.3                      8      latest/stable    clangen          -
 mysql-workbench-community  8.0.36                      13     latest/stable    tonybolzan       -
 okular                     24.05.2                     156    latest/stable    kde**            -
 postman                    11.13.0                     277    latest/stable    postman-inc**    -
-snap-store                 0+git.e3dd562               1173   latest/stable/…  canonical**      disabled
+redisinsight               2.56.0                      23     latest/stable    redislabs        -
 snap-store                 0+git.4fcd62b7              1218   latest/stable/…  canonical**      -
 snapcraft                  8.3.4                       12563  latest/stable    canonical**      classic
 snapd                      2.63                        21759  latest/stable    canonical**      snapd
