@@ -894,6 +894,7 @@ libgcr-base-3-1:amd64				install
 libgcr-ui-3-1:amd64				install
 libgcrypt20:amd64				install
 libgcrypt20:i386				install
+libgcrypt20-dev					install
 libgd3:amd64					install
 libgdata-common					install
 libgdata22:amd64				install
@@ -968,6 +969,9 @@ libgnome-menu-3-0:amd64				install
 libgnome-rr-4-2t64:amd64			install
 libgnomekbd-common				install
 libgnomekbd8:amd64				install
+libgnutls-dane0t64:amd64			install
+libgnutls-openssl27t64:amd64			install
+libgnutls28-dev:amd64				install
 libgnutls30t64:amd64				install
 libgnutls30t64:i386				deinstall
 libgoa-1.0-0b:amd64				install
@@ -975,6 +979,7 @@ libgoa-1.0-common				install
 libgoa-backend-1.0-2:amd64			install
 libgom-1.0-0t64:amd64				install
 libgomp1:amd64					install
+libgpg-error-dev				install
 libgpg-error-l10n				install
 libgpg-error0:amd64				install
 libgpg-error0:i386				install
@@ -1080,6 +1085,7 @@ libicu74:amd64					install
 libidn12:amd64					install
 libidn2-0:amd64					install
 libidn2-0:i386					install
+libidn2-dev:amd64				install
 libiec61883-0:amd64				install
 libieee1284-3t64:amd64				install
 libigdgmm12:amd64				install
@@ -1301,10 +1307,12 @@ libnotify-bin					install
 libnotify4:amd64				install
 libnpth0t64:amd64				install
 libnspr4:amd64					install
+libnspr4-dev					install
 libnss-mdns:amd64				install
 libnss-sss:amd64				install
 libnss-systemd:amd64				install
 libnss3:amd64					install
+libnss3-dev:amd64				install
 libnss3-tools					install
 libntfs-3g89t64:amd64				install
 libnuma1:amd64					install
@@ -1329,6 +1337,7 @@ liborcus-0.18-0:amd64				install
 liborcus-parser-0.18-0:amd64			install
 libostree-1-1:amd64				install
 libotf1:amd64					install
+libp11-kit-dev:amd64				install
 libp11-kit0:amd64				install
 libpackage-stash-perl				install
 libpackage-stash-xs-perl:amd64			install
@@ -1668,6 +1677,8 @@ libtag1v5:amd64					install
 libtag1v5-vanilla:amd64				install
 libtalloc2:amd64				install
 libtasn1-6:amd64				install
+libtasn1-6-dev:amd64				install
+libtasn1-doc					install
 libtcl8.6:amd64					install
 libtdb1:amd64					install
 libteamdctl0:amd64				install
@@ -1734,6 +1745,7 @@ libudev-dev:amd64				install
 libudev1:amd64					install
 libudfread0:amd64				install
 libudisks2-0:amd64				install
+libunbound8:amd64				install
 libunibreak5:amd64				install
 libunicode-utf8-perl				install
 libunistring5:amd64				install
@@ -1874,6 +1886,7 @@ libxext6:amd64					install
 libxfixes-dev:amd64				install
 libxfixes3:amd64				install
 libxfont2:amd64					install
+libxft-dev:amd64				install
 libxft2:amd64					install
 libxi-dev:amd64					install
 libxi6:amd64					install
@@ -1897,8 +1910,12 @@ libxml2:amd64					install
 libxml2-dev:amd64				install
 libxml2-utils					install
 libxmlb2:amd64					install
+libxmlsec1-dev					install
 libxmlsec1t64:amd64				install
+libxmlsec1t64-gcrypt:amd64			install
+libxmlsec1t64-gnutls:amd64			install
 libxmlsec1t64-nss:amd64				install
+libxmlsec1t64-openssl:amd64			install
 libxmu6:amd64					install
 libxmuu1:amd64					install
 libxpm4:amd64					install
@@ -1909,6 +1926,7 @@ libxrender1:amd64				install
 libxres1:amd64					install
 libxs-parse-keyword-perl			install
 libxshmfence1:amd64				install
+libxslt1-dev:amd64				install
 libxslt1.1:amd64				install
 libxss-dev:amd64				install
 libxss1:amd64					install
@@ -2036,6 +2054,7 @@ mysql-server-core-8.0				install
 mysql-shell					install
 mythes-en-au					install
 mythes-en-us					install
+nala						install
 nano						install
 nautilus					install
 nautilus-admin					install
@@ -2054,6 +2073,7 @@ netcat-openbsd					install
 netpbm						install
 netplan-generator				install
 netplan.io					install
+nettle-dev:amd64				install
 network-manager					install
 network-manager-config-connectivity-ubuntu	install
 network-manager-gnome				install
@@ -2155,6 +2175,7 @@ python-dev-is-python3				install
 python-is-python3				install
 python-matplotlib-data				install
 python3						install
+python3-anyio					install
 python3-appdirs					install
 python3-apport					install
 python3-apsw					install
@@ -2219,11 +2240,14 @@ python3-google-auth-httplib2			install
 python3-googleapi				install
 python3-greenlet				install
 python3-gunicorn				install
+python3-h11					install
 python3-hamcrest				install
 python3-html2text				install
 python3-html5-parser				install
 python3-html5lib				install
+python3-httpcore				install
 python3-httplib2				install
+python3-httpx					install
 python3-hyperlink				install
 python3-ibus-1.0				install
 python3-idna					install
@@ -2336,6 +2360,8 @@ python3-setuptools-whl				install
 python3-sgmllib3k				install
 python3-simplejson				install
 python3-six					install
+python3-sniffio					install
+python3-socksio					install
 python3-software-properties			install
 python3-soupsieve				install
 python3-speechd					install
@@ -2352,8 +2378,10 @@ python3-terminaltables				install
 python3-texttable				install
 python3-tk:amd64				install
 python3-tldextract				install
+python3-tomli					install
 python3-traitlets				install
 python3-twisted					install
+python3-typer					install
 python3-typeshed				install
 python3-typing-extensions			install
 python3-tz					install
@@ -2496,6 +2524,7 @@ sssd-krb5					install
 sssd-krb5-common				install
 sssd-ldap					install
 sssd-proxy					install
+stow						install
 strace						install
 sudo						install
 switcheroo-control				install
@@ -2513,7 +2542,9 @@ sysvinit-utils					install
 t1utils						install
 tar						install
 tcl						install
+tcl-dev:amd64					install
 tcl8.6						install
+tcl8.6-dev:amd64				install
 tcpdump						install
 tecla						install
 telnet						install
@@ -2525,7 +2556,11 @@ thunderbird-locale-en-gb			install
 thunderbird-locale-en-us			install
 time						install
 timeshift					install
+tk						install
+tk-dev:amd64					install
+tk8.6						install
 tk8.6-blt2.5					install
+tk8.6-dev:amd64					install
 tmpreaper					install
 tmux						install
 tnftp						install
