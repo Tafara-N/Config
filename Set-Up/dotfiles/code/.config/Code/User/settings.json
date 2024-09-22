@@ -1,0 +1,600 @@
+{
+  "accessibility.hideAccessibleView": true,
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
+  "autoDocstring.customTemplatePath": "/home/tafara/.config/Code/User/pep257.mustache",
+  "autoDocstring.docstringFormat": "pep257",
+  "autoDocstring.guessTypes": true,
+  "autoDocstring.includeName": false,
+  "autoDocstring.startOnNewLine": true,
+  "better-comments.tags": [
+    {
+      "tag": "#!",
+      "color": "#88846F",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": true
+    },
+    {
+      "tag": "#",
+      "color": "#88846F",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": true
+    },
+    {
+      "tag": "!",
+      "color": "#88846F",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": true
+    },
+    {
+      "tag": "?",
+      "color": "#88846F",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": true
+    },
+    {
+      "tag": "//",
+      "color": "#88846F",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": true
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#88846F",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    }
+  ],
+  "betterFolding.excludedLanguages": [],
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false,
+    "editor.inlineSuggest.enabled": false,
+    "editor.rulers": [80],
+    "editor.tabSize": 4,
+    "files.autoSave": "afterDelay"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "C_Cpp.autocomplete": "default",
+  "C_Cpp.autocompleteAddParentheses": true,
+  "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+  "C_Cpp.files.exclude": {
+    "**/.vscode": true,
+    "**/.vs": true
+  },
+  "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+  "C_Cpp.inlayHints.parameterNames.enabled": true,
+  "C_Cpp.inlayHints.referenceOperator.enabled": true,
+  "C_Cpp.inlayHints.referenceOperator.showSpace": false,
+  "C_Cpp.intelliSenseEngineFallback": "enabled",
+  "C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
+  "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
+  "C_Cpp.vcFormat.indent.accessSpecifiers": true,
+  "C_Cpp.vcFormat.indent.braces": true,
+  "C_Cpp.vcFormat.indent.caseContentsWhenBlock": true,
+  "C_Cpp.vcFormat.indent.caseLabels": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "zig": "zig run",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "clear && python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runghc",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "sml": "cd $dir && sml $fileName",
+    "mojo": "mojo run"
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.showRunCommandInEditorContextMenu": false,
+  "code-runner.showRunCommandInExplorerContextMenu": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "cmake.configureOnOpen": true,
+  "database-client.autoSync": true,
+  "database-client.capitalizeKeywordsWhenFormatting": true,
+  "database-client.reloadAfterDML": true,
+  "database-client.showUser": true,
+  "[django-html]": {
+    "editor.defaultFormatter": "monosans.djlint",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    }
+  },
+  "docker.languageserver.formatter.ignoreMultilineInstructions": true,
+  "doxdocgen.c.commentPrefix": " * ",
+  "doxdocgen.c.firstLine": "/**",
+  "doxdocgen.c.lastLine": " */",
+  "doxdocgen.c.triggerSequence": "/**",
+  "doxdocgen.c.getterText": "Get the {name} object",
+  "doxdocgen.c.setterText": "Set the {name} object",
+  "doxdocgen.c.factoryMethodText": "Create a {name} object",
+  "doxdocgen.generic.includeTypeAtReturn": true,
+  "doxdocgen.generic.briefTemplate": "{function_name} - Description",
+  "doxdocgen.generic.returnTemplate": "Return: {type}\n      : {description}",
+  "doxdocgen.generic.paramTemplate": "@{param}: {description}",
+  "doxdocgen.generic.authorName": "Tafara Nyamhunga",
+  "doxdocgen.generic.authorTag": "@author: {author}",
+  "doxdocgen.generic.dateTemplate": "@date: {date}",
+  "doxdocgen.generic.useGitUserName": false,
+  "doxdocgen.generic.order": ["brief", "empty", "param", "empty", "return"],
+  "doxdocgen.generic.commandSuggestion": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingComments": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.codeActionsOnSave": {},
+  "editor.codeLensFontFamily": "SF Compact Rounded Regular",
+  "editor.colorDecoratorsActivatedOn": "hover",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorBlinking": "phase",
+  "editor.defaultColorDecorators": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.folding": true,
+  "editor.fontFamily": "SF Compact Rounded Regular",
+  "editor.fontWeight": "normal",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.insertSpaces": false,
+  "editor.fontSize": 13,
+  "editor.guides.indentation": false,
+  "editor.inlayHints.fontFamily": "SF Pro Rounded Regular",
+  "editor.inlineSuggest.fontFamily": "SF Compact Rounded Regular",
+  "editor.inlayHints.fontSize": 13,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": false,
+  "editor.largeFileOptimizations": false,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "boundary",
+  "editor.semanticTokenColorCustomizations": {
+    // optionally wrap the following in a "[Color Theme Name]": { ... }
+    "enabled": true,
+    "rules": {
+      // "class:python": "#61ea95",
+      // "method:python": "#0db474",
+      "module:python": "#27ee91",
+      // "magicFunction:python": "#a9ede4",
+      // "function.declaration:python": "#7fe7bf",
+      // "function:python": "#43bee3",
+      // "variable:python": "#0db474",
+      "*.decorator:python": "#71e5ab",
+      "*.typeHint:python": "#73ecb4",
+      "*.typeHintComment:python": "#aaaaaa"
+    }
+  },
+  "editor.scrollbar.horizontalScrollbarSize": 9,
+  "editor.scrollbar.verticalScrollbarSize": 9,
+  "editor.scrollBeyondLastLine": false,
+  "editor.stickyScroll.maxLineCount": 1,
+  "editor.stickyTabStops": true,
+  "editor.showFoldingControls": "always",
+  "editor.suggestFontSize": 10,
+  "editor.tokenColorCustomizations": {
+    "comments": "#88846F",
+    "textMateRules": [
+      {
+        "scope": [
+          // For Python multi-line docstrings / block comments!
+          "string.quoted.docstring.multi.python",
+          "string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
+          "string.quoted.docstring.multi.python punctuation.definition.string.end.python"
+        ],
+        "settings": {
+          // match regular Python comment color
+          "foreground": "#88846F",
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.tabCompletion": "on",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.quickSuggestions": {
+    "other": "inline",
+    "strings": "inline"
+  },
+  "editor.wordWrap": "on",
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "emmet.useInlineCompletions": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
+  "files.autoSave": "afterDelay",
+  "files.associations": {
+    "*html": "html",
+    "*.c": "c",
+    "*.cpp": "cpp",
+    "*.css": "css",
+    "*.go": "go",
+    "*.html": "html",
+    "*.java": "java",
+    "*.js": "javascript",
+    "*.md": "markdown",
+    "*.pl": "perl",
+    "*.py": "python",
+    "*.rb": "ruby",
+    "*.sh": "shellscript",
+    "*.sql": "sql",
+    "*.ts": "typecript",
+    "**/views/**/*.html": "django-html",
+    "**/templates/*.html": "django-html"
+  },
+  "files.eol": "\n",
+  "files.readonlyInclude": {
+    "/home/tafara/": true,
+    "/home/tafara/etc/": true,
+    "/home/tafara/var/": true
+  },
+  "files.refactoring.autoSave": false,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "fiveServer.browser": ["firefox"],
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/node_modules/**": true,
+    "**/__pycache__/**": true,
+    "**/venv/**": true,
+    "**/.venv/**": true,
+    "**/.vscode/**": true,
+    "**/.vscode-server/**": true
+  },
+  "github.copilot.advanced": {},
+  "github.copilot.chat.experimental.generateTests.codeLens": true,
+  "github.copilot.chat.terminalChatLocation": "quickChat",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "python": true,
+    "c": true
+  },
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "always",
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "underline": "#e7e7e7"
+      }
+    }
+  },
+  "[html]": {
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": "entity.other.attribute-name",
+          "settings": {
+            "fontStyle": "italic"
+          }
+        }
+      ]
+    }
+  },
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
+  "html.format.templating": true,
+  "html-css-class-completion.enableEmmetSupport": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.tabSize": 2
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features", // esbenp.prettier-vscode
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "liveServer.settings.CustomBrowser": "firefox",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.fullReload": true,
+  "makefile.additionalCompilerNames": ["gcc", "cc"],
+  "[markdown]": {
+    // 快速补全
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    },
+    "editor.defaultFormatter": "mervin.markdown-formatter"
+  },
+  "mediaPreview.video.autoPlay": true,
+  "mypy.runUsingActiveInterpreter": true,
+  "mypy-type-checker.interpreter": ["/home/tafara/.pyenv/shims/python3"],
+  "mypy-type-checker.preferDaemon": true,
+  "oracledevtools.bookmarkFileFolder": "/home/tafara/Oracle/oracle.oracledevtools",
+  "oracledevtools.download.otherFolder": "/home/tafara/downloads",
+  "oracledevtools.connectionConfiguration.configFilesFolder": "/home/tafara/Oracle/network/admin",
+  "oracledevtools.connectionConfiguration.walletFileFolder": "/home/tafara/Oracle/network/admin",
+  "[oraclesql]": {
+    "editor.suggest.showSnippets": true,
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  "prettier.jsxSingleQuote": true,
+  "prettier.useTabs": true,
+  "prettier.singleQuote": true,
+  "projectManager.git.baseFolders": [
+    "/home/tafara/Documents/Code",
+    "/home/tafara/Documents/Code/C/alx-low_level_programming/"
+  ],
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportArgumentType": "warning",
+    "reportMissingImports": "warning",
+    "reportImplicitStringConcatenation": "warning",
+    "reportUnboundVariable": "warning",
+    "reportUnusedImport": "information"
+  },
+  "python.analysis.fixAll": [],
+  "python.analysis.inlayHints.callArgumentNames": "all",
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.defaultInterpreterPath": "/home/tafara/.venv",
+  "python.globalModuleInstallation": true,
+  "python.languageServer": "Pylance",
+  "python.testing.cwd": "tests",
+  "python.testing.unittestEnabled": true,
+  "python.testing.pyTestEnabled": true,
+  "python.terminal.activateEnvironment": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "pythonTestExplorer.testplanEnabled": true,
+  "pythonTestExplorer.testFramework": "unittest",
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit" // If you have something like Ruff or isort installed.
+    },
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.detectIndentation": false,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.insertSpaces": true,
+    "editor.rulers": [79],
+    "editor.tabSize": 4,
+    "files.autoSave": "afterDelay",
+    "isort.args": ["--profile", "black"]
+  },
+  "redhat.telemetry.enabled": true,
+  "remoteHub.commitDirectlyWarning": "off",
+  "remote.autoForwardPortsSource": "hybrid",
+  "remote.SSH.connectTimeout": 120,
+  "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
+  "remote.SSH.remotePlatform": {
+    "load-balancer": "linux",
+    "Ubuntu": "linux",
+    "ubuntu-01": "linux",
+    "webserver-01": "linux",
+    "webserver-02": "linux",
+    "*.gitpod.io": "linux"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.insertSpaces": true,
+    "editor.rulers": [120],
+    "editor.tabSize": 2,
+    "editor.semanticHighlighting.enabled": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "scssFormatter.singleQuote": true,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "cweijan.vscode-mysql-client2"
+  },
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyleInactive": "underline",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "zsh (2)": {
+      "path": "/usr/bin/zsh"
+    }
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.enableVisualBell": true,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.sendKeybindingsToShell": false,
+  "terminal.integrated.tabs.defaultIcon": "terminal-bash",
+  "terminal.integrated.tabStopWidth": 4,
+  "testExplorer.hideWhen": "noTests",
+  "testing.alwaysRevealTestOnStateChange": true,
+  "typescript.preferences.quoteStyle": "single",
+  "window.autoDetectHighContrast": true,
+  "window.confirmSaveUntitledWorkspace": false,
+  "window.menuBarVisibility": "toggle",
+  "window.newWindowDimensions": "fullscreen",
+  "window.openFilesInNewWindow": "off",
+  "window.openFoldersInNewWindow": "off",
+  "window.titleBarStyle": "custom",
+  "window.restoreFullscreen": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#191819",
+    "activityBar.background": "#191819",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#422c74",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "editorInlayHint.background": "#00000000",
+    "editorInlayHint.foreground": "#88846F",
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editorError.foreground": "#e6696988",
+    "editorWarning.foreground": "#ffe60033",
+    "editorInfo.foreground": "#00ff0088",
+    "sash.hoverBorder": "#191819",
+    "statusBar.background": "#191819",
+    "statusBar.debuggingBackground": "#191819",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBar.noFolderBackground": "#191819",
+    "statusBarItem.hoverBackground": "#191819",
+    "statusBarItem.remoteBackground": "#191819",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    // "terminal.foreground" : "#00FD61",
+    // "terminal.background" : "#300A24",
+    "titleBar.activeBackground": "#191819",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#191819",
+    "titleBar.inactiveForeground": "#191819"
+  },
+  "workbench.colorTheme": "Jellybeans Theme",
+  "workbench.commandPalette.experimental.suggestCommands": true,
+  "workbench.commandPalette.preserveInput": true,
+  "workbench.editorAssociations": {
+    "*.html": "default",
+    "*.db": "default"
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.externalBrowser": "firefox",
+  "workbench.iconTheme": "file-icons",
+  "workbench.list.smoothScrolling": true,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "yaml.schemas": {
+    "file:///home/tafara/.vscode-server/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+}

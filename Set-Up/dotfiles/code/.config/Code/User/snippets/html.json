@@ -1,0 +1,11 @@
+{
+  "HTML Multiline Comment": {
+    "prefix": "multiline-comment",
+    "body": [
+      "<!--",
+      "",
+      "-->"
+    ],
+    "description": "Generate a multiline comment for HTML"
+  }
+}
