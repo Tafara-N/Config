@@ -5,6 +5,7 @@ acl						install
 adb						install
 adduser						install
 adwaita-icon-theme				install
+aircrack-ng					install
 alsa-base					install
 alsa-topology-conf				install
 alsa-ucm-conf					install
@@ -462,6 +463,7 @@ hunspell-en-us					install
 hunspell-en-za					install
 hunspell-fr-classical				install
 hwdata						install
+hwloc						install
 hyphen-en-ca					install
 hyphen-en-gb					install
 hyphen-en-us					install
@@ -501,12 +503,14 @@ iproute2					install
 iptables					install
 iputils-ping					install
 iputils-tracepath				install
+ipython3					install
 iredis						install
 isa-support:amd64				install
 iso-codes					install
 isympy-common					install
 isympy3						install
 iucode-tool					install
+iw						install
 javascript-common				install
 jdk-22						install
 jq						install
@@ -609,6 +613,7 @@ libb-hooks-op-check-perl:amd64			install
 libb2-1:amd64					install
 libbabeltrace1:amd64				install
 libbasicobjects0t64:amd64			install
+libbcg729-0:amd64				install
 libbdplus0:amd64				install
 libberkeleydb-perl:amd64			install
 libbinutils:amd64				install
@@ -1072,6 +1077,8 @@ libhttp-negotiate-perl				install
 libhttp-parser2.9:amd64				install
 libhunspell-1.7-0:amd64				install
 libhwasan0:amd64				install
+libhwloc-plugins:amd64				install
+libhwloc15:amd64				install
 libhwy1t64:amd64				install
 libhyphen0:amd64				install
 libibus-1.0-5:amd64				install
@@ -1294,6 +1301,7 @@ libnfsidmap1:amd64				install
 libnftables1:amd64				install
 libnftnl11:amd64				install
 libnghttp2-14:amd64				install
+libnghttp3-3:amd64				install
 libnice10:amd64					install
 libnl-3-200:amd64				install
 libnl-genl-3-200:amd64				install
@@ -1325,6 +1333,7 @@ libopenal-data					install
 libopenal1:amd64				install
 libopencc-data					install
 libopencc1.1					install
+libopencore-amrnb0:amd64			install
 libopenexr-3-1-30:amd64				install
 libopengl-dev:amd64				install
 libopengl0:amd64				install
@@ -1605,6 +1614,7 @@ libsm-dev:amd64					install
 libsm6:amd64					install
 libsmartcols1:amd64				install
 libsmbclient0:amd64				install
+libsmi2t64:amd64				install
 libsnapd-glib-2-1:amd64				install
 libsnappy1v5:amd64				install
 libsndfile1:amd64				install
@@ -1627,6 +1637,7 @@ libsoxr0:amd64					install
 libspa-0.2-bluetooth:amd64			install
 libspa-0.2-dev:amd64				install
 libspa-0.2-modules:amd64			install
+libspandsp2t64:amd64				install
 libspatialaudio0t64:amd64			install
 libspectre1:amd64				install
 libspeechd2:amd64				install
@@ -1817,6 +1828,9 @@ libwhoopsie-preferences0			install
 libwhoopsie0:amd64				install
 libwinpr3-3:amd64				install
 libwireplumber-0.4-0:amd64			install
+libwireshark-data				install
+libwireshark17t64:amd64				install
+libwiretap14t64:amd64				install
 libwmf-0.2-7:amd64				install
 libwmf-0.2-7-gtk:amd64				install
 libwmf0.2-7-gtk:amd64				install
@@ -1828,6 +1842,7 @@ libwpd-0.10-10:amd64				install
 libwpg-0.3-3:amd64				install
 libwps-0.4-4:amd64				install
 libwrap0:amd64					install
+libwsutil15t64:amd64				install
 libwww-mechanize-perl				install
 libwww-perl					install
 libwww-robotrules-perl				install
@@ -1918,6 +1933,7 @@ libxmlsec1t64-nss:amd64				install
 libxmlsec1t64-openssl:amd64			install
 libxmu6:amd64					install
 libxmuu1:amd64					install
+libxnvctrl0:amd64				install
 libxpm4:amd64					install
 libxrandr-dev:amd64				install
 libxrandr2:amd64				install
@@ -2125,6 +2141,7 @@ pinentry-gnome3					install
 pipewire:amd64					install
 pipewire-bin					install
 pipewire-pulse					install
+pixiewps					install
 pkexec						install
 pkg-config:amd64				install
 pkgconf:amd64					install
@@ -2350,6 +2367,7 @@ python3-resolvelib				install
 python3-rich					install
 python3-routes					install
 python3-rsa					install
+python3-scapy					install
 python3-scipy					install
 python3-selinux					install
 python3-serial					install
@@ -2449,6 +2467,7 @@ r-doc-html					install
 r-recommended					install
 rake						install
 readline-common					install
+reaver						install
 redis						install
 redis-server					install
 redis-tools					install
@@ -2577,6 +2596,7 @@ tracker-miner-fs				install
 transmission-common				install
 transmission-gtk				install
 tree						install
+tshark						install
 tzdata						install
 ubuntu-advantage-desktop-daemon			install
 ubuntu-docs					install
@@ -2654,9 +2674,11 @@ wget						install
 whiptail					install
 whoopsie					install
 whoopsie-preferences				install
+wifite						install
 wireless-regdb					install
 wireless-tools					install
 wireplumber					install
+wireshark-common				install
 wpasupplicant					install
 wsl-pro-service					install
 wsl-setup					install
