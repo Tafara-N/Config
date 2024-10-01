@@ -1232,6 +1232,15 @@ Welcome to Swift version 6.0.1 (swift-6.0.1-RELEASE).
 Type :help for assistance.
   1>
 ```
+
+## Julia
+
+**Visit the [julia](https://julialang.org/downloads/) downloads page:**
+
+```shell
+curl -fsSL https://install.julialang.org | sh
+source ~/.zshrc
+```
 ___
 
 # Docker
