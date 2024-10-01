@@ -11,9 +11,11 @@ core18                     20240612                    2829   latest/stable    c
 core20                     20240705                    2379   latest/stable    canonical**       base
 core22                     20240904                    1621   latest/stable    canonical**       base
 core24                     20240710                    490    latest/stable    canonical**       base
-discord                    0.0.69                      209    latest/stable    snapcrafters*     -
+discord                    0.0.69                      210    latest/stable    snapcrafters*     -
+discord                    0.0.69                      209    latest/stable    snapcrafters*     disabled
 drawio                     24.7.8                      226    latest/stable    jgraph**          -
-firefox                    130.0.1-1                   4955   latest/stable    mozilla**         -
+firefox                    131.0-1                     5014   latest/stable    mozilla**         -
+firefox                    130.0.1-1                   4955   latest/stable    mozilla**         disabled
 firmware-updater           0+git.5007558               127    latest/stable/…  canonical**       -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**       -
 gnome-3-38-2004            0+git.efb213a               143    latest/stable    canonical**       -
@@ -34,7 +36,8 @@ musikcube                  0.96.3                      8      latest/stable    c
 mysql-workbench-community  8.0.36                      13     latest/stable    tonybolzan        -
 okular                     24.05.2                     156    latest/stable    kde**             -
 postman                    11.14.0                     279    latest/stable    postman-inc**     -
-redisinsight               2.56.0                      23     latest/stable    redislabs         -
+redisinsight               2.56.0                      23     latest/stable    redislabs         disabled
+redisinsight               2.58.0                      24     latest/stable    redislabs         -
 snap-store                 0+git.4fcd62b7              1218   latest/stable/…  canonical**       -
 snapcraft                  8.4.1                       12607  latest/stable    canonical**       classic
 snapd                      2.63                        21759  latest/stable    canonical**       snapd
