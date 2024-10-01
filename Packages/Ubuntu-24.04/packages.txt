@@ -223,6 +223,7 @@ fonts-freefont-ttf				install
 fonts-lato					install
 fonts-liberation				install
 fonts-liberation-sans-narrow			install
+fonts-liberation2				install
 fonts-lyx					install
 fonts-noto-cjk					install
 fonts-noto-color-emoji				install
@@ -275,6 +276,8 @@ gfortran-13-x86-64-linux-gnu			install
 gfortran-x86-64-linux-gnu			install
 gh						install
 ghostscript					install
+gimp						install
+gimp-data					install
 gir1.2-accountsservice-1.0:amd64		install
 gir1.2-adw-1:amd64				install
 gir1.2-amtk-5:amd64				install
@@ -411,6 +414,7 @@ gpg-wks-client					install
 gpgconf						install
 gpgsm						install
 gpgv						install
+graphviz					install
 grep						install
 grilo-plugins-0.3-base:amd64			install
 groff-base					install
@@ -546,6 +550,8 @@ libalgorithm-diff-perl				install
 libalgorithm-diff-xs-perl:amd64			install
 libalgorithm-merge-perl				install
 libaliased-perl					install
+libamd3:amd64					install
+libann0						install
 libantlr4-runtime4.10:amd64			install
 libao-common					install
 libao4:amd64					install
@@ -612,6 +618,7 @@ libb-hooks-endofscope-perl			install
 libb-hooks-op-check-perl:amd64			install
 libb2-1:amd64					install
 libbabeltrace1:amd64				install
+libbabl-0.1-0:amd64				install
 libbasicobjects0t64:amd64			install
 libbcg729-0:amd64				install
 libbdplus0:amd64				install
@@ -665,6 +672,7 @@ libcairo2:amd64					install
 libcairo2-dev:amd64				install
 libcairomm-1.0-1v5:amd64			install
 libcairomm-1.16-1:amd64				install
+libcamd3:amd64					install
 libcamel-1.2-64t64:amd64			install
 libcamera0.2:amd64				install
 libcanberra-gtk3-0t64:amd64			install
@@ -679,18 +687,22 @@ libcapture-tiny-perl				install
 libcares2:amd64					install
 libcbor0.10:amd64				install
 libcc1-0:amd64					install
+libccolamd3:amd64				install
 libcddb2					install
 libcdio-cdda2t64:amd64				install
 libcdio-paranoia2t64:amd64			install
 libcdio19t64:amd64				install
 libcdparanoia0:amd64				install
 libcdr-0.1-1:amd64				install
+libcdt5:amd64					install
 libcgi-fast-perl				install
 libcgi-pm-perl					install
+libcgraph6:amd64				install
 libchewing3:amd64				install
 libchewing3-data				install
 libchm-bin					install
 libchm1						install
+libcholmod5:amd64				install
 libchromaprint1:amd64				install
 libcjson1:amd64					install
 libclang-cpp18					install
@@ -916,6 +928,8 @@ libgedit-amtk-5-common				install
 libgedit-gtksourceview-300-0:amd64		install
 libgedit-gtksourceview-300-common		install
 libgee-0.8-2:amd64				install
+libgegl-0.4-0t64:amd64				install
+libgegl-common					install
 libgeoclue-2-0:amd64				install
 libgeocode-glib-2-0:amd64			install
 libgettextpo0:amd64				install
@@ -923,6 +937,7 @@ libgexiv2-2:amd64				install
 libgfortran-13-dev:amd64			install
 libgfortran5:amd64				install
 libgif7:amd64					install
+libgimp2.0t64:amd64				install
 libgirepository-1.0-1:amd64			install
 libgirepository-1.0-dev:amd64			install
 libgirepository-2.0-0:amd64			install
@@ -1041,12 +1056,16 @@ libgtksourceview-5-0:amd64			install
 libgtksourceview-5-common			install
 libgtop-2.0-11:amd64				install
 libgtop2-common					install
+libgts-0.7-5t64:amd64				install
+libgts-bin					install
 libgudev-1.0-0:amd64				install
 libgupnp-1.6-0:amd64				install
 libgupnp-av-1.0-3:amd64				install
 libgupnp-dlna-2.0-4:amd64			install
 libgupnp-igd-1.6-0:amd64			install
 libgusb2:amd64					install
+libgvc6						install
+libgvpr2:amd64					install
 libgweather-4-0t64:amd64			install
 libgweather-4-common				install
 libgxps2t64:amd64				install
@@ -1168,6 +1187,7 @@ libkrb5-3:amd64					install
 libkrb5-dev:amd64				install
 libkrb5support0:amd64				install
 libksba8:amd64					install
+liblab-gamut1:amd64				install
 liblangtag-common				install
 liblangtag1:amd64				install
 liblapack-dev:amd64				install
@@ -1270,6 +1290,8 @@ libmtp-runtime					install
 libmtp9t64:amd64				install
 libmutter-14-0:amd64				install
 libmwaw-0.3-3:amd64				install
+libmypaint-1.5-1:amd64				install
+libmypaint-common				install
 libmysofa1:amd64				install
 libmysqlclient-dev				install
 libmysqlclient21:amd64				install
@@ -1375,6 +1397,7 @@ libparams-util-perl				install
 libparted2t64:amd64				install
 libpath-tiny-perl				install
 libpath-utils1t64:amd64				install
+libpathplan4:amd64				install
 libpcap0.8t64:amd64				install
 libpcaudio0:amd64				install
 libpci3:amd64					install
@@ -1756,6 +1779,7 @@ libudev-dev:amd64				install
 libudev1:amd64					install
 libudfread0:amd64				install
 libudisks2-0:amd64				install
+libumfpack6:amd64				install
 libunbound8:amd64				install
 libunibreak5:amd64				install
 libunicode-utf8-perl				install
