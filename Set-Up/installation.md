@@ -1190,6 +1190,48 @@ nvm alias default  # (version you want)
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
+
+## Swift
+
+**Install required dependencies:**
+
+```shell
+sudo apt update && sudo apt upgrade
+sudo apt install binutils git gnupg2 libc6-dev libcurl4 libedit2 libgcc-9-dev libpython2.7 libsqlite3-0 libstdc++-9-dev libxml2 libz3-dev pkg-config tzdata zlib1g-dev
+```
+
+### Steps:
+
+1. **Download the swift tarball for Ubuntu 24.04 from [the swift download page](https://www.swift.org/download/):**
+2. **Extract the tarball to your home directory:**
+3. **Add the swift binary directory to your PATH:**
+4. **Source your shell profile:**
+
+```shell
+wget "https://download.swift.org/swift-6.0.1-release/ubuntu2404/swift-6.0.1-RELEASE/swift-6.0.1-RELEASE-ubuntu24.04.tar.gz"
+tar -xvzf swift-6.0.1-RELEASE-ubuntu24.04.tar.gz -C ~
+echo "PATH=~/swift-5.3.3-RELEASE-ubuntu20.04/usr/bin:$PATH" >> ~/.zshrc
+source ~/.zshrc
+```
+
+**Verify that this went through correctly enter `$ swift --version` and if you receive output similar to:**
+
+```shell
+swift --version
+Swift version 6.0.1 (swift-6.0.1-RELEASE)
+Target: x86_64-unknown-linux-gnu
+```
+
+**Now you should be able to enter the `swift` command on the command line anytime that you want.**
+
+**Enter the swift repl:**
+
+```shell
+swift repl
+Welcome to Swift version 6.0.1 (swift-6.0.1-RELEASE).
+Type :help for assistance.
+  1>
+```
 ___
 
 # Docker
