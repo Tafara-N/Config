@@ -225,5 +225,13 @@
   {
     "key": "ctrl+shift+pagedown",
     "command": "-workbench.action.moveEditorRightInGroup"
+  },
+  {
+    "key": "alt+shift+]",
+    "command": "workbench.action.increaseViewSize"
+  },
+  {
+    "key": "alt+shift+[",
+    "command": "workbench.action.decreaseViewSize"
   }
 ]
