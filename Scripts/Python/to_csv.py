@@ -23,8 +23,13 @@ def main() -> None:
     The main function to convert a JSON file to a CSV file.
     """
 
-    json_file = argv[1]
-    csv_file = argv[2]
+    if len(argv) != 3:
+        print("Usage: json-csv <json_file> <csv_file>")
+        print("Example: json-csv data.json data.csv")
+        exit(1)
+
+    json_file: str = argv[1]
+    csv_file: str = argv[2]
     json_to_csv(json_file, csv_file)
 
 
@@ -90,8 +95,4 @@ def to_utf8(*, filepath: str) -> str:
 
 
 if __name__ == "__main__":
-    if len(argv) != 3:
-        print("Usage: json-csv <json_file> <csv_file>")
-        print("Example: json-csv data.json data.csv")
-        exit(1)
     main()
