@@ -84,6 +84,7 @@ byobu						install
 bzip2						install
 bzip2-doc					install
 ca-certificates					install
+ca-certificates-java				deinstall
 calibre						install
 calibre-bin					install
 cbonsai						install
@@ -515,6 +516,7 @@ isympy-common					install
 isympy3						install
 iucode-tool					install
 iw						install
+java-common					deinstall
 javascript-common				install
 jdk-22						install
 jq						install
@@ -1445,6 +1447,7 @@ libpopt0:amd64					install
 libportal-gtk3-1:amd64				install
 libportal-gtk4-1:amd64				install
 libportal1:amd64				install
+libportaudio2:amd64				install
 libpostproc-dev:amd64				install
 libpostproc57:amd64				install
 libppd2:amd64					install
@@ -2043,6 +2046,7 @@ lsb-release					install
 lshw						install
 lsof						install
 lto-disabled-list				install
+lua5.4						install
 lzip						install
 lzop						install
 m17n-db						install
@@ -2129,6 +2133,7 @@ ninja-build					install
 ntfs-3g						install
 numactl						install
 ocl-icd-libopencl1:amd64			install
+openjdk-21-jre-headless:amd64			deinstall
 openprinting-ppds				install
 openssh-client					install
 openssh-server					install
@@ -2524,6 +2529,7 @@ sane-airscan					install
 sane-utils					install
 sassc						install
 sbsigntool					install
+sbt						deinstall
 scrcpy						install
 scrcpy-server					install
 seahorse					install
@@ -2599,6 +2605,7 @@ thunderbird-locale-en-gb			install
 thunderbird-locale-en-us			install
 time						install
 timeshift					install
+timgm6mb-soundfont				deinstall
 tk						install
 tk-dev:amd64					install
 tk8.6						install
@@ -2647,6 +2654,7 @@ udisks2						install
 ufw						install
 unattended-upgrades				install
 unicode-data					install
+unityhub					deinstall
 uno-libs-private				install
 unzip						install
 update-inetd					install
