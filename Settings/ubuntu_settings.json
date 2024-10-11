@@ -76,7 +76,7 @@
   "betterFolding.excludedLanguages": [],
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools",
-    "editor.detectIndentation": false,
+    "editor.detectIndentation": true,
     "editor.insertSpaces": false,
     "editor.inlineSuggest.enabled": false,
     "editor.rulers": [
@@ -174,6 +174,7 @@
     "editor.detectIndentation": false
   },
   "cmake.configureOnOpen": true,
+  "cmake.options.statusBarVisibility": "icon",
   "database-client.autoSync": true,
   "database-client.capitalizeKeywordsWhenFormatting": true,
   "database-client.reloadAfterDML": true,
@@ -195,8 +196,8 @@
   "doxdocgen.c.setterText": "Set the {name} object",
   "doxdocgen.c.factoryMethodText": "Create a {name} object",
   "doxdocgen.generic.includeTypeAtReturn": true,
-  "doxdocgen.generic.briefTemplate": "{function_name} - Description",
-  "doxdocgen.generic.returnTemplate": "Return: {type}\n      : {description}",
+  "doxdocgen.generic.briefTemplate": "__func_name__ - __Description__",
+  "doxdocgen.generic.returnTemplate": "Return: {type}\n      : __description__",
   "doxdocgen.generic.paramTemplate": "@{param}: {description}",
   "doxdocgen.generic.authorName": "Tafara Nyamhunga",
   "doxdocgen.generic.authorTag": "@author: {author}",
@@ -204,7 +205,6 @@
   "doxdocgen.generic.useGitUserName": false,
   "doxdocgen.generic.order": [
     "brief",
-    "empty",
     "param",
     "empty",
     "return"
@@ -222,7 +222,7 @@
   "editor.defaultColorDecorators": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.folding": true,
-  "editor.fontFamily": "SF Compact Rounded Regular",
+  "editor.fontFamily": "SF Pro Rounded Regular",
   "editor.fontWeight": "normal",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -283,7 +283,7 @@
   },
   "editor.tabCompletion": "on",
   "editor.unicodeHighlight.ambiguousCharacters": false,
-  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.invisibleCharacters": true,
   "editor.quickSuggestions": {
     "other": "inline",
     "strings": "inline"
@@ -295,6 +295,13 @@
   "emmet.useInlineCompletions": true,
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
+  "emojisense.languages": {
+    "json": true,
+    "markdown": true,
+    "plaintext": true,
+    "python": true,
+    "scminput": true // language used in the source control commit message box
+  },
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "extensions.ignoreRecommendations": true,
@@ -464,7 +471,7 @@
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.pytestParameters": true,
   "python.analysis.inlayHints.variableTypes": true,
-  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.typeCheckingMode": "standard",
   "python.defaultInterpreterPath": "/home/tafara/.venv",
   "python.globalModuleInstallation": true,
   "python.languageServer": "Pylance",
@@ -479,7 +486,7 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit" // If you have something like Ruff or isort installed.
     },
-    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.detectIndentation": false,
     "editor.inlayHints.enabled": "offUnlessPressed",
     "editor.insertSpaces": true,
@@ -491,7 +498,7 @@
     "isort.args": [
       "--profile",
       "black"
-    ],
+    ]
   },
   "redhat.telemetry.enabled": true,
   "remoteHub.commitDirectlyWarning": "off",
@@ -570,8 +577,11 @@
   "window.confirmSaveUntitledWorkspace": false,
   "window.menuBarVisibility": "toggle",
   "window.newWindowDimensions": "fullscreen",
+  "window.openFilesInNewWindow": "off",
+  "window.openFoldersInNewWindow": "off",
   "window.titleBarStyle": "custom",
   "window.restoreFullscreen": true,
+  "window.restoreWindows": "none",
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#191819",
     "activityBar.background": "#191819",
@@ -609,7 +619,7 @@
   },
   "workbench.editor.enablePreview": false,
   "workbench.editor.closeOnFileDelete": true,
-  "workbench.externalBrowser": "firefox",
+  "workbench.externalBrowser": "",
   "workbench.iconTheme": "file-icons",
   "workbench.list.smoothScrolling": true,
   "workbench.sideBar.location": "right",
@@ -618,5 +628,5 @@
   "workbench.tree.renderIndentGuides": "none",
   "yaml.schemas": {
     "file:///home/tafara/.vscode-server/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
+  }
 }
