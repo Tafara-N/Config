@@ -6,7 +6,6 @@ alias .="cd"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias .....="cd ../../../.."
 
 	# List files, directories and hidden files
 alias ls="colorls"
@@ -15,7 +14,7 @@ alias dir-contents="ls -d */"
 
 alias md="mkdir"
 alias bat="batcat"
-alias rmv="sudo rm -fr"
+alias rmv="rm -fr"
 alias nv="nvim"
 alias usage="tldr"
 
@@ -30,10 +29,7 @@ alias x-="chmod 644"     # r = 4, w = 2, x = 1
 alias link="sudo ln -s"  # sudo ln -s /path/to/file /path/to/symlink
 
 	# Compress files and directories
-alias zip-dir="gzip -d"  # Decompress files and directories
 alias untar="sudo tar -zxvf"
-
-alias grep-e="grep -E"
 
 	# List all users
 alias list-users="cat /etc/passwd | grep -vE '(/bin/false|/sbin/nologin|/bin/sync)' | cut -d: -f1"
@@ -63,25 +59,17 @@ alias dos-unix="dos2unix"
 alias unix-dos="unix2dos"
 
 	# Restart the terminal
-alias restart="source ~/.zshrc"
-alias refresh="exec \"$SHELL\""
+alias refresh="source ~/.zshrc"
+alias restart="exec \"$SHELL\""
 
 # Virtual Environments
 
 # Python
+alias debug="python3 -m pudb.run"
 alias set-venv="python3 -m venv .venv"
 alias start="source .venv/bin/activate"
 alias tafara="source .tafara/bin/activate"
 alias stop="deactivate"
-
-# Conda
-alias enable-base="conda config --set auto_activate_base true"
-alias disable-base="conda config --set auto_activate_base false"
-alias conda-start="conda create --name .venv"
-alias conda-venv="conda activate .venv"
-alias conda-base="conda activate base"
-alias conda-envs="conda info --envs"
-alias conda-stop="conda deactivate"
 
 alias requirements="pip3 freeze > requirements.txt"
 alias conda-requirements="pip list --format=freeze > requirements.txt"
@@ -99,51 +87,25 @@ alias django-server="python3 manage.py runserver"
 alias django-app="python3 manage.py startapp"  # name of the app
 alias django-migrations="python3 manage.py makemigrations"  # creates a migration file
 alias django-migrate="python3 manage.py migrate"  # migrates data into a database
-alias django-shell="bpython manage.py shell"  # Django shell
+alias django-shell="ptpython manage.py shell"  # Django shell
 alias django-superuser="python3 manage.py createsuperuser"
-
-	# Flask Project
-alias flask-run="flask run"
-alias flask-runapp="flask --app"
-alias flask-shell="flask shell"
-
 
 	# Unit Testing
 alias test-file="python3 -m unittest"
 alias tests-dir="python3 -m unittest discover tests"
 
-# Python
-alias py-local="pyenv local"
-alias py-global="pyenv global"
-alias py-install="pyenv install"
-alias py-versions="pyenv versions"
-alias py-uninstall="pyenv uninstall"
-
-# Java
-alias j-add="jenv add"
-alias j-local="jenv local"
-alias j-global="jenv global"
-alias j-versions="jenv versions"
-
-# Ruby
-alias ruby-local="rbenv local"
-alias ruby-global="rbenv global"
-alias ruby-install="rbenv install"
-alias ruby-versions="rbenv versions"
-alias ruby-uninstall="rbenv uninstall"
-alias ruby-remote="rbenv --list-remote"
-
-# Node
-alias node-use="nvm use"
-alias node-versions="nvm ls"
-alias node-install="nvm install"
-alias node-remote="nvm ls-remote"
-alias node-uninstall="nvm uninstall"
+# Nala
+alias nala-i="sudo nala install"
+alias nala-remove="sudo nala remove"
+alias nala-update="sudo nala update"
+alias nala-upgrade="sudo nala upgrade"
+alias nala-fullupgrade="sudo nala full-upgrade"
 
 # APT GET
 
 	# Release version
 alias release="lsb_release -a"
+alias specs="dpkg --print-architecture && arch"
 
 	# Packages list: Ubuntu
 alias packages="sudo dpkg --get-selections > packages.txt"
@@ -159,13 +121,10 @@ alias search="apt-cache search"
 alias show="apt-cache show"
 alias check="sudo apt-get check"
 
-	# Convert chm, epub to pdf
-alias to-pdf="ebook-convert"
-
 	# Install, update and upgrade
+alias i-dpkg="sudo dpkg -i"
 alias reboot-now="sudo reboot now"
 alias poweroff="sudo shutdown now"
-alias i-dpkg="sudo dpkg -i"
 alias install="sudo apt-get install -y"
 alias update="sudo apt-get update"
 alias upgrade="sudo apt-get upgrade -y"
@@ -196,6 +155,7 @@ alias show-snaps="du -h /var/lib/snapd/snaps"  # Then run rmv-old-snaps
 alias free-mem="free -h && sudo sysctl -w vm.drop_caches=3 && sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches && free -h"
 
 	# Clear Thumbnail Cache
+alias clear-history="echo -n > ~/.zsh_history"
 alias show-thumbnail="du -sh ~/.cache/thumbnails"
 alias clean-thumbnail="rm -rf ~/.cache/thumbnails/*"
 
@@ -206,10 +166,6 @@ alias autoremove="sudo apt autoremove"
 
 # PROCESSES | PID
 alias proc="ps auxf | grep"
-alias k15="sudo kill -15"
-alias k9="sudo kill -9"
-alias k6="sudo kill -6"
-alias k3="sudo kill -3"
 
 	# Ports
 alias ports="netstat -tuln"
@@ -302,7 +258,7 @@ alias mongodb-enable="sudo systemctl enable mongod"
 alias mongodb-disable="sudo systemctl disable mongod"
 
 # Mongo Users
-alias mongo-atlas="mongosh 'mongodb+srv://$MONGO_USER:$MONGO_USER_PASSWD@$APP.ntw59k5.mongodb.net/?retryWrites=true&w=majority&appName=$APP_NAME'"
+alias mongo-atlas="mongosh 'mongodb+srv://$MONGO_USER:$MONGO_PASSWD@$APP.ntw59k5.mongodb.net/?retryWrites=true&w=majority&appName=$APP_NAME'"
 
 # Redis
 alias redis-status="sudo systemctl status redis"
@@ -391,6 +347,7 @@ alias log="git log"
 alias init="git init"
 alias clone="git clone"
 alias status="git status"
+alias rename="git mv"
 
 	# Branches
 alias branch="git branch"
@@ -463,6 +420,9 @@ alias name="git config --global user.name"
 alias email="git config --global user.email"
 alias git-list="git config --list"
 
+	# Track large files
+alias track="git lfs track"
+
 # LAZYGIT
 alias lazy="lazygit"
 
@@ -502,6 +462,16 @@ alias snippets-py="code /home/tafara/.config/Code/User/snippets/python.json"
 alias snippets-rb="code /home/tafara/.config/Code/User/snippets/ruby.json"
 alias snippets-sh="code /home/tafara/.config/Code/User/snippets/shellscript.json"
 
+# GNU stow
+alias stow-test="stow -nvt ~"  # Pass the directory name
+alias stow-run="stow -vt ~"
+
+# Adopts/copies existing files
+alias stow-adopt="stow --adopt -nvt ~"
+
+# Unstow, remove symlinks
+alias unstow="stow -Dvt ~"
+
 # Redis
 alias redis="iredis"
 
@@ -509,7 +479,8 @@ alias redis="iredis"
 alias sqlite="litecli"
 
 # C
-alias options="-Wall -Wextra -pedantic"
+alias compile="gcc -Wall -Wextra -pedantic -ggdb3"
+alias leaks="valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --log-file=valgrind-out.txt"
 
 # PYTHON
 alias list="pip3 list"
@@ -534,6 +505,12 @@ alias py-json="python3 -m json.tool"
 
 # CSV tools: Print CSV files in a table format
 alias csv="rich --csv"
+
+	# Convert chm, epub to pdf
+alias to-pdf="ebook-convert"
+
+# Text tools
+alias get-txt="pandoc -t plain -o"  # Download webpage as text and save it to a file name
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -567,3 +544,17 @@ compinit
 
 # Clip-View: clip
 export PATH=$HOME/.local/bin:$PATH
+
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc
+PATH=~/swift-6.0.1-RELEASE-ubuntu24.04/usr/bin:/home/tafara/swift-6.0.1-RELEASE-ubuntu24.04/usr/bin:/home/tafara/.local/bin:/home/tafara/.rbenv/shims:/home/tafara/.rbenv/bin:/home/tafara/.nvm/versions/node/v22.6.0/bin:/home/tafara/.pyenv/plugins/pyenv-virtualenv/shims:/home/tafara/.pyenv/shims:/home/tafara/.pyenv/bin:/home/tafara/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/home/tafara/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<
