@@ -51,5 +51,12 @@
       "\"\"\""
     ],
     "description": "Generate a Python docstring"
+  },
+  "Dunder Main": {
+    "prefix": "dunder",
+    "body": [
+        "if __name__ == \"__main__\":",
+    ],
+    "description": "Expands to if __name__ == '__main__':"
   }
 }
