@@ -12,7 +12,7 @@ alias ls="colorls"
 alias hidden="ls -dA .*"  # Show hidden files
 alias dir-contents="ls -d */"
 
-alias md="mkdir"
+alias md="mkdir -p"
 alias bat="batcat"
 alias rmv="rm -fr"
 alias nv="nvim"
@@ -100,6 +100,10 @@ alias nala-remove="sudo nala remove"
 alias nala-update="sudo nala update"
 alias nala-upgrade="sudo nala upgrade"
 alias nala-fullupgrade="sudo nala full-upgrade"
+
+# Flatpak
+alias board="flatpak run org.mypaint.MyPaint"
+alias koodoo="flatpak run io.github.troyeguo.koodo-reader"
 
 # APT GET
 
@@ -558,3 +562,5 @@ path=('/home/tafara/.juliaup/bin' $path)
 export PATH
 
 # <<< juliaup initialize <<<
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
