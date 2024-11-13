@@ -413,8 +413,8 @@ alias fetch="git fetch origin"
 	# Delete
 alias del-branch="git push origin --delete"
 
-	# Delete committed and pushed: AFter deleting, commit and force-push
-alias rm-cache="git rm --cached"  # Remove file from remote repo, but keeps it locally
+	# Delete committed and pushed: After deleting, commit and force-push
+alias unstage="git rm --cached"  # Remove file from remote repo, but keeps it locally
 alias delete-file="git rm"
 alias delete-folder="git rm -r"
 alias force-push="git push --force -u origin main"
