@@ -50,7 +50,7 @@ git --version
 sudo apt update && sudo apt upgrade
 sudo apt install libz-dev libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext cmake gcc
 cd /tmp
-curl -o git.tar.gz https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.45.1.tar.gz
+curl -o git.tar.gz https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.47.0.tar.gz
 tar -zxf git.tar.gz
 cd git-*
 make prefix=/usr/local all
