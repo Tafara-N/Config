@@ -1,0 +1,6 @@
+eza v0.20.9:
+    eza
+netscanner v0.6.0:
+    netscanner
+sd v1.0.0:
+    sd
