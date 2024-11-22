@@ -1,0 +1,17 @@
+Koodo Reader	io.github.troyeguo.koodo-reader	1.6.7	stable	system
+Freedesktop Platform	org.freedesktop.Platform	freedesktop-sdk-23.08.25	23.08	system
+Mesa	org.freedesktop.Platform.GL.default	24.2.5	23.08	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	24.2.5	23.08-extra	system
+Mesa	org.freedesktop.Platform.GL.default	24.2.6	24.08	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	24.2.6	24.08extra	system
+Intel VAAPI driver	org.freedesktop.Platform.VAAPI.Intel		23.08	system
+Intel VAAPI driver	org.freedesktop.Platform.VAAPI.Intel		24.08	system
+openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	system
+openh264	org.freedesktop.Platform.openh264	2.4.1	2.4.1	system
+GNOME Application Platform version 47	org.gnome.Platform		47	system
+Yaru Gtk Theme	org.gtk.Gtk3theme.Yaru		3.22	system
+KDE Application Platform	org.kde.Platform		5.15-23.08	system
+QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15-23.08	system
+QAdwaitaDecorations	org.kde.WaylandDecoration.QAdwaitaDecorations		5.15-23.08	system
+QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-23.08	system
+MyPaint	org.mypaint.MyPaint	2.0.1	stable	system
