@@ -85,7 +85,7 @@ byobu						install
 bzip2						install
 bzip2-doc					install
 ca-certificates					install
-ca-certificates-java				deinstall
+ca-certificates-java				install
 calibre						install
 calibre-bin					install
 cbmc						install
@@ -219,7 +219,9 @@ font-manager-common:amd64			install
 font-viewer					install
 fontconfig					install
 fontconfig-config				install
+fonts-cantarell					install
 fonts-dejavu-core				install
+fonts-dejavu-extra				install
 fonts-dejavu-mono				install
 fonts-droid-fallback				install
 fonts-freefont-ttf				install
@@ -349,6 +351,7 @@ gir1.2-webkit2-4.1:amd64			install
 gir1.2-wnck-3.0:amd64				install
 gir1.2-xapp-1.0					install
 git						install
+git-delta					install
 git-lfs						install
 git-man						install
 gjs						install
@@ -442,6 +445,7 @@ gstreamer1.0-plugins-ugly:amd64			install
 gstreamer1.0-tools				install
 gstreamer1.0-vaapi:amd64			install
 gstreamer1.0-x:amd64				install
+gtk-4-examples					install
 gtk-update-icon-cache				install
 gtk2-engines-murrine:amd64			install
 gtk2-engines-pixbuf:amd64			install
@@ -462,6 +466,7 @@ hostname					install
 hplip						install
 hplip-data					install
 htop						install
+httpie						install
 humanity-icon-theme				install
 hunspell-en-au					install
 hunspell-en-ca					install
@@ -518,9 +523,10 @@ isympy-common					install
 isympy3						install
 iucode-tool					install
 iw						install
-java-common					deinstall
+java-common					install
 javascript-common				install
 jdk-22						install
+jenkins						install
 jq						install
 kbd						install
 kerneloops					install
@@ -587,6 +593,8 @@ libasyncns0:amd64				install
 libatasmart4:amd64				install
 libatk-adaptor:amd64				install
 libatk-bridge2.0-0t64:amd64			install
+libatk-wrapper-java				install
+libatk-wrapper-java-jni:amd64			install
 libatk1.0-0t64:amd64				install
 libatkmm-1.6-1v5:amd64				install
 libatm1t64:amd64				install
@@ -745,7 +753,7 @@ libcupsfilters2t64:amd64			install
 libcupsimage2-dev:amd64				install
 libcupsimage2t64:amd64				install
 libcurl3t64-gnutls:amd64			install
-libcurl4-openssl-dev:amd64			install
+libcurl4-gnutls-dev:amd64			install
 libcurl4t64:amd64				install
 libdaemon0:amd64				install
 libdata-dpath-perl				install
@@ -755,6 +763,7 @@ libdata-optlist-perl				install
 libdata-validate-domain-perl			install
 libdata-validate-ip-perl			install
 libdata-validate-uri-perl			install
+libdatrie-dev:amd64				install
 libdatrie1:amd64				install
 libdav1d7:amd64					install
 libdb-dev:amd64					install
@@ -830,6 +839,7 @@ libemail-address-xs-perl			install
 libenchant-2-2:amd64				install
 libencode-locale-perl				install
 libeot0:amd64					install
+libepoxy-dev:amd64				install
 libepoxy0:amd64					install
 libepubgen-0.1-1:amd64				install
 liberror-perl					install
@@ -894,6 +904,7 @@ libfreerdp3-3:amd64				install
 libfreetype-dev:amd64				install
 libfreetype6:amd64				install
 libfreezethaw-perl				install
+libfribidi-dev:amd64				install
 libfribidi0:amd64				install
 libftdi1-2:amd64				install
 libfuse3-3:amd64				install
@@ -924,6 +935,7 @@ libgdbm-dev:amd64				install
 libgdbm6t64:amd64				install
 libgdk-pixbuf-2.0-0:amd64			install
 libgdk-pixbuf-2.0-0:i386			deinstall
+libgdk-pixbuf-2.0-dev:amd64			install
 libgdk-pixbuf2.0-bin				install
 libgdk-pixbuf2.0-common				install
 libgdm1						install
@@ -1019,7 +1031,9 @@ libgpod-common					install
 libgpod4t64:amd64				install
 libgprofng0:amd64				install
 libgraphene-1.0-0:amd64				install
+libgraphene-1.0-dev				install
 libgraphite2-3:amd64				install
+libgraphite2-dev:amd64				install
 libgrilo-0.3-0:amd64				install
 libgs-common					install
 libgs10:amd64					install
@@ -1047,6 +1061,7 @@ libgtk-3-common					install
 libgtk-4-1:amd64				install
 libgtk-4-bin					install
 libgtk-4-common					install
+libgtk-4-dev:amd64				install
 libgtk-4-media-gstreamer			install
 libgtk2.0-0t64:amd64				install
 libgtk2.0-bin					install
@@ -1074,6 +1089,8 @@ libgweather-4-0t64:amd64			install
 libgweather-4-common				install
 libgxps2t64:amd64				install
 libhandy-1-0:amd64				install
+libharfbuzz-cairo0:amd64			install
+libharfbuzz-dev:amd64				install
 libharfbuzz-gobject0:amd64			install
 libharfbuzz-icu0:amd64				install
 libharfbuzz-subset0:amd64			install
@@ -1389,6 +1406,7 @@ libpam-sss:amd64				install
 libpam-systemd:amd64				install
 libpam0g:amd64					install
 libpango-1.0-0:amd64				install
+libpango1.0-dev:amd64				install
 libpangocairo-1.0-0:amd64			install
 libpangoft2-1.0-0:amd64				install
 libpangomm-1.4-1v5:amd64			install
@@ -1486,6 +1504,7 @@ libqmi-glib5:amd64				install
 libqmi-proxy					install
 libqmi-utils					install
 libqpdf29t64:amd64				install
+libqrencode4:amd64				install
 libqrtr-glib0:amd64				install
 libqt5concurrent5t64:amd64			install
 libqt5core5t64:amd64				install
@@ -1509,9 +1528,11 @@ libqt5widgets5t64:amd64				install
 libqt5x11extras5:amd64				install
 libqt5xml5t64:amd64				install
 libqt6concurrent6t64:amd64			install
+libqt6core5compat6:amd64			install
 libqt6core6t64:amd64				install
 libqt6dbus6t64:amd64				install
 libqt6gui6t64:amd64				install
+libqt6multimedia6:amd64				install
 libqt6network6t64:amd64				install
 libqt6opengl6t64:amd64				install
 libqt6openglwidgets6t64:amd64			install
@@ -1585,6 +1606,7 @@ librist4:amd64					install
 libroc0.3:amd64					install
 librole-tiny-perl				install
 librsvg2-2:amd64				install
+librsvg2-bin					install
 librsvg2-common:amd64				install
 librsync2t64:amd64				install
 librtmp1:amd64					install
@@ -1735,6 +1757,7 @@ libtext-markdown-discount-perl			install
 libtext-wrapi18n-perl				install
 libtext-xslate-perl:amd64			install
 libthai-data					install
+libthai-dev:amd64				install
 libthai0:amd64					install
 libtheora0:amd64				install
 libtie-ixhash-perl				install
@@ -1859,8 +1882,8 @@ libwhoopsie0:amd64				install
 libwinpr3-3:amd64				install
 libwireplumber-0.4-0:amd64			install
 libwireshark-data				install
-libwireshark17t64:amd64				install
-libwiretap14t64:amd64				install
+libwireshark18:amd64				install
+libwiretap15:amd64				install
 libwmf-0.2-7:amd64				install
 libwmf-0.2-7-gtk:amd64				install
 libwmf0.2-7-gtk:amd64				install
@@ -1872,7 +1895,7 @@ libwpd-0.10-10:amd64				install
 libwpg-0.3-3:amd64				install
 libwps-0.4-4:amd64				install
 libwrap0:amd64					install
-libwsutil15t64:amd64				install
+libwsutil16:amd64				install
 libwww-mechanize-perl				install
 libwww-perl					install
 libwww-robotrules-perl				install
@@ -1919,10 +1942,12 @@ libxcb-xtest0:amd64				install
 libxcb-xv0:amd64				install
 libxcb1:amd64					install
 libxcb1-dev:amd64				install
+libxcomposite-dev:amd64				install
 libxcomposite1:amd64				install
 libxcursor-dev:amd64				install
 libxcursor1:amd64				install
 libxcvt0:amd64					install
+libxdamage-dev:amd64				install
 libxdamage1:amd64				install
 libxdmcp-dev:amd64				install
 libxdmcp6:amd64					install
@@ -2009,36 +2034,42 @@ linux-firmware					install
 linux-generic-hwe-24.04				install
 linux-headers-6.8.0-39				install
 linux-headers-6.8.0-39-generic			install
-linux-headers-6.8.0-45				install
-linux-headers-6.8.0-45-generic			install
-linux-headers-6.8.0-47				install
-linux-headers-6.8.0-47-generic			install
+linux-headers-6.8.0-48				install
+linux-headers-6.8.0-48-generic			install
+linux-headers-6.8.0-49				install
+linux-headers-6.8.0-49-generic			install
 linux-headers-generic-hwe-24.04			install
 linux-image-6.8.0-39-generic			deinstall
 linux-image-6.8.0-40-generic			deinstall
 linux-image-6.8.0-41-generic			deinstall
 linux-image-6.8.0-44-generic			deinstall
-linux-image-6.8.0-45-generic			install
-linux-image-6.8.0-47-generic			install
+linux-image-6.8.0-45-generic			deinstall
+linux-image-6.8.0-47-generic			deinstall
+linux-image-6.8.0-48-generic			install
+linux-image-6.8.0-49-generic			install
 linux-image-generic-hwe-24.04			install
 linux-libc-dev:amd64				install
 linux-modules-6.8.0-39-generic			deinstall
 linux-modules-6.8.0-40-generic			install
 linux-modules-6.8.0-41-generic			deinstall
 linux-modules-6.8.0-44-generic			deinstall
-linux-modules-6.8.0-45-generic			install
-linux-modules-6.8.0-47-generic			install
+linux-modules-6.8.0-45-generic			deinstall
+linux-modules-6.8.0-47-generic			deinstall
+linux-modules-6.8.0-48-generic			install
+linux-modules-6.8.0-49-generic			install
 linux-modules-extra-6.8.0-39-generic		deinstall
 linux-modules-extra-6.8.0-40-generic		install
 linux-modules-extra-6.8.0-41-generic		deinstall
 linux-modules-extra-6.8.0-44-generic		deinstall
-linux-modules-extra-6.8.0-45-generic		install
-linux-modules-extra-6.8.0-47-generic		install
+linux-modules-extra-6.8.0-45-generic		deinstall
+linux-modules-extra-6.8.0-47-generic		deinstall
+linux-modules-extra-6.8.0-48-generic		install
+linux-modules-extra-6.8.0-49-generic		install
 linux-sound-base				install
-linux-tools-6.8.0-45				install
-linux-tools-6.8.0-45-generic			install
-linux-tools-6.8.0-47				install
-linux-tools-6.8.0-47-generic			install
+linux-tools-6.8.0-48				install
+linux-tools-6.8.0-48-generic			install
+linux-tools-6.8.0-49				install
+linux-tools-6.8.0-49-generic			install
 linux-tools-common				install
 litecli						install
 lm-sensors					install
@@ -2140,6 +2171,8 @@ ninja-build					install
 ntfs-3g						install
 numactl						install
 ocl-icd-libopencl1:amd64			install
+openjdk-17-jre:amd64				install
+openjdk-17-jre-headless:amd64			install
 openjdk-21-jre-headless:amd64			deinstall
 openprinting-ppds				install
 openssh-client					install
@@ -2157,7 +2190,9 @@ p7zip-full					install
 packagekit					install
 packagekit-tools				install
 pandoc						install
+pango1.0-tools					install
 parted						install
+pass						install
 passwd						install
 pastebinit					install
 patch						install
@@ -2253,6 +2288,7 @@ python3-cairo					install
 python3-certifi					install
 python3-cffi-backend:amd64			install
 python3-chardet					install
+python3-charset-normalizer			install
 python3-chm					install
 python3-cli-helpers				install
 python3-click					install
@@ -2273,6 +2309,7 @@ python3-debconf					install
 python3-debian					install
 python3-decorator				install
 python3-defer					install
+python3-defusedxml				install
 python3-deprecated				install
 python3-dev					install
 python3-distlib					install
@@ -2341,6 +2378,7 @@ python3-monotonic				install
 python3-more-itertools				install
 python3-mpmath					install
 python3-msgpack					install
+python3-multidict				install
 python3-nacl					install
 python3-nautilus				install
 python3-netaddr					install
@@ -2400,6 +2438,7 @@ python3-repoze.lru				install
 python3-requests				install
 python3-requests-file				install
 python3-requests-ntlm				install
+python3-requests-toolbelt			install
 python3-resolvelib				install
 python3-rich					install
 python3-routes					install
@@ -2416,6 +2455,7 @@ python3-sgmllib3k				install
 python3-simplejson				install
 python3-six					install
 python3-sniffio					install
+python3-socks					install
 python3-socksio					install
 python3-software-properties			install
 python3-soupsieve				install
@@ -2468,6 +2508,7 @@ python3.12					install
 python3.12-dev					install
 python3.12-minimal				install
 python3.12-venv					install
+qrencode					install
 qt5-gtk-platformtheme:amd64			install
 qt5-qmake:amd64					install
 qt5-qmake-bin					install
@@ -2508,6 +2549,7 @@ reaver						install
 redis						install
 redis-server					install
 redis-tools					install
+relagit						deinstall
 rfkill						install
 rhythmbox					install
 rhythmbox-data					install
@@ -2636,6 +2678,7 @@ transmission-common				install
 transmission-gtk				install
 tree						install
 tshark						install
+tufw						install
 tzdata						install
 ubuntu-advantage-desktop-daemon			install
 ubuntu-docs					install
@@ -2706,6 +2749,7 @@ vlc-plugin-video-output:amd64			install
 vlc-plugin-video-splitter:amd64			install
 vlc-plugin-visualization:amd64			install
 wamerican					install
+wayland-protocols				install
 wbritish					install
 webapp-manager					install
 webp						install
@@ -2718,7 +2762,9 @@ wifite						install
 wireless-regdb					install
 wireless-tools					install
 wireplumber					install
+wireshark					install
 wireshark-common				install
+wl-clipboard					install
 wpasupplicant					install
 wsl-pro-service					install
 wsl-setup					install
